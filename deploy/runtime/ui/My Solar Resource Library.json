@@ -1,7 +1,7 @@
 {
-  "Name": "Solar Resource Library",
-  "Width": 882.0,
-  "Height": 534.0,
+    "Name": "My Solar Resource Library",
+    "Width": 882.0,
+    "Height": 534.0,
   "FormObjects": {
     "GroupBox": {
       "Visible": 1.0,
@@ -700,7 +700,40 @@
       "ObjectProperties": {
         "Name": {
           "Type": 5.0,
-          "String": "user_specified_weather_file"
+          "String": "my_dni_scale"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 300
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 525
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 120
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28
+        },
+        "Text": {
+          "Type": 5.0,
+          "String": "1.0"
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "TextEntry": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "callback"
         },
         "X": {
           "Type": 3.0,
@@ -833,12 +866,40 @@
       "UIObject": "TextEntry",
       "sscVariableName": "",
       "sscVariableValue": ""
+    },
+    "my_met_preprocess_enable": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "Enable met preprocessing",
+      "Units": "",
+      "Group": "Location and Resource",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "my_dni_scale": {
+      "Version": 4.0,
+      "Type": 2.0,
+      "Label": "DNI scale factor",
+      "Units": "-",
+      "Group": "Location and Resource",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 1.0,
+      "UIObject": "TextEntry",
+      "sscVariableName": "",
+      "sscVariableValue": ""
     }
+
+
   },
-  "Equations": [
-    "",
-    ""
-  ],
+    "Equations": [
+        "",
+        ""
+    ],
   "Callbacks": [
     "on_load{'Solar Resource Library'} = define() {",
     "\t//msgbox('Debug\\non_load Solar Resource Library');",
@@ -846,6 +907,11 @@
     "\tupdate_library_folders(''); // refresh list of library folders\r",
     "\tlibrary_notification();\r",
     "};",
+    "",
+    "on_change{'my_met_preprocess_enable'} = define() {",
+    "\tenable('my_dni_scale', value('my_met_preprocess_enable') == 1);\\r",
+    "};",
+    "\\r",
     "",
     "on_change{'btn_refresh_library'} = define() {",
     "\t//msgbox('Debug\\non_change btn_refresh_library');\r",
