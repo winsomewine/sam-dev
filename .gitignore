@@ -1,0 +1,26 @@
+# Build outputs
+build/
+out/
+bin/
+*.exe
+*.dll
+*.lib
+*.obj
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.pdb
+*.ipch
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
