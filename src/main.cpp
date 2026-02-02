@@ -170,36 +170,36 @@ MainWindow::MainWindow()
 
 #ifdef __WXOSX__
 	wxMenu *fileMenu = new wxMenu;
-	fileMenu->Append( wxID_NEW, "New project\tCtrl-N" );
-	fileMenu->Append( ID_NEW_SCRIPT, "New script" );
+	fileMenu->Append( wxID_NEW, L"\u65b0\u5efa\u9879\u76ee\tCtrl-N" );
+	fileMenu->Append( ID_NEW_SCRIPT, L"\u65b0\u5efa\u811a\u672c" );
 	fileMenu->AppendSeparator();
-	fileMenu->Append( wxID_OPEN, "Open project\tCtrl-O" );
-	fileMenu->Append( ID_OPEN_SCRIPT, "Open script" );
+	fileMenu->Append( wxID_OPEN, L"\u6253\u5f00\u9879\u76ee\tCtrl-O" );
+	fileMenu->Append( ID_OPEN_SCRIPT, L"\u6253\u5f00\u811a\u672c" );
 	fileMenu->AppendSeparator();
-	fileMenu->Append( wxID_SAVE, "Save\tCtrl-S" );
-	fileMenu->Append( wxID_SAVEAS, "Save as..." );
-	fileMenu->Append( ID_SAVE_HOURLY, "Save with hourly results");
+	fileMenu->Append( wxID_SAVE, L"\u4fdd\u5b58\tCtrl-S" );
+	fileMenu->Append( wxID_SAVEAS, L"\u53e6\u5b58\u4e3a..." );
+	fileMenu->Append( ID_SAVE_HOURLY, L"\u4fdd\u5b58\u5e76\u5305\u542b\u5c0f\u65f6\u7ed3\u679c");
 	fileMenu->AppendSeparator();
-	fileMenu->Append( ID_IMPORT_CASES, "Import cases..");
+	fileMenu->Append( ID_IMPORT_CASES, L"\u5bfc\u5165\u6848\u4f8b..");
 	fileMenu->AppendSeparator();
-	fileMenu->Append( ID_BROWSE_INPUTS, "Inputs browser...");
+	fileMenu->Append( ID_BROWSE_INPUTS, L"\u8f93\u5165\u6d4f\u89c8\u5668...");
 	fileMenu->AppendSeparator();
-	fileMenu->Append( wxID_EXIT, "Quit SAM");
+	fileMenu->Append( wxID_EXIT, L"\u9000\u51faSAM");
 
 	wxMenu *caseMenu = new wxMenu;
-	caseMenu->Append( ID_CASE_SIMULATE, "Simulate\tF5" );
-	caseMenu->Append( ID_CASE_REPORT, "Create report\tF6" );
-	caseMenu->Append( ID_CASE_CLEAR_RESULTS, "Clear all results" );
+	caseMenu->Append( ID_CASE_SIMULATE, L"\u8fd0\u884c\u4eff\u771f\tF5" );
+	caseMenu->Append( ID_CASE_REPORT, L"\u751f\u6210\u62a5\u544a\tF6" );
+	caseMenu->Append( ID_CASE_CLEAR_RESULTS, L"\u6e05\u9664\u6240\u6709\u7ed3\u679c" );
 	caseMenu->AppendSeparator();
-	caseMenu->Append( ID_CASE_RENAME, "Rename\tF2" );
-	caseMenu->Append( ID_CASE_DUPLICATE, "Duplicate" );
-	caseMenu->Append( ID_CASE_DELETE, "Delete" );
+	caseMenu->Append( ID_CASE_RENAME, L"\u91cd\u547d\u540d\tF2" );
+	caseMenu->Append( ID_CASE_DUPLICATE, L"\u590d\u5236" );
+	caseMenu->Append( ID_CASE_DELETE, L"\u5220\u9664" );
 	caseMenu->AppendSeparator();
-	caseMenu->Append( ID_CASE_MOVE_LEFT, "Move left" );
-	caseMenu->Append( ID_CASE_MOVE_RIGHT, "Move right" );
+	caseMenu->Append( ID_CASE_MOVE_LEFT, L"\u5de6\u79fb" );
+	caseMenu->Append( ID_CASE_MOVE_RIGHT, L"\u53f3\u79fb" );
 	caseMenu->AppendSeparator();
-	caseMenu->Append( ID_CASE_CONFIG, "Change model..." );
-	caseMenu->Append( ID_CASE_RESET_DEFAULTS, "Reset inputs to default values" );
+	caseMenu->Append( ID_CASE_CONFIG, L"\u66f4\u6539\u6a21\u578b..." );
+	caseMenu->Append( ID_CASE_RESET_DEFAULTS, L"\u91cd\u7f6e\u4e3a\u9ed8\u8ba4\u503c" );
 
 	wxMenu *helpMenu = new wxMenu;
 	helpMenu->Append( wxID_HELP );
@@ -207,9 +207,9 @@ MainWindow::MainWindow()
 	helpMenu->Append( wxID_ABOUT );
 
 	wxMenuBar *menuBar = new wxMenuBar;
-	menuBar->Append( fileMenu, wxT("&File") );
-	menuBar->Append( caseMenu, wxT("&Case")  );
-	menuBar->Append( helpMenu, wxT("&Help")  );
+	menuBar->Append( fileMenu, L"\u6587\u4ef6(&F)" );
+	menuBar->Append( caseMenu, L"\u6848\u4f8b(&C)"  );
+	menuBar->Append( helpMenu, L"\u5e2e\u52a9(&H)"  );
 	SetMenuBar( menuBar );
 #endif
 	m_eqnCase = nullptr; // SAM 1922
@@ -217,27 +217,27 @@ MainWindow::MainWindow()
 	m_topBook = new wxSimplebook( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE );
 
 	m_welcomeScreen = new WelcomeScreen( m_topBook );
-	m_topBook->AddPage( m_welcomeScreen, wxT("Welcome to SAM") );
+	m_topBook->AddPage( m_welcomeScreen, L"\u6b22\u8fce\u4f7f\u7528SAM" );
 
 
 	m_caseTabPanel = new wxPanel( m_topBook );
-	m_topBook->AddPage( m_caseTabPanel, wxT("Main project window") );
+	m_topBook->AddPage( m_caseTabPanel, L"\u4e3b\u9879\u76ee\u7a97\u53e3" );
 
 	wxMetroButton *metbut = 0;
 
 	wxBoxSizer *tools = new wxBoxSizer( wxHORIZONTAL );
 	//tools->Add( m_mainMenuButton = new wxMetroButton( m_caseTabPanel, ID_MAIN_MENU, wxEmptyString, wxBITMAP_PNG_FROM_DATA( menu ), wxDefaultPosition, wxDefaultSize /*, wxMB_DOWNARROW */), 0, wxALL|wxEXPAND, 0 );
-	tools->Add( m_mainMenuButton = new wxMetroButton( m_caseTabPanel, ID_MAIN_MENU, "File", wxNullBitmap/*wxBITMAP_PNG_FROM_DATA( menu )*/, wxDefaultPosition, wxDefaultSize, wxMB_DOWNARROW ), 0, wxALL|wxEXPAND, 0 );
-	tools->Add( metbut = new wxMetroButton( m_caseTabPanel, ID_CASE_CREATE, "Add", wxBITMAP_PNG_FROM_DATA( cirplus ), wxDefaultPosition, wxDefaultSize), 0, wxALL|wxEXPAND, 0 );
-	metbut->SetToolTip( "Add case" );
+	tools->Add( m_mainMenuButton = new wxMetroButton( m_caseTabPanel, ID_MAIN_MENU, L"\u6587\u4ef6", wxNullBitmap/*wxBITMAP_PNG_FROM_DATA( menu )*/, wxDefaultPosition, wxDefaultSize, wxMB_DOWNARROW ), 0, wxALL|wxEXPAND, 0 );
+	tools->Add( metbut = new wxMetroButton( m_caseTabPanel, ID_CASE_CREATE, L"\u6dfb\u52a0", wxBITMAP_PNG_FROM_DATA( cirplus ), wxDefaultPosition, wxDefaultSize), 0, wxALL|wxEXPAND, 0 );
+	metbut->SetToolTip( L"\u6dfb\u52a0\u6848\u4f8b" );
 	m_caseTabList = new wxMetroTabList( m_caseTabPanel, ID_CASE_TABS, wxDefaultPosition, wxDefaultSize, wxMT_MENUBUTTONS );
 
 	tools->Add( m_caseTabList, 1, wxALL|wxEXPAND, 0 );
 	tools->Add( metbut = new wxMetroButton( m_caseTabPanel, ID_PAGE_NOTES, wxEmptyString, wxBITMAP_PNG_FROM_DATA( notes_white ), wxDefaultPosition, wxDefaultSize), 0, wxALL|wxEXPAND, 0 );
-	metbut->SetToolTip( "Add a page note" );
+	metbut->SetToolTip( L"\u6dfb\u52a0\u9875\u9762\u6ce8\u91ca" );
 
-	tools->Add(new wxMetroButton(m_caseTabPanel, wxID_ABOUT, "About",wxNullBitmap, wxDefaultPosition, wxDefaultSize), 0, wxALL | wxEXPAND, 0);
-	tools->Add( new wxMetroButton( m_caseTabPanel, wxID_HELP, "Help",/*wxBITMAP_PNG_FROM_DATA(qmark)*/ wxNullBitmap, wxDefaultPosition, wxDefaultSize), 0, wxALL | wxEXPAND, 0);
+	tools->Add(new wxMetroButton(m_caseTabPanel, wxID_ABOUT, L"\u5173\u4e8e",wxNullBitmap, wxDefaultPosition, wxDefaultSize), 0, wxALL | wxEXPAND, 0);
+	tools->Add( new wxMetroButton( m_caseTabPanel, wxID_HELP, L"\u5e2e\u52a9",/*wxBITMAP_PNG_FROM_DATA(qmark)*/ wxNullBitmap, wxDefaultPosition, wxDefaultSize), 0, wxALL | wxEXPAND, 0);
 
 	m_caseNotebook = new wxSimplebook( m_caseTabPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE );
 
@@ -316,14 +316,14 @@ public:
 
 void MainWindow::ImportCases()
 {
-	wxFileDialog fdlg( this, "Select a SAM project file", wxEmptyString, wxEmptyString, "SAM Project Files (*.sam)|*.sam", wxFD_OPEN );
+	wxFileDialog fdlg( this, L"\u9009\u62e9SAM\u9879\u76ee\u6587\u4ef6", wxEmptyString, wxEmptyString, L"SAM\u9879\u76ee\u6587\u4ef6 (*.sam)|*.sam", wxFD_OPEN );
 	if ( fdlg.ShowModal() != wxID_OK )
 		return;
 
 	wxString file( fdlg.GetPath() );
 	if ( wxFileName(file).SameAs( GetProjectFileName() ) )
 	{
-		wxMessageBox("The file you selected is currently open.");
+		wxMessageBox(L"\u60a8\u9009\u62e9\u7684\u6587\u4ef6\u5df2\u6253\u5f00\u3002");
 		return;
 	}
 
@@ -334,7 +334,7 @@ void MainWindow::ImportCases()
 	ProjectFile prj;
 	if ( !prj.ReadArchive( file ) )
 	{
-		wxMessageBox( "Could not read project file:\n\n" + file );
+		wxMessageBox( L"\u65e0\u6cd5\u8bfb\u53d6\u9879\u76ee\u6587\u4ef6\uff1a\n\n" + file );
 		return;
 	}
 
@@ -343,11 +343,11 @@ void MainWindow::ImportCases()
 
 	if ( file_ver > sam_ver )
 	{
-		wxMessageBox( "The file '" + wxFileNameFromPath(file) + "' was saved using a newer SAM version "
-			+ wxString::Format( "%d.%d.%d.\n"
-				"You are currently using SAM version %d.%d.%d.\n\n"
-				"Please upgrade to the latest version of SAM to import a case from this file.",
-				prj_major, prj_minor, prj_micro, sam_major, sam_minor, sam_micro), "Version Error", wxICON_ERROR);
+		wxMessageBox( L"\u6587\u4ef6 '" + wxFileNameFromPath(file) + L"' \u662f\u7528\u66f4\u65b0\u7684SAM\u7248\u672c\u4fdd\u5b58\u7684 "
+			+ wxString::Format( L"%d.%d.%d\u3002\n"
+				L"\u60a8\u5f53\u524d\u4f7f\u7528\u7684SAM\u7248\u672c\u4e3a %d.%d.%d\u3002\n\n"
+				L"\u8bf7\u5347\u7ea7\u5230\u6700\u65b0\u7248\u672c\u7684SAM\u624d\u80fd\u4ece\u6b64\u6587\u4ef6\u5bfc\u5165\u6848\u4f8b\u3002",
+				prj_major, prj_minor, prj_micro, sam_major, sam_minor, sam_micro), L"\u7248\u672c\u9519\u8bef", wxICON_ERROR);
 		return;
 	}
 
@@ -358,13 +358,13 @@ void MainWindow::ImportCases()
 		{ // scope to show busy info dialog
 //			wxBusyInfo info( "Upgrading project file to current SAM version..." );
 			if ( !upgd.Run( prj ) )
-				wxMessageBox("Error upgrading older project file:\n\n", file );
+				wxMessageBox(L"\u5347\u7ea7\u65e7\u9879\u76ee\u6587\u4ef6\u51fa\u9519\uff1a\n\n", file );
 		}
 
 		upgd.ShowReportDialog( file, true );
 	}
 
-	CaseImportDialog cdlg(this, "Select case(s) to import:");
+	CaseImportDialog cdlg(this, L"\u9009\u62e9\u8981\u5bfc\u5165\u7684\u6848\u4f8b\uff1a");
 	cdlg.CenterOnParent();
 	cdlg.SetItems( prj.GetCaseNames() );
 	if ( cdlg.ShowModal() != wxID_OK)
@@ -378,7 +378,7 @@ void MainWindow::ImportCases()
 		if ( Case *to_import = prj.GetCase( cname ) )
 		{
 			// duplicate case and append it to current project
-			wxBusyInfo info("Importing case: " + cname );
+			wxBusyInfo info(L"\u6b63\u5728\u5bfc\u5165\u6848\u4f8b\uff1a" + cname );
 
 			if( Case *dup = dynamic_cast<Case*>(to_import->Duplicate()) )
 			{
@@ -407,7 +407,7 @@ bool MainWindow::CloseProject()
 {
 	if ( m_project.IsModified() )
 	{
-		int ret = wxMessageBox("The project '" + GetProjectDisplayName() + "' has been modified.  Save changes?", "Query", wxICON_EXCLAMATION|wxYES_NO|wxCANCEL, this );
+		int ret = wxMessageBox(L"\u9879\u76ee '" + GetProjectDisplayName() + L"' \u5df2\u88ab\u4fee\u6539\u3002  \u4fdd\u5b58\u66f4\u6539\uff1f", L"\u67e5\u8be2", wxICON_EXCLAMATION|wxYES_NO|wxCANCEL, this );
 		if (ret == wxYES)
 		{
 			Save( );
@@ -432,7 +432,7 @@ bool MainWindow::CloseProject()
 
 wxString MainWindow::GetProjectDisplayName()
 {
-	if ( m_projectFileName.IsEmpty() ) return wxT("untitled");
+	if ( m_projectFileName.IsEmpty() ) return L"\u672a\u547d\u540d";
 	else return m_projectFileName;
 }
 
@@ -444,7 +444,7 @@ wxString MainWindow::GetProjectFileName()
 
 wxString MainWindow::GetUniqueCaseName( wxString base )
 {
-	if ( base.IsEmpty() ) base = wxT("untitled");
+	if ( base.IsEmpty() ) base = L"\u672a\u547d\u540d";
 	int unique_num = 0;
 	wxString suffix;
 	while ( m_project.GetCaseNames().Index( base + suffix ) >= 0 )
@@ -464,7 +464,7 @@ bool MainWindow::CreateNewCase( const wxString &_name, wxString tech, wxString f
 
 	if ( 0 == SamApp::Config().Find( tech, fin ) )
 	{
-		wxMessageBox("Internal error: could not locate configuration information for " + tech + "/" + fin );
+		wxMessageBox(L"\u5185\u90e8\u9519\u8bef\uff1a\u65e0\u6cd5\u627e\u5230\u914d\u7f6e\u4fe1\u606f " + tech + "/" + fin );
 		return false;
 	}
 
@@ -592,7 +592,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 		break;
 	case ID_INTERNAL_RESTART:
 		SamApp::Restart();
-		wxMessageBox("Configuration and variable databases reloaded from startup.lk");
+		wxMessageBox(L"\u914d\u7f6e\u548c\u53d8\u91cf\u6570\u636e\u5e93\u5df2\u4ecestartup.lk\u91cd\u65b0\u52a0\u8f7d");
 		break;
 	case ID_INTERNAL_SHOWLOG:
 		SamLogWindow::Setup();
@@ -620,8 +620,8 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			size_t tab_sel = m_caseTabList->GetSelection();
 			wxString case_name = m_caseTabList->GetLabel(tab_sel);
 
-			wxFileDialog fdlg(this, "Save the active case as a JSON file", wxEmptyString,
-				case_name + ".json", "JSON (*.json)|*.json", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+			wxFileDialog fdlg(this, L"\u5c06\u5f53\u524d\u6848\u4f8b\u4fdd\u5b58\u4e3aJSON\u6587\u4ef6", wxEmptyString,
+				case_name + ".json", L"JSON (*.json)|*.json", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
 
 			if (fdlg.ShowModal() == wxID_OK) {
 				cc->SaveAsJSON(true, fdlg.GetPath(), case_name);
@@ -631,8 +631,8 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 	case ID_LOAD_CASE_FROM_JSON:
 	{
 		// Read JSON file and get case_name and config_info
-		wxFileDialog fdlg(this, "Load a case from a JSON file", wxEmptyString,
-			".json", "JSON (*.json)|*.json", wxFD_OPEN);
+		wxFileDialog fdlg(this, L"\u4eceJSON\u6587\u4ef6\u52a0\u8f7d\u6848\u4f8b", wxEmptyString,
+			".json", L"JSON (*.json)|*.json", wxFD_OPEN);
 
 		if (fdlg.ShowModal() == wxID_OK) {
 			rapidjson::Document doc;
@@ -642,7 +642,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			wxFileInputStream fis(sfn);
 
 			if (!fis.IsOk()) {
-				wxLogError(wxS("Couldn't open the file '%s'."), sfn);
+				wxLogError(L"\u65e0\u6cd5\u6253\u5f00\u6587\u4ef6 '%s'\u3002", sfn);
 				break;
 			}
 			wxStringOutputStream os;
@@ -655,7 +655,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 				// SAM issue 1856 handle parsing Inf values for max tier usage values.
 			doc.ParseStream< rapidjson::kParseNanAndInfFlag>(is);
 			if (doc.HasParseError()) {
-				wxLogError(wxS("Could not read the json file string conversion '%s'."), sfn);
+				wxLogError(L"\u65e0\u6cd5\u8bfb\u53d6JSON\u6587\u4ef6\u5b57\u7b26\u4e32\u8f6c\u6362 '%s'\u3002", sfn);
 				break;
 			}
 			else {
@@ -672,7 +672,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			}
 
 			if (0 == SamApp::Config().Find(tech, fin)) {
-				wxMessageBox("Internal error: could not locate configuration information for " + tech + "/" + fin);
+				wxMessageBox(L"\u5185\u90e8\u9519\u8bef\uff1a\u65e0\u6cd5\u627e\u5230\u914d\u7f6e\u4fe1\u606f " + tech + "/" + fin);
 				break;
 			}
 
@@ -694,8 +694,8 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			size_t tab_sel = m_caseTabList->GetSelection();
 			wxString case_name = m_caseTabList->GetLabel(tab_sel);
 
-			wxFileDialog fdlg(this, "Save the active case as a SSC JSON file", wxEmptyString,
-				case_name + ".json", "JSON (*.json)|*.json", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+			wxFileDialog fdlg(this, L"\u5c06\u5f53\u524d\u6848\u4f8b\u4fdd\u5b58\u4e3aSSC JSON\u6587\u4ef6", wxEmptyString,
+				case_name + ".json", L"JSON (*.json)|*.json", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
 
 			if (fdlg.ShowModal() == wxID_OK) {
 				cc->SaveAsSSCJSON(fdlg.GetPath());
@@ -705,8 +705,8 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 	case ID_LOAD_CASE_FROM_SSC_JSON:
 	{
 		// Read JSON file and get case_name and config_info
-		wxFileDialog fdlg(this, "Load a case from a ssc JSON file", wxEmptyString,
-			".json", "JSON (*.json)|*.json", wxFD_OPEN);
+		wxFileDialog fdlg(this, L"\u4eceSSC JSON\u6587\u4ef6\u52a0\u8f7d\u6848\u4f8b", wxEmptyString,
+			".json", L"JSON (*.json)|*.json", wxFD_OPEN);
 
 		if (fdlg.ShowModal() == wxID_OK) {
 			wxString case_name, tech, fin;
@@ -758,7 +758,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			case_name = "SSC inputs";
 
 			if (0 == SamApp::Config().Find(tech, fin)) {
-				wxMessageBox("Internal error: could not locate configuration information for " + tech + "/" + fin);
+				wxMessageBox(L"\u5185\u90e8\u9519\u8bef\uff1a\u65e0\u6cd5\u627e\u5230\u914d\u7f6e\u4fe1\u606f " + tech + "/" + fin);
 				break;
 			}
 
@@ -778,8 +778,8 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 	case ID_LOAD_RUN_CASE_FROM_SSC_JSON:
 	{
 		// Read JSON file and get case_name and config_info
-		wxFileDialog fdlg(this, "Load and run a case from a ssc JSON file", wxEmptyString,
-			".json", "JSON (*.json)|*.json", wxFD_OPEN);
+		wxFileDialog fdlg(this, L"\u4eceSSC JSON\u6587\u4ef6\u52a0\u8f7d\u5e76\u8fd0\u884c\u6848\u4f8b", wxEmptyString,
+			".json", L"JSON (*.json)|*.json", wxFD_OPEN);
 
 		if (fdlg.ShowModal() == wxID_OK) {
 			wxString case_name, tech, fin;
@@ -794,7 +794,7 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 			case_name = "SSC run inputs";
 
 			if (0 == SamApp::Config().Find(tech, fin)) {
-				wxMessageBox("Internal error: could not locate configuration information for " + tech + "/" + fin);
+				wxMessageBox(L"\u5185\u90e8\u9519\u8bef\uff1a\u65e0\u6cd5\u627e\u5230\u914d\u7f6e\u4fe1\u606f " + tech + "/" + fin);
 				break;
 			}
 
@@ -805,14 +805,14 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 
 			wxString error = "";
 			if (c->PreRunSSCJSON(tech, fin, sfn, &error)) {
-				if (wxMessageBox("Continue and create case loading any missing defaults?", "Create Case", wxYES_NO) == wxYES) {
+				if (wxMessageBox(L"\u7ee7\u7eed\u5e76\u521b\u5efa\u6848\u4f8b\uff0c\u52a0\u8f7d\u4efb\u4f55\u7f3a\u5931\u7684\u9ed8\u8ba4\u503c\uff1f", L"\u521b\u5efa\u6848\u4f8b", wxYES_NO) == wxYES) {
 					c->SetConfiguration(tech, fin); // loads defaults
 					error = "";
 					// overwrite defaults with JSON values
 //					c->LoadFromSSCJSON(sfn, &error);
 					auto* cw = CreateCaseWindow(c);
-					//cw->RunSSCBaseCase(sfn, false, &error); // optionally run base case
-					//if (error.Len() > 0) wxMessageBox(error);
+//					cw->RunSSCBaseCase(sfn, false, &error); // optionally run base case
+//					if (error.Len() > 0) wxMessageBox(error);
 				}
 			}
 			else {
@@ -822,7 +822,6 @@ void MainWindow::OnInternalCommand( wxCommandEvent &evt )
 	}
 	break;
 	}
-
 }
 
 void MainWindow::CaseVarGrid(std::vector<Case*> &cases)
@@ -839,13 +838,13 @@ void MainWindow::CaseVarGrid(std::vector<Case*> &cases)
 			col_hdrs.push_back("Label");
 			wxString case_name = m_project.GetCaseName(cases[0]);
 			col_hdrs.push_back(case_name);
-			title = "Inputs Browser"; //: " + case_name;
+			title = L"\u8f93\u5165\u6d4f\u89c8\u5668"; //: " + case_name;
 			var_table_vec.push_back(cases[0]->Values(0)); // TODO - handle hybrid technologies
 			var_info_lookup_vec.push_back(cases[0]->Variables(0));
 		}
 		else
 		{
-			title = "Inputs Browser"; //Case comparison";
+			title = L"\u8f93\u5165\u6d4f\u89c8\u5668"; //Case comparison";
 			col_hdrs = m_project.GetCaseNames();
 			col_hdrs.Insert("Label", 0);
 			col_hdrs.Insert("Variable", 0);
@@ -976,22 +975,22 @@ void MainWindow::OnCommand( wxCommandEvent &evt )
 		{
 			wxPoint p = m_mainMenuButton->ClientToScreen( wxPoint( 0, m_mainMenuButton->GetClientSize().y ) );
 			wxMetroPopupMenu menu;
-			menu.Append( wxID_NEW, "New project\tCtrl-N" );
-			menu.Append( ID_NEW_SCRIPT, "New script" );
+			menu.Append( wxID_NEW, L"\u65b0\u5efa\u9879\u76ee\tCtrl-N" );
+			menu.Append( ID_NEW_SCRIPT, L"\u65b0\u5efa\u811a\u672c" );
 			menu.AppendSeparator();
-			menu.Append( wxID_OPEN, "Open project\tCtrl-O" );
-			menu.Append( ID_OPEN_SCRIPT, "Open script" );
+			menu.Append( wxID_OPEN, L"\u6253\u5f00\u9879\u76ee\tCtrl-O" );
+			menu.Append( ID_OPEN_SCRIPT, L"\u6253\u5f00\u811a\u672c" );
 			menu.AppendSeparator();
-			menu.Append( wxID_SAVE, "Save\tCtrl-S" );
-			menu.Append( wxID_SAVEAS, "Save as..." );
-			menu.Append( ID_SAVE_HOURLY, "Save with hourly results");
+			menu.Append( wxID_SAVE, L"\u4fdd\u5b58\tCtrl-S" );
+			menu.Append( wxID_SAVEAS, L"\u53e6\u5b58\u4e3a..." );
+			menu.Append( ID_SAVE_HOURLY, L"\u4fdd\u5b58\u5e76\u5305\u542b\u5c0f\u65f6\u7ed3\u679c");
 			menu.AppendSeparator();
-			menu.Append( ID_IMPORT_CASES, "Import cases..." );
+			menu.Append( ID_IMPORT_CASES, L"\u5bfc\u5165\u6848\u4f8b..." );
 			menu.AppendSeparator();
-			menu.Append( ID_BROWSE_INPUTS, "Inputs browser...");
+			menu.Append( ID_BROWSE_INPUTS, L"\u8f93\u5165\u6d4f\u89c8\u5668...");
 			menu.AppendSeparator();
-			menu.Append( wxID_CLOSE, "Close\tCtrl-W" );
-			menu.Append( wxID_EXIT, "Quit" );
+			menu.Append( wxID_CLOSE, L"\u5173\u95ed\tCtrl-W" );
+			menu.Append( wxID_EXIT, L"\u9000\u51fa" );
 			menu.Popup( this, p );
 		}
 		break;
@@ -1001,11 +1000,11 @@ void MainWindow::OnCommand( wxCommandEvent &evt )
 	case wxID_OPEN:
 		{
 			if ( !CloseProject() ) return;
-			wxFileDialog dlg(this, "Open SAM file", wxEmptyString, wxEmptyString, "SAM Project Files (*.sam)|*.sam", wxFD_OPEN );
+			wxFileDialog dlg(this, L"\u6253\u5f00SAM\u6587\u4ef6", wxEmptyString, wxEmptyString, L"SAM\u9879\u76ee\u6587\u4ef6 (*.sam)|*.sam", wxFD_OPEN );
 			if (dlg.ShowModal() == wxID_OK)
 				if( !LoadProject( dlg.GetPath() ) )
-					wxMessageBox("Error loading project file:\n\n"
-						+ dlg.GetPath() + "\n\n" + m_project.GetLastError(), "Notice", wxOK, this );
+					wxMessageBox(L"\u52a0\u8f7d\u9879\u76ee\u6587\u4ef6\u51fa\u9519\uff1a\n\n"
+						+ dlg.GetPath() + "\n\n" + m_project.GetLastError(), L"\u901a\u77e5", wxOK, this );
 		}
 		break;
 	case ID_NEW_SCRIPT:
@@ -1047,10 +1046,10 @@ bool MainWindow::CheckVersionBeforeSaving( const wxString &file )
 	int major, minor, micro;
 	if ( m_project.GetVersionInfo(&major,&minor,&micro) < SamApp::Version() && wxFileExists(file) )
 		return wxYES == wxMessageBox( wxString::Format(
-				"This project was originally created with a previous version of SAM, version %d.%d.%d.\n\n"
-				"After saving, you will not be able to open this project in the previous version of SAM.\n\n", major, minor, micro )
-				+ "Overwrite " + file + "?",
-			"Query", wxYES_NO|wxICON_WARNING, this );
+				L"\u6b64\u9879\u76ee\u662f\u7528\u4e4b\u524d\u7684SAM\u7248\u672c\u521b\u5efa\u7684\uff0c\u7248\u672c %d.%d.%d\u3002\n\n"
+				L"\u4fdd\u5b58\u540e\uff0c\u60a8\u5c06\u65e0\u6cd5\u5728\u4e4b\u524d\u7684SAM\u7248\u672c\u4e2d\u6253\u5f00\u6b64\u9879\u76ee\u3002\n\n", major, minor, micro )
+				+ L"\u8986\u76d6 " + file + L"\uff1f",
+			L"\u67e5\u8be2", wxYES_NO|wxICON_WARNING, this );
 	else
 		return true;
 }
@@ -1068,15 +1067,15 @@ void MainWindow::Save()
 	}
 
 	if ( !SaveProject( m_projectFileName ) )
-		wxMessageBox("Error writing project to disk:\n\n" + m_projectFileName, "Notice", wxOK, this );
+		wxMessageBox(L"\u5199\u5165\u9879\u76ee\u5230\u78c1\u76d8\u51fa\u9519\uff1a\n\n" + m_projectFileName, L"\u901a\u77e5", wxOK, this );
 
 	UpdateFrameTitle();
 }
 
 void MainWindow::SaveAs()
 {
-	wxFileDialog dlg( this, "Save SAM file as", wxPathOnly(m_projectFileName),
-		m_projectFileName, "SAM Project File (*.sam)|*.sam",
+	wxFileDialog dlg( this, L"\u53e6\u5b58SAM\u6587\u4ef6\u4e3a", wxPathOnly(m_projectFileName),
+		m_projectFileName, L"SAM\u9879\u76ee\u6587\u4ef6 (*.sam)|*.sam",
 		wxFD_SAVE|wxFD_OVERWRITE_PROMPT );
 	if ( dlg.ShowModal() == wxID_OK )
 	{
@@ -1101,7 +1100,7 @@ bool MainWindow::LoadProject( const wxString &file )
 	// tell user to save and check file if issue
 	if (!pf.ReadArchive(file)) {
 //		wxMessageBox(wxString::Format("Problem reading file!\n\n%s\n\n%sTo fix the problem, click OK to open the file and then save it.", file, pf.GetLastError()));
-		wxMessageBox(wxString::Format("Problem reading file!\n\n%s\n\n%s.", file, pf.GetLastError()));
+		wxMessageBox(wxString::Format(L"\u8bfb\u53d6\u6587\u4ef6\u65f6\u51fa\u73b0\u95ee\u9898\uff01\n\n%s\n\n%s\u3002", file, pf.GetLastError()));
 		return false;
 	}
 
@@ -1113,13 +1112,13 @@ bool MainWindow::LoadProject( const wxString &file )
 
 	if ( file_ver > sam_ver )
 	{
-		wxMessageBox( wxString::Format("The file '%s' was last saved using SAM version %d.%d.%d.\n"
-				"You are currently running SAM version %d.%d.%d.\n\n"
-				"Please upgrade to the latest version of SAM to open this file.",
+		wxMessageBox( wxString::Format(L"\u6587\u4ef6 '%s' \u4e0a\u6b21\u4fdd\u5b58\u65f6\u4f7f\u7528\u7684\u662fSAM\u7248\u672c %d.%d.%d\u3002\n"
+				L"\u60a8\u5f53\u524d\u8fd0\u884c\u7684SAM\u7248\u672c\u4e3a %d.%d.%d\u3002\n\n"
+				L"\u8bf7\u5347\u7ea7\u5230\u6700\u65b0\u7248\u672c\u7684SAM\u624d\u80fd\u6253\u5f00\u6b64\u6587\u4ef6\u3002",
 				(const char*)wxFileNameFromPath(file).c_str(),
 				major, minor, micro,
 				sammajor, samminor, sammicro ),
-				"Version Error", wxICON_ERROR );
+				L"\u7248\u672c\u9519\u8bef", wxICON_ERROR );
 
 		return false;
 	}
@@ -1127,11 +1126,10 @@ bool MainWindow::LoadProject( const wxString &file )
 
 	if ( file_ver < sam_ver )
 	{
-		wxMessageBox( wxString::Format("The file you are opening was created with an older version of SAM, Version %d.%d.%d.\n\n%s\n\n"
-			"There may be changes between versions that cause simulation results to be different. The Version Upgrade Report in the next "
-			"window lists any input variables that have changed between versions.\n\n",
+		wxMessageBox( wxString::Format(L"\u60a8\u6253\u5f00\u7684\u6587\u4ef6\u662f\u7528\u65e7\u7248\u672c\u7684SAM\u521b\u5efa\u7684\uff0c\u7248\u672c %d.%d.%d\u3002\n\n%s\n\n"
+			L"\u7248\u672c\u4e4b\u95f4\u53ef\u80fd\u5b58\u5728\u66f4\u6539\uff0c\u5bfc\u81f4\u4eff\u771f\u7ed3\u679c\u4e0d\u540c\u3002\u4e0b\u4e00\u4e2a\u7a97\u53e3\u4e2d\u7684\u7248\u672c\u5347\u7ea7\u62a5\u544a\u5c06\u5217\u51fa\u7248\u672c\u95f4\u53d8\u66f4\u7684\u4efb\u4f55\u8f93\u5165\u53d8\u91cf\u3002\n\n",
 			major, minor, micro, (const char*)wxFileNameFromPath(file).c_str()),
-			"Notice", wxICON_INFORMATION, this);
+			L"\u901a\u77e5", wxICON_INFORMATION, this);
 
 //		wxBusyInfo info( "Upgrading project file to current SAM version..." );
 
@@ -1139,7 +1137,7 @@ bool MainWindow::LoadProject( const wxString &file )
 		upgd.Run( pf );
 		upgd.ShowReportDialog( file );
 		if (pf.GetCases().size() == 0) {
-			wxMessageBox("Cannot open a file that contains only retired cases.", "Information", wxOK);
+			wxMessageBox(L"\u65e0\u6cd5\u6253\u5f00\u4ec5\u5305\u542b\u9000\u4f11\u6848\u4f8b\u7684\u6587\u4ef6\u3002", L"\u4fe1\u606f", wxOK);
 			pf.Clear();
 			return false;
 		}
@@ -1273,27 +1271,27 @@ void MainWindow::OnCaseTabChange( wxCommandEvent &evt )
 void MainWindow::OnCaseTabButton( wxCommandEvent & )
 {
 	wxMetroPopupMenu menu;
-	menu.Append( ID_CASE_SIMULATE, "Simulate\tF5" );
-	menu.Append( ID_CASE_REPORT, "Create report\tF6" );
-	menu.Append( ID_CASE_CLEAR_RESULTS, "Clear all results" );
+	menu.Append( ID_CASE_SIMULATE, L"\u8fd0\u884c\u4eff\u771f\tF5" );
+	menu.Append( ID_CASE_REPORT, L"\u751f\u6210\u62a5\u544a\tF6" );
+	menu.Append( ID_CASE_CLEAR_RESULTS, L"\u6e05\u9664\u6240\u6709\u7ed3\u679c" );
 	menu.AppendSeparator();
-	menu.Append( ID_CASE_RENAME, "Rename\tF2" );
-	menu.Append( ID_CASE_DUPLICATE, "Duplicate" );
-	menu.Append( ID_CASE_DELETE, "Delete" );
+	menu.Append( ID_CASE_RENAME, L"\u91cd\u547d\u540d\tF2" );
+	menu.Append( ID_CASE_DUPLICATE, L"\u590d\u5236" );
+	menu.Append( ID_CASE_DELETE, L"\u5220\u9664" );
 	menu.AppendSeparator();
-	menu.Append( ID_CASE_MOVE_LEFT, "Move left" );
-	menu.Append( ID_CASE_MOVE_RIGHT, "Move right" );
+	menu.Append( ID_CASE_MOVE_LEFT, L"\u5de6\u79fb" );
+	menu.Append( ID_CASE_MOVE_RIGHT, L"\u53f3\u79fb" );
 	menu.AppendSeparator();
-	menu.Append( ID_CASE_CONFIG, "Change model..." );
-	menu.Append( ID_CASE_RESET_DEFAULTS, "Reset inputs to default values" );
+	menu.Append( ID_CASE_CONFIG, L"\u66f4\u6539\u6a21\u578b..." );
+	menu.Append( ID_CASE_RESET_DEFAULTS, L"\u91cd\u7f6e\u4e3a\u9ed8\u8ba4\u503c" );
 #ifdef __WXMSW__
 	menu.AppendSeparator();
-	menu.Append( ID_CASE_EXCELEXCH, "Excel exchange...");
+	menu.Append( ID_CASE_EXCELEXCH, L"Excel\u4ea4\u6362...");
 #endif
 	//menu.AppendSeparator();
 	//menu.Append( ID_CASE_IMPORT, "Import" );
 	menu.AppendSeparator();
-	menu.Append(ID_CASE_GENERATE_CODE, "Generate code...");
+	menu.Append(ID_CASE_GENERATE_CODE, L"\u751f\u6210\u4ee3\u7801...");
 
 	menu.Popup( this, m_caseTabList->GetPopupMenuPosition( m_caseTabList->GetSelection() ) );
 }
@@ -1341,7 +1339,7 @@ void MainWindow::OnCaseMenu( wxCommandEvent &evt )
 			wxString new_name = case_name;
 			while( 1 )
 			{
-				new_name = wxGetTextFromUser( "Please enter a new name for the case:", "Query", case_name, this );
+				new_name = wxGetTextFromUser( L"\u8bf7\u4e3a\u8be5\u6848\u4f8b\u8f93\u5165\u65b0\u540d\u79f0\uff1a", L"\u67e5\u8be2", case_name, this );
 				if ( new_name == case_name || new_name.IsEmpty() ) return;
 
 				if ( m_project.RenameCase( case_name, new_name ) )
@@ -1351,14 +1349,14 @@ void MainWindow::OnCaseMenu( wxCommandEvent &evt )
 					break;
 				}
 
-				if ( wxNO == wxMessageBox("A case with that name already exists in the project. Try again?", "Query", wxYES_NO, this ) )
+				if ( wxNO == wxMessageBox(L"\u8be5\u540d\u79f0\u7684\u6848\u4f8b\u5df2\u5b58\u5728\u3002 \u91cd\u8bd5\uff1f", L"\u67e5\u8be2", wxYES_NO, this ) )
 					break;
 			}
 		}
 		break;
 	case ID_CASE_DELETE:
 		if (m_project.GetCases().size() > 1) {
-			if (wxYES == wxMessageBox("Really delete case " + case_name + "?  This action cannot be reversed.", "Query", wxYES_NO, this)) {
+			if (wxYES == wxMessageBox(L"\u786e\u5b9a\u5220\u9664\u6848\u4f8b " + case_name + L"\uff1f  \u6b64\u64cd\u4f5c\u4e0d\u53ef\u9006\u8f6c\u3002", L"\u67e5\u8be2", wxYES_NO, this)) {
 				DeleteCaseWindow(c);
 				m_project.DeleteCase(case_name);
 				if (m_project.GetCases().size() == 0) {
@@ -1367,7 +1365,7 @@ void MainWindow::OnCaseMenu( wxCommandEvent &evt )
 			}
 		}
 		else {
-			wxMessageBox("Cannot delete case when there is only one case in the file.", "Information", wxOK);
+			wxMessageBox(L"\u5f53\u6587\u4ef6\u4e2d\u53ea\u6709\u4e00\u4e2a\u6848\u4f8b\u65f6\u65e0\u6cd5\u5220\u9664\u3002", L"\u4fe1\u606f", wxOK);
 		}
 		break;
 	case ID_CASE_DUPLICATE:
@@ -1982,8 +1980,8 @@ void ConfigDatabase::AddInputPageGroup( const std::vector< std::vector<PageInfo>
             m_curConfig->InputPageGroups[ndx].push_back(ip);
         }
 		else if (ndx < 0 || ndx >(int)m_curConfig->InputPageGroups.size()) {
-			wxMessageBox("Internal error in configuration.\n\n" + m_curConfig->TechnologyFullName + ", " + m_curConfig->Financing + "   [ " + ip->BinName + " ]\n\n"
-				"An error occurred when attempting to add input pages.", "sam-engine", wxICON_ERROR | wxOK);
+			wxMessageBox(L"\u914d\u7f6e\u4e2d\u7684\u5185\u90e8\u9519\u8bef\u3002\n\n" + m_curConfig->TechnologyFullName + ", " + m_curConfig->Financing + "   [ " + ip->BinName + " ]\n\n"
+				L"\u5c1d\u8bd5\u6dfb\u52a0\u8f93\u5165\u9875\u9762\u65f6\u53d1\u751f\u9519\u8bef\u3002", "sam-engine", wxICON_ERROR | wxOK);
 			return;
 		}
 		else {
@@ -3263,7 +3261,7 @@ void ConfigDialog::OnOk( wxCommandEvent & )
 	GetConfiguration( t, f );
 	if ( t.IsEmpty() || f.IsEmpty() )
 	{
-		wxMessageBox( "Please select both a technology and a financing option.", "Notice", wxOK, this );
+		wxMessageBox( L"\u8bf7\u540c\u65f6\u9009\u62e9\u6280\u672f\u548c\u8d22\u52a1\u9009\u9879\u3002", L"\u901a\u77e5", wxOK, this );
 		return;
 	}
 	EndModal( wxID_OK );
