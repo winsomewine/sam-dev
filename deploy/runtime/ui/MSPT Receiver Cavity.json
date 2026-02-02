@@ -8,6 +8,89 @@
       "ObjectProperties": {
         "Name": {
           "Type": 5.0,
+          "String": "cav_rec_height"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 192.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 27.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 0.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
           "String": "cav_rec_width"
         },
         "X": {
@@ -86,6 +169,255 @@
         }
       }
     },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_rec_span"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 192.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 81.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 2.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_rec_passive_abs"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 192.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 108.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 3.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_rec_passive_eps"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 192.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 135.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 4.0
+        }
+      }
+    },
     "Choice": {
       "Visible": 1.0,
       "ObjectProperties": {
@@ -95,7 +427,7 @@
         },
         "X": {
           "Type": 3.0,
-          "Integer": 456.0
+          "Integer": 483.0
         },
         "Y": {
           "Type": 3.0,
@@ -123,7 +455,256 @@
         },
         "TabOrder": {
           "Type": 3.0,
-          "Integer": -1.0
+          "Integer": 5.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_rec_area_ui"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 483.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 81.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 214.0,
+            "Green": 240.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 6.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_radius_ui"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 483.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 108.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 214.0,
+            "Green": 240.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 7.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "cav_panel_width_ui"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 483.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 135.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 214.0,
+            "Green": 240.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 8.0
         }
       }
     },
@@ -206,7 +787,7 @@
     "cav_panel_width_ui": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Panel width",
+      "Label": "面板宽度",
       "Units": "m",
       "Group": "Cavity receiver",
       "IndexLabels": "",
@@ -219,7 +800,7 @@
     "cav_radius_ui": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Cavity radius",
+      "Label": "腔体半径",
       "Units": "m",
       "Group": "Cavity Receiver",
       "IndexLabels": "",
@@ -232,7 +813,7 @@
     "cav_rec_area_ui": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Total receiver area",
+      "Label": "接收器总面积",
       "Units": "m²",
       "Group": "Cavity Receiver",
       "IndexLabels": "",
@@ -245,7 +826,7 @@
     "cav_rec_height": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Receiver height",
+      "Label": "接收器高度",
       "Units": "m",
       "Group": "cavity receiver",
       "IndexLabels": "",
@@ -258,7 +839,7 @@
     "cav_rec_passive_abs": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Passive surface absorptivity",
+      "Label": "被动表面吸收率",
       "Units": " ",
       "Group": "cavity receiver",
       "IndexLabels": "",
@@ -271,7 +852,7 @@
     "cav_rec_passive_eps": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Passive surface emissivity",
+      "Label": "被动表面发射率",
       "Units": " ",
       "Group": "cavity receiver",
       "IndexLabels": "",
@@ -284,7 +865,7 @@
     "cav_rec_span": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Receiver aperture span",
+      "Label": "接收器孔径跨度",
       "Units": "deg",
       "Group": "cavity receiver",
       "IndexLabels": "",
@@ -297,7 +878,7 @@
     "cav_rec_width": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Receiver aperture width",
+      "Label": "接收器孔径宽度",
       "Units": "m",
       "Group": "cavity receiver",
       "IndexLabels": "",
@@ -310,7 +891,7 @@
     "n_cav_rec_panels_widget": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Number of panels",
+      "Label": "面板数量",
       "Units": " ",
       "Group": "cavity receiver",
       "IndexLabels": "4| 6| 8| 10",

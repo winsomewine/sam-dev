@@ -32,7 +32,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "塔和接收器尺寸 (Tower and Receiver Dimensions)"
+          "String": "塔和接收器尺寸"
         },
         "Bold": {
           "Type": 2.0,
@@ -69,7 +69,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "接收器材料和传热特性 (Receiver Material and Heat Transfer Properties)"
+          "String": "接收器材料和传热特性"
         },
         "Bold": {
           "Type": 2.0,
@@ -106,7 +106,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "传热流体 (Heat Transfer Fluid - HTF)"
+          "String": "传热流体"
         },
         "Bold": {
           "Type": 2.0,
@@ -143,7 +143,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "设计和运行 (Design and Operation)"
+          "String": "设计和运行"
         },
         "Bold": {
           "Type": 2.0,
@@ -180,7 +180,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "管道损耗 (Piping Losses)"
+          "String": "管道损耗"
         },
         "Bold": {
           "Type": 2.0,
@@ -1888,7 +1888,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "接收器通量建模参数 (Receiver Flux Modeling Parameters)"
+          "String": "接收器通量建模参数"
         },
         "Bold": {
           "Type": 2.0,
@@ -2174,7 +2174,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "设计性能指标 (Design Performance Metrics)"
+          "String": "设计性能指标"
         },
         "Bold": {
           "Type": 2.0,
@@ -2211,7 +2211,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "系统设计参数 (System Design Parameters)"
+          "String": "系统设计参数"
         },
         "Bold": {
           "Type": 2.0,

@@ -1285,7 +1285,7 @@
         },
         "ColLabels": {
           "Type": 5.0,
-          "String": "X 坐标, Y 坐标, Z 坐标"
+          "String": "  X 坐标  ,   Y 坐标  ,   Z 坐标  "
         },
         "NumRowsLabel": {
           "Type": 5.0,
@@ -1939,7 +1939,7 @@
       }
     },
     "Numeric": {
-      "Visible": 1.0,
+      "Visible": 0.0,
       "ObjectProperties": {
         "Name": {
           "Type": 5.0,

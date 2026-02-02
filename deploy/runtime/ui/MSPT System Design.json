@@ -812,7 +812,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u7535\u52a0\u70ed\u5668"
+          "String": "电加热器"
         },
         "Bold": {
           "Type": 2.0,
@@ -899,7 +899,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u84c4\u70ed\u7cfb\u7edf"
+          "String": "蓄热系统"
         },
         "Bold": {
           "Type": 2.0,
@@ -949,7 +949,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u5854\u67b6\u4e0e\u5438\u70ed\u5668"
+          "String": "塔架与吸热器"
         },
         "Bold": {
           "Type": 2.0,
@@ -999,7 +999,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u52a8\u529b\u5faa\u73af"
+          "String": "动力循环"
         },
         "Bold": {
           "Type": 2.0,
@@ -1049,7 +1049,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u5b9a\u65e5\u955c\u573a"
+          "String": "定日镜场"
         },
         "Bold": {
           "Type": 2.0,
@@ -1086,7 +1086,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u8bbe\u8ba1\u70b9\u53c2\u6570"
+          "String": "设计点参数"
         },
         "Bold": {
           "Type": 2.0,
@@ -1123,7 +1123,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "\u8bbe\u8ba1\u70b9\u53c2\u6570\u51b3\u5b9a\u4e86\u5854\u5f0f\u592a\u9633\u80fd\u7cfb\u7edf\u5404\u90e8\u5206\u7684\u989d\u5b9a\u503c\u3002\u5728\u6b64\u6307\u5b9a\u8bbe\u8ba1\u70b9\u53c2\u6570\u540e\uff0c\u60a8\u53ef\u4ee5\u5728\u5b9a\u65e5\u955c\u573a\u3001\u5854\u67b6\u4e0e\u5438\u70ed\u5668\u3001\u84c4\u70ed\u7cfb\u7edf\u548c\u52a8\u529b\u5faa\u73af\u8f93\u5165\u9875\u9762\u4e2d\u8bbe\u7f6e\u5404\u7ec4\u4ef6\u7684\u8be6\u7ec6\u53c2\u6570\u3002"
+          "String": "设计点参数决定了塔式太阳能系统各部分的额定值。在此指定设计点参数后，您可以在定日镜场、塔架与吸热器、蓄热系统和动力循环输入页面中设置各组件的详细参数。"
         },
         "TextColour": {
           "Type": 4.0,
@@ -1836,7 +1836,7 @@
     "P_ref": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u8bbe\u8ba1\u6c7d\u8f6e\u673a\u603b\u8f93\u51fa",
+      "Label": "设计汽轮机总输出",
       "Units": "MWe",
       "Group": "System Design",
       "IndexLabels": "",
@@ -1862,7 +1862,7 @@
     "Q_rec_des": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u5438\u70ed\u5668\u70ed\u529f\u7387",
+      "Label": "吸热器热功率",
       "Units": "MWt",
       "Group": "System Design",
       "IndexLabels": "",
@@ -1927,7 +1927,7 @@
     "T_htf_cold_des": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "HTF\u51b7\u6e29\u5ea6",
+      "Label": "HTF冷温度",
       "Units": "°C",
       "Group": "System Design",
       "IndexLabels": "",
@@ -1953,7 +1953,7 @@
     "T_htf_hot_des": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "HTF\u70ed\u6e29\u5ea6",
+      "Label": "HTF热温度",
       "Units": "°C",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2083,8 +2083,8 @@
     "W_dot_heater_des_calc": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": " ",
-      "Units": " ",
+      "Label": "加热器热功率",
+      "Units": "",
       "Group": " ",
       "IndexLabels": "",
       "Flags": 8.0,
@@ -2252,7 +2252,7 @@
     "design_eff": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u5faa\u73af\u70ed\u6548\u7387",
+      "Label": "循环热效率",
       "Units": " ",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2265,7 +2265,7 @@
     "dni_des": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u8bbe\u8ba1\u70b9DNI",
+      "Label": "设计点DNI",
       "Units": "W/m²",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2369,7 +2369,7 @@
     "heater_mult": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u52a0\u70ed\u5668\u500d\u6570",
+      "Label": "加热器倍数",
       "Units": " ",
       "Group": " ",
       "IndexLabels": "",
@@ -2421,7 +2421,7 @@
     "is_parallel_htr": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": " \u542f\u7528\u7535\u52a0\u70ed\u5668\u52a0\u70ed\u51b7HTF",
+      "Label": " 启用电加热器加热冷HTF",
       "Units": " ",
       "Group": " ",
       "IndexLabels": "",
@@ -2603,7 +2603,7 @@
     "nameplate": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u8bbe\u8ba1\u70b9\u4f30\u7b97\u51c0\u8f93\u51fa(\u94ed\u724c)",
+      "Label": "设计点估算净输出",
       "Units": "MWe",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2642,7 +2642,7 @@
     "q_dot_heater_des_calc": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u52a0\u70ed\u5668\u70ed\u529f\u7387",
+      "Label": "加热器热功率",
       "Units": "MWt",
       "Group": " ",
       "IndexLabels": "",
@@ -2681,7 +2681,7 @@
     "q_pb_design": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u5faa\u73af\u70ed\u529f\u7387",
+      "Label": "循环热功率",
       "Units": "MWt",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2759,7 +2759,7 @@
     "sf_excess": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u5b9a\u65e5\u955c\u573a\u500d\u6570",
+      "Label": "定日镜场倍数",
       "Units": " ",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2785,7 +2785,7 @@
     "solarm": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u592a\u9633\u500d\u6570",
+      "Label": "太阳倍数",
       "Units": " ",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2928,7 +2928,7 @@
     "tshours": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u6ee1\u8d1f\u8377\u84c4\u70ed\u65f6\u957f",
+      "Label": "满负荷蓄热时长",
       "Units": "hours",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2941,7 +2941,7 @@
     "tshours_heater": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u52a0\u70ed\u5668\u84c4\u70ed\u65f6\u957f",
+      "Label": "加热器蓄热时长",
       "Units": "hours",
       "Group": " ",
       "IndexLabels": "",
@@ -2954,7 +2954,7 @@
     "tshours_sf": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "\u592a\u9633\u573a\u84c4\u70ed\u65f6\u957f",
+      "Label": "太阳场蓄热时长",
       "Units": "hours",
       "Group": "System Design",
       "IndexLabels": "",
@@ -2980,7 +2980,7 @@
     "ui_msg": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "\u7cfb\u7edf\u8bbe\u8ba1\u6d88\u606f",
+      "Label": "系统设计消息",
       "Units": " ",
       "Group": "System Design",
       "IndexLabels": "",
@@ -3254,15 +3254,15 @@
   "Callbacks": [
     "function change_msg ( v ) {",
     "\tmsg = '';",
-    "\tm = '\u672a\u5b9a\u4e49';",
+    "\tm = '\\u672a\\u5b9a\\u4e49'; // 未定义",
     "\tif ( v != '' ) {",
-    "\t\tif ( v == 'dni_des' || v == 'sf_excess' ) m = '\u8bbe\u8ba1\u70b9\u592a\u9633\u573a\u89c4\u6a21';",
+    "\t\tif ( v == 'dni_des' || v == 'sf_excess' ) m = '\\u8bbe\\u8ba1\\u70b9\\u592a\\u9633\\u573a\\u89c4\\u6a21'; // 设计点太阳场规模",
     "\t\telseif ( v == 'solarm' ||",
     "\t\t         v == 'P_ref'  ||",
-    "\t\t         v == 'design_eff' ) m = '\u8bbe\u8ba1\u70b9\u5438\u70ed\u5668\u70ed\u529f\u7387';",
+    "\t\t         v == 'design_eff' ) m = '\\u8bbe\\u8ba1\\u70b9\\u5438\\u70ed\\u5668\\u70ed\\u529f\\u7387'; // 设计点吸热器热功率",
     "\t\tv_info = varinfo(v);",
     "\t\tif ( value('field_model_type') != 0 )",
-    "\t\t\tmsg = '\u60a8\u66f4\u6539\u4e86' + v_info.label + '\u7684\u503c\uff0c\u8fd9\u4f1a\u6539\u53d8' + m + '\u3002\u5efa\u8bae\u60a8\u91cd\u65b0\u4f18\u5316\u955c\u573a\uff0c\u4ee5\u786e\u4fdd\u955c\u573a\u5e03\u5c40\u548c\u51e0\u4f55\u53c2\u6570\u4e0e\u65b0\u503c\u5339\u914d\u3002';",
+    "\t\t\tmsg = '\\u60a8\\u66f4\\u6539\\u4e86' + v_info.label + '\\u7684\\u503c\\uff0c\\u8fd9\\u4f1a\\u6539\\u53d8' + m + '\\u3002\\u5efa\\u8bae\\u60a8\\u91cd\\u65b0\\u4f18\\u5316\\u955c\\u573a\\uff0c\\u4ee5\\u786e\\u4fdd\\u955c\\u573a\\u5e03\\u5c40\\u548c\\u51e0\\u4f55\\u53c2\\u6570\\u4e0e\\u65b0\\u503c\\u5339\\u914d\\u3002'; // 您更改了...的值，这会改变...。建议您重新优化镜场，以确保镜场布局和几何参数与新值匹配。",
     "\t}",
     "\tproperty('ui_msg','Caption',msg);",
     "}",
@@ -3291,7 +3291,7 @@
     "\tis_dispatch = value('is_dispatch') == 1;",
     "\tmsg = \"\";",
     "\tif(is_htr && !is_dispatch){",
-    "\t\tmsg = \"\u4f7f\u7528\u7535\u52a0\u70ed\u5668\u65f6\u5fc5\u987b\u542f\u7528\u8c03\u5ea6\u4f18\u5316\u3002\u8bf7\u5728\u7cfb\u7edf\u63a7\u5236\u9875\u9762\u4e2d\u9009\u62e9\u8c03\u5ea6\u4f18\u5316\u3002\";",
+    "\t\tmsg = \"\\u4f7f\\u7528\\u7535\\u52a0\\u70ed\\u5668\\u65f6\\u5fc5\\u987b\\u542f\\u7528\\u8c03\\u5ea6\\u4f18\\u5316\\u3002\\u8bf7\\u5728\\u7cfb\\u7edf\\u63a7\\u5236\\u9875\\u9762\\u4e2d\\u9009\\u62e9\\u8c03\\u5ea6\\u4f18\\u5316\\u3002\"; // 使用电加热器时必须启用调度优化。请在系统控制页面中选择调度优化。",
 
     "\t}",
     "\tproperty('heater_msg','Caption',msg);",
