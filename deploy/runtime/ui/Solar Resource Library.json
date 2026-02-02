@@ -32,7 +32,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "选择气象文件 (Choose Weather File)"
+          "String": "选择气象文件"
         },
         "Bold": {
           "Type": 2.0,
@@ -106,7 +106,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "浏览 (Browse)..."
+          "String": "浏览..."
         },
         "TabOrder": {
           "Type": 3.0,
@@ -156,7 +156,69 @@
       "ObjectProperties": {
         "Name": {
           "Type": 5.0,
-          "String": "caption_library"
+          "String": "lbl_library_enabled"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 15.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 480.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "太阳能资源库显示您计算机上的气象文件。请选定文件并在下方验证数据。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_library_disabled"
         },
         "X": {
           "Type": 3.0,
@@ -180,7 +242,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "The Solar Resource library is a list of weather files on your computer. Choose a file from the library and verify the weather data information below."
+          "String": "太阳能资源库已禁用。取消选中下方的“手动选择气象文件”复选框以启用资源库。"
         },
         "TextColour": {
           "Type": 4.0,
@@ -194,6 +256,316 @@
         "Bold": {
           "Type": 2.0,
           "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_msg_no_selection"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 500.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 370.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "未选择任何文件。请选择一个文件。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_msg_invalid_selection"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 500.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 370.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "无效的选择。请选择其他文件。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_msg_no_match"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 500.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 370.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "未找到匹配项。尝试下载或选择气象文件。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_msg_diff_selection"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 500.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 370.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "当前选择与气象文件不一致。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": -1.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_msg_no_files"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 500.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 370.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 28.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "您尚未将任何气象文件添加到资源库中。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
         },
         "FontSize": {
           "Type": 3.0,
@@ -304,7 +676,7 @@
         },
         "Text": {
           "Type": 5.0,
-          "String": "List of Solar Resource library folders"
+          "String": "太阳能资源库文件夹列表"
         },
         "Editable": {
           "Type": 2.0,
@@ -759,7 +1131,7 @@
     "library_folder_list": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "Solar resource library folders",
+      "Label": "太阳能资源库文件夹",
       "Units": " ",
       "Group": "Location and Resource",
       "IndexLabels": "",
@@ -772,7 +1144,7 @@
     "library_paths": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "Solar resource library file path list",
+      "Label": "太阳能资源库文件路径列表",
       "Units": " ",
       "Group": "Location and Resource",
       "IndexLabels": "",
@@ -785,7 +1157,7 @@
     "solar_data_file_name": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "Weather file from library",
+      "Label": "资源库中的气象文件",
       "Units": "",
       "Group": "Location and Resource",
       "IndexLabels": "",
@@ -798,7 +1170,7 @@
     "solar_resource": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "Solar resource library current selection",
+      "Label": "太阳能资源库当前选择",
       "Units": " ",
       "Group": "Location and Resource",
       "IndexLabels": "SolarResourceData|0",
@@ -811,7 +1183,7 @@
     "use_specific_weather_file": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "Use user-specified weather file",
+      "Label": "使用用户指定的气象文件",
       "Units": "",
       "Group": "Location and Resource",
       "IndexLabels": "",
@@ -824,7 +1196,7 @@
     "user_specified_weather_file": {
       "Version": 4.0,
       "Type": 4.0,
-      "Label": "Weather file on disk",
+      "Label": "磁盘上的气象文件",
       "Units": "",
       "Group": "Location and Resource",
       "IndexLabels": "",
@@ -856,7 +1228,7 @@
     "\t\tupdate_library_folders( '' );",
     "\t}\r",
     "\telse {\r",
-    "\t\tmsgbox('Failed to open Solar Resource Data Folder Settings window.');\r",
+    "\t\tmsgbox('无法打开太阳能资源数据文件夹设置窗口。');\r",
     "\t}\r",
     "\tlibrary_notification();\r",
     "};",
@@ -870,7 +1242,7 @@
     "\t\tfpath = path_only( f_current );\r",
     "\t}\r",
     "\t\r",
-    "\tf = choose_file( fpath , 'Choose a weather file', 'Weather Files (*.csv, *.epw, *.tm2)|*.csv; *.epw; *.tm2');\r",
+    "\tf = choose_file( fpath , '选择气象文件', '气象文件 (*.csv, *.epw, *.tm2)|*.csv; *.epw; *.tm2');\r",
     "\t\t\r",
     "\tif ( f != '' ) {\r",
     "\t\tf = replace(f, '\\\\', '/');\r",
@@ -925,32 +1297,42 @@
     "\tdefault_files = dir_list(default_solar_resource_path, '*');\r",
     "\tlib = csvread(userlocaldatadir() + '/SolarResourceData.csv', {'skip'=3});\r",
     "\r",
-    "\tif ( librarygetcurrentselection('solar_resource') == '' ) {\r",
-    "\t\tlibrarynotifytext('solar_resource','Nothing selected. Please choose a file.');\r",
-    "\t}\r",
-    "\telseif ( strpos( replace(value('solar_data_file_name'),'\\\\','/'), replace(value('solar_resource'),'\\\\','/')  ) < 0) {\r",
-    "\t\tlibrarynotifytext('solar_resource','Invalid selection. Choose a different file.');\r",
-    "\t}\r",
-    "\telseif (librarygetnumbermatches('solar_resource') < 1) {\r",
-    "\t\tlibrarynotifytext('solar_resource', 'No match found. Try downloading or choosing a weather file.');\r",
-    "\t}\r",
-    "\telseif ( replace(value('solar_data_file_name'), '\\\\', '/') != replace( value('solar_resource_file'), '\\\\', '/' ) ) {\r",
-    "\t\tlibrarynotifytext('solar_resource','Current selection is different from weather file.');\r",
-    "\t}\r",
-    "\telseif ( #lib ==  #default_files ) {\r",
-    "\t\tlibrarynotifytext('solar_resource', 'You have not added any weather files to your library.' );\r",
-    "\t}\r",
-    "\telse {\r",
-    "\t\tlibrarynotifytext('solar_resource', ''); \r",
-    "\t}\r",
+    "\t// Hide all error labels initially\r",
+    "\tshow('lbl_msg_no_selection', false);\r",
+    "\tshow('lbl_msg_invalid_selection', false);\r",
+    "\tshow('lbl_msg_no_match', false);\r",
+    "\tshow('lbl_msg_diff_selection', false);\r",
+    "\tshow('lbl_msg_no_files', false);\r",
+    "\t// Clear built-in notification area to avoid question marks\r",
+    "\tlibrarynotifytext('solar_resource', '');\r",
     "\r",
+    "\t// Always show enabled text by default unless disabled mode overrides it\r",
+    "\t\r",
     "\tif (value('use_specific_weather_file') == 1) {\r",
-    "\t\tproperty('caption_library','Caption','The Solar Resource library is disabled. Clear the Use Weather File on Disk checkbox below to enable the library.');\r",
+    "\t\tshow('lbl_library_enabled', false);\r",
+    "\t\tshow('lbl_library_disabled', true);\r",
     "\t}\r",
     "\telse {\r",
-    "\t\tproperty('caption_library','Caption','The Solar Resource library is a list of weather files on your computer. Choose a file from the library and verify the weather data information below.');\r",
+    "\t\tshow('lbl_library_disabled', false);\r",
+    "\t\t\r",
+    "\t\tif ( librarygetcurrentselection('solar_resource') == '' ) {\r",
+    "\t\t\tshow('lbl_msg_no_selection', true);\r",
+    "\t\t}\r",
+    "\t\telseif ( strpos( replace(value('solar_data_file_name'),'\\\\','/'), replace(value('solar_resource'),'\\\\','/')  ) < 0) {\r",
+    "\t\t\tshow('lbl_msg_invalid_selection', true);\r",
+    "\t\t}\r",
+    "\t\telseif (librarygetnumbermatches('solar_resource') < 1) {\r",
+    "\t\t\tshow('lbl_msg_no_match', true);\r",
+    "\t\t}\r",
+    "\t\telseif ( replace(value('solar_data_file_name'), '\\\\', '/') != replace( value('solar_resource_file'), '\\\\', '/' ) ) {\r",
+    "\t\t\tshow('lbl_msg_diff_selection', true);\r",
+    "\t\t}\r",
+    "\t\telseif ( #lib ==  #default_files ) {\r",
+    "\t\t\tshow('lbl_msg_no_files', true);\r",
+    "\t\t}\r",
+    "\t\t\r",
+    "\t\tshow('lbl_library_enabled', true);\r",
     "\t}\r",
-    "\r",
     "}\r",
     ""
   ]

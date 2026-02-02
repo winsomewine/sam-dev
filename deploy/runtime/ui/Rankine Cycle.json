@@ -1095,6 +1095,35 @@
         },
         "Y": {
           "Type": 3.0,
+          "Integer": 40.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 346.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 257.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        }
+      }
+    },
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "label_plot_title"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 666.0
+        },
+        "Y": {
+          "Type": 3.0,
           "Integer": 21.0
         },
         "Width": {
@@ -1103,11 +1132,44 @@
         },
         "Height": {
           "Type": 3.0,
-          "Integer": 276.0
+          "Integer": 24.0
         },
         "Tool Tip": {
           "Type": 5.0,
           "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "空冷冷凝器模型（满负荷）"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 0.0
         }
       }
     },
@@ -1281,7 +1343,7 @@
         },
         "Items": {
           "Type": 6.0,
-          "StringList": "Fixed pressure|Sliding pressure|Sliding pressure designed for high backpressure|Sliding pressure designed for low backpressure"
+          "StringList": "定压运行|滑压运行"
         },
         "Selection": {
           "Type": 3.0,
@@ -3840,7 +3902,7 @@
       "Label": "汽轮机入口压力控制",
       "Units": " ",
       "Group": "Power Cycle",
-      "IndexLabels": "Fixed pressure|Sliding pressure|Sliding pressure with high backpressure|Sliding pressure with low backpressure",
+      "IndexLabels": "定压运行|滑压运行",
       "Flags": 2.0,
       "DefaultValue": 0.0,
       "UIObject": "Choice",
@@ -4236,6 +4298,7 @@
     "\t",
     "\tshow(\"label_hybrid_cooling\", mode==2);",
     "\tshow(\"acc_pressure_plot\", mode==1);",
+    "\tshow(\"label_plot_title\", mode==1); // Show/hide static title label",
     "\tupdate_acc_press_plot();",
     "\t",
     "\t// 0 = evap, 1 = air, 2 = hybrid, 3=radiative",
@@ -4253,11 +4316,10 @@
     "\t\tproperty(\"radiator_field_divider\", \"Y\", 336);",
     "\t\tproperty(\"cold_storage_divider\", \"Y\", 336);",
     "\t\tproperty(\"cost_divider\", \"Y\", 666);",
-    "\t\tproperty(\"csp.pt.pwrb.pressure_mode\", \"Items\",",
-    "\t\t [\"Fixed pressure\",",
-    "\t\t \"Sliding pressure\",",
-    "\t\t \"Sliding for high backpressure\",",
-    "\t\t \"Sliding for low backpressure\"]);",
+    "\t\t// Commented out to prevent ??? issues - rely on static Items definition",
+    "\t\t//property(\"csp.pt.pwrb.pressure_mode\", \"Items\",",
+    "\t\t// [\"定压运行\",",
+    "\t\t// \"滑压运行\",",
     "\t}",
     "\telse {",
     "\t\tproperty(\"cycle_technology_group_box\", \"Height\", 300);",
@@ -4268,9 +4330,10 @@
     "\t\tif (value(\"csp.pt.pwrb.pressure_mode\") > 1)",
     "\t\t\t// keep \"Turbine inlet pressure control\" from being blank",
     "\t\t\tvalue(\"csp.pt.pwrb.pressure_mode\", 0);",
-    "\t\tproperty(\"csp.pt.pwrb.pressure_mode\", \"Items\",",
-    "\t\t [\"Fixed pressure\",",
-    "\t\t \"Sliding pressure\"]);",
+    "\t\t// Commented out to prevent ??? issues - rely on static Items definition",
+    "\t\t//property(\"csp.pt.pwrb.pressure_mode\", \"Items\",",
+    "\t\t// [\"定压运行\",",
+    "\t\t// \"滑压运行\"]);",
     "\t}",
     "\t",
     "\t//show(\"radiative_cooling_divider\", mode==3);",
@@ -4332,9 +4395,11 @@
     "\t",
     "\tclearplot( 'acc_pressure_plot');",
     "\tplot( Tamb, p_cond, {'thick'=3, 'type' = 'line', 'color' = 'blue'});//, 'series' = 'Tamb: ' + ${T_amb_des} + ' [C]'",
-    "\tplotopt( {'title' = 'Air-cooled Condenser Model (full-load)', 'legend' = true});//, 'legendpos'=[15,12]",
-    "\taxis( 'x1', {'label' = 'Ambient Temperature [C]', 'min' = 0, 'max' = ${T_amb_des}*1.1});",
-    "\taxis( 'y1', {'label' = 'Condenser Pressure [inHg]', 'min'= 0, 'max' = desPcond*1.1});",
+    "\t// REMOVED 'title' property from plotopt to avoid ???. Used static Label 'label_plot_title' instead.",
+    "\tplotopt( {'legend' = true});//, 'legendpos'=[15,12]",
+    "\t// Reverted axis labels to English to prevent ??? characters in dynamic plot generation.",
+    "\taxis( 'x1', {'label' = 'Amb Temp [C]', 'min' = 0, 'max' = ${T_amb_des}*1.1});",
+    "\taxis( 'y1', {'label' = 'Pressure [inHg]', 'min'= 0, 'max' = desPcond*1.1});",
     "}",
     "",
     "function acc_press_vs_load_temp()",
