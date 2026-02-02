@@ -1,7 +1,7 @@
 {
   "Name": "MSPT System Control",
   "Width": 913.0,
-  "Height": 580.0,
+  "Height": 470.0,
   "FormObjects": {
     "GroupBox": {
       "Visible": 1.0,
@@ -32,7 +32,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "电站能耗 (Plant Energy Consumption)"
+          "String": "电站能耗"
         },
         "Bold": {
           "Type": 2.0,
@@ -2245,7 +2245,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "调度优化 (Dispatch Optimization)"
+          "String": "调度优化"
         },
         "Bold": {
           "Type": 2.0,
@@ -2282,7 +2282,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "系统可用性 (System Availability)"
+          "String": "系统可用性"
         },
         "Bold": {
           "Type": 2.0,
@@ -2453,7 +2453,7 @@
     "adjust_constant": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "恒定性能调整 (Constant performance adjustment)",
+      "Label": "恒定性能调整",
       "Units": "%",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2466,7 +2466,7 @@
     "adjust_en_periods": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "启用自定义时段性能调整 (Enable custom period adjustments)",
+      "Label": "启用自定义时段性能调整",
       "Units": "0/1",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2479,7 +2479,7 @@
     "adjust_en_timeindex": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "启用时间序列性能调整 (Enable timeseries adjustments)",
+      "Label": "启用时间序列性能调整",
       "Units": "0/1",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2492,7 +2492,7 @@
     "adjust_periods": {
       "Version": 4.0,
       "Type": 3.0,
-      "Label": "自定义时段性能调整 (Custom period adjustments)",
+      "Label": "自定义时段性能调整",
       "Units": "%",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2509,7 +2509,7 @@
     "adjust_timeindex": {
       "Version": 4.0,
       "Type": 2.0,
-      "Label": "时间序列性能调整 (Timeseries adjustments)",
+      "Label": "时间序列性能调整",
       "Units": "%",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2524,7 +2524,7 @@
     "aux_par": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "辅助加热器/锅炉寄生负载 (Aux heater boiler parasitic)",
+      "Label": "辅助加热器/锅炉寄生负载",
       "Units": "MWe/MWcap",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2589,7 +2589,7 @@
     "bop_par": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "辅助系统(BOP)寄生负载 (Balance of plant parasitic)",
+      "Label": "辅助系统(BOP)寄生负载",
       "Units": "MWe/MWcap",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2680,7 +2680,7 @@
     "disp_csu_cost_rel": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "循环启动成本惩罚 (Cycle startup cost penalty)",
+      "Label": "循环启动成本惩罚",
       "Units": "$/MWe-cycle/start",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2693,7 +2693,7 @@
     "disp_frequency": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "调度重新优化频率 (Dispatch reoptimization frequency)",
+      "Label": "调度重新优化频率",
       "Units": "hour",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2706,7 +2706,7 @@
     "disp_horizon": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "调度优化时间范围 (Dispatch optimization horizon)",
+      "Label": "调度优化时间范围",
       "Units": "hour",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2719,7 +2719,7 @@
     "disp_hsu_cost_rel": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "加热器启动成本惩罚 (Heater startup cost penalty)",
+      "Label": "加热器启动成本惩罚",
       "Units": "$/MWt/start",
       "Group": " ",
       "IndexLabels": "",
@@ -2732,7 +2732,7 @@
     "disp_max_iter": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "最大分支定界迭代次数 (Max branch and bound iterations)",
+      "Label": "最大分支定界迭代次数",
       "Units": " ",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2745,7 +2745,7 @@
     "disp_mip_gap": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "解的最优性间隙容差 (Solution optimality gap tolerance)",
+      "Label": "解的最优性间隙容差",
       "Units": " ",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2758,7 +2758,7 @@
     "disp_pen_ramping": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "发电爬坡惩罚 (Power generation ramping penalty)",
+      "Label": "发电爬坡惩罚",
       "Units": "$/ΔMWe",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2771,7 +2771,7 @@
     "disp_rsu_cost_rel": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "接收器启动成本惩罚 (Receiver startup cost penalty)",
+      "Label": "接收器启动成本惩罚",
       "Units": "$/MWt-rec/start",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2784,7 +2784,7 @@
     "disp_time_weighting": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "目标函数时间加权指数 (Objective function time weighting exponent)",
+      "Label": "目标函数时间加权指数",
       "Units": " ",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2797,7 +2797,7 @@
     "disp_timeout": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "优化求解器超时限制 (Optimization solver timeout limit)",
+      "Label": "优化求解器超时限制",
       "Units": "sec",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2810,7 +2810,7 @@
     "is_dispatch": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "启用调度优化 (Enable dispatch optimization)",
+      "Label": "启用调度优化",
       "Units": " ",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2823,7 +2823,7 @@
     "pb_fixed_par": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "固定寄生负载比例 (占额定毛功率) (Fraction of rated gross power consumed all times)",
+      "Label": "固定寄生负载比例 (占额定毛功率)",
       "Units": "MWe/MWcap",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2836,7 +2836,7 @@
     "time_start": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "模拟开始时间 (Simulation start time)",
+      "Label": "模拟开始时间",
       "Units": "sec",
       "Group": "System Control",
       "IndexLabels": "",
@@ -2849,7 +2849,7 @@
     "time_stop": {
       "Version": 4.0,
       "Type": 1.0,
-      "Label": "模拟结束时间 (Simulation stop time)",
+      "Label": "模拟结束时间",
       "Units": "sec",
       "Group": "System Control",
       "IndexLabels": "",
