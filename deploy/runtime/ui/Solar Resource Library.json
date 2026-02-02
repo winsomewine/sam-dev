@@ -32,7 +32,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Choose Weather File"
+          "String": "选择气象文件 (Choose Weather File)"
         },
         "Bold": {
           "Type": 2.0,
@@ -69,7 +69,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Add/remove weather file folders..."
+          "String": "添加/移除气象文件夹..."
         },
         "TabOrder": {
           "Type": 3.0,
@@ -106,7 +106,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Browse"
+          "String": "浏览 (Browse)..."
         },
         "TabOrder": {
           "Type": 3.0,
@@ -143,7 +143,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Refresh library"
+          "String": "刷新资源库"
         },
         "TabOrder": {
           "Type": 3.0,
@@ -242,7 +242,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "SAM scans the following folders on your computer for valid weather files and adds them to your Solar Resource library. To use weather files stored on your computer, click Add/remove Weather File Folders and add folders containing valid weather files."
+          "String": "SAM 会扫描以下文件夹中的有效气象文件并添加到资源库中。要使用本地气象文件，请点击“添加/移除气象文件夹”并添加包含文件的目录。"
         },
         "TextColour": {
           "Type": 4.0,
@@ -376,7 +376,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Solar Resource Library"
+          "String": "太阳能资源库"
         },
         "Bold": {
           "Type": 2.0,
@@ -426,7 +426,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Disable Solar Resource Library"
+          "String": "禁用太阳能资源库"
         },
         "Bold": {
           "Type": 2.0,
@@ -463,7 +463,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "If you prefer not to use the Solar Resource Library, check Choose Weather File to disable it, and click Browse to choose a weather file."
+          "String": "如果您不想使用资源库，请勾选“手动选择气象文件”以禁用它，然后点击“浏览”手动选择文件。"
         },
         "TextColour": {
           "Type": 4.0,
@@ -525,7 +525,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Choose a weather file from the library or from a folder."
+          "String": "从资源库或文件夹中选择一个气象文件。"
         },
         "TextColour": {
           "Type": 4.0,
@@ -683,7 +683,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "Choose weather file"
+          "String": "手动选择气象文件"
         },
         "State": {
           "Type": 2.0,
@@ -841,20 +841,17 @@
   ],
   "Callbacks": [
     "on_load{'Solar Resource Library'} = define() {",
-    "\t//msgbox('Debug\\non_load Solar Resource Library');",
     "\tenable_user_specified_wf();\r",
-    "\tupdate_library_folders(''); // refresh list of library folders\r",
+    "\tupdate_library_folders(''); \r",
     "\tlibrary_notification();\r",
     "};",
     "",
     "on_change{'btn_refresh_library'} = define() {",
-    "\t//msgbox('Debug\\non_change btn_refresh_library');\r",
     "\trescanlibrary( 'solar' );\r",
     "\tlibrary_notification();",
     "};",
     "",
     "on_change{'btn_add_remove_folders'} = define() {",
-    "\t//msgbox('Debug\\non_change btn_add_remove_folders');\r",
     "\tif ( showsettings( 'solar' ) ) {",
     "\t\tupdate_library_folders( '' );",
     "\t}\r",
@@ -897,22 +894,16 @@
     "\tenable('btn_refresh_library', !is_user_specified );\r",
     "}\r",
     "\r",
-    "// update ui list of library folders, and optionally add new path to library folders\r",
     "function update_library_folders( new_path )\r",
     "{\r",
-    "\t//msgbox('Debug\\nupdate_library_folders()');\r",
     "\tx = get_settings('solar_data_paths');\r",
-    "\t// add new path if provided and it doesn't already exist in the library\r",
     "\tif ( new_path != '' && dir_exists( new_path ) && ( strpos( x, new_path ) < 0 ) )\r",
     "\t{\r",
     "\t\tif ( x != '' ) { x += ';'; }\r",
     "\t\tx += replace( new_path, '\\\\', '/' );\r",
     "\t}\r",
-    "\t// list of library folders files to display on separate lines\r",
     "\tpaths = split( x, ';' );\r",
-    "\t// put solar download folder at top of list\r",
     "\tclean_list = '';\r",
-    "\t// remove folders in list that no longer exist\r",
     "\tfor (i = 0; i<#paths; i++ )\r",
     "\t{\r",
     "\t\tif ( dir_exists( paths[i] ) )\r",
@@ -921,24 +912,19 @@
     "\t\t\tif ( i < #paths-1 ) { clean_list += ';'; }\r",
     "\t\t}\t\r",
     "\t}\t\t\r",
-    "\t// update solar_data_paths used by library.cpp and nsrdb.cpp to cleaned list\t\t\r",
     "\tset_settings('solar_data_paths', clean_list );\r",
-    "\t// update list to display\r",
     "\tvalue( 'library_folder_list', get_settings('solar_download_path') + '\\n' \r",
     "\t       + replace( clean_list , ';' , '\\n' ) );\r",
     "\trescanlibrary( 'solar' );        \r",
     "}\r",
     "\r",
-    "// sets the library widget's notification text based on status of library\r",
     "function library_notification() {\r",
     "\r",
-    "\t// get list of default files and files in library\r",
-    "\tsam_dir = replace(appdir(),'\\\\','/'); // app dir is like c:/SAM/2024.12.12/x64\r",
-    "\tdefault_solar_resource_path = left(sam_dir,last_of(sam_dir,'/'))+'/solar_resource'; // default solar resource path is like c:/SAM/2024.12.12/solar_resource\r",
+    "\tsam_dir = replace(appdir(),'\\\\','/'); \r",
+    "\tdefault_solar_resource_path = left(sam_dir,last_of(sam_dir,'/'))+'/solar_resource'; \r",
     "\tdefault_files = dir_list(default_solar_resource_path, '*');\r",
     "\tlib = csvread(userlocaldatadir() + '/SolarResourceData.csv', {'skip'=3});\r",
     "\r",
-    "\t// set library widget notification text\r",
     "\tif ( librarygetcurrentselection('solar_resource') == '' ) {\r",
     "\t\tlibrarynotifytext('solar_resource','Nothing selected. Please choose a file.');\r",
     "\t}\r",
@@ -955,7 +941,7 @@
     "\t\tlibrarynotifytext('solar_resource', 'You have not added any weather files to your library.' );\r",
     "\t}\r",
     "\telse {\r",
-    "\t\tlibrarynotifytext('solar_resource', ''); //'Everything is fine.'\r",
+    "\t\tlibrarynotifytext('solar_resource', ''); \r",
     "\t}\r",
     "\r",
     "\tif (value('use_specific_weather_file') == 1) {\r",
@@ -964,10 +950,6 @@
     "\telse {\r",
     "\t\tproperty('caption_library','Caption','The Solar Resource library is a list of weather files on your computer. Choose a file from the library and verify the weather data information below.');\r",
     "\t}\r",
-    "\t//msgbox('Debug\\nlibraryget functions'+\r",
-    "\t//'\\nfiltertext = ' + librarygetfiltertext('solar_resource') \r",
-    "\t//+ '\\nnumber matches = ' + librarygetnumbermatches('solar_resource') \r",
-    "\t//+ '\\ncurrentselection = ' + librarygetcurrentselection('solar_resource'));\r",
     "\r",
     "}\r",
     ""
