@@ -1,191 +1,252 @@
 {
-    "Name": "Grid Curtailment",
-    "Width": 858.0,
-    "Height": 105.0,
-    "FormObjects": {
-        "DataArray": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "grid_curtailment"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 144.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 69.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 184.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Label": {
-                    "Type": 5.0,
-                    "String": "MWac"
-                },
-                "Description": {
-                    "Type": 5.0,
-                    "String": "Type or import a table of maximum system AC power output values in MW for each time step of the year. The number of rows in the table must match the weather file time step."
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+  "Name": "Grid Curtailment",
+  "Width": 858.0,
+  "Height": 105.0,
+  "FormObjects": {
+    "DataArray": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "grid_curtailment"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 144.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 69.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 184.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
         },
         "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "grid_curtailment_label"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 30.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 782.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 41.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+          "Type": 5.0,
+          "String": "MWac"
         },
-        "GroupBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "object 4"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 850.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 99.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Grid Curtailment"
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Description": {
+          "Type": 5.0,
+          "String": "输入或导入包含一年中每个时间步长的最大系统交流功率输出值（MW）的表。表中的行数必须与天气文件的时间步长匹配。"
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
         }
+      }
     },
-    "VarDatabase": {
-        "grid_curtailment": {
-            "Version": 4.0,
-            "Type": 2.0,
-            "Label": "Curtailment",
-            "Units": "MWac",
-            "Group": "Grid Limits",
-            "IndexLabels": "MWac|1",
-            "Flags": 2.0,
-            "DefaultValue": [
-                0.0
-            ],
-            "UIObject": "DataArray",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_curtailment_compensated"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 30.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 782.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 41.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "点击“编辑数组”在限电计划表中输入值。SAM 将系统功率输出限制为表中的 MW 功率值。任何被削减的系统功率将在“收入”页面按限电费率进行补偿。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
         }
+      }
     },
-    "Equations": [],
-    "Callbacks": [
-        "on_load{'Grid Curtailment'} = define() {",
-        "\tcheck_grid_curtailment_fin();",
-        "};",
-        "",
-        "function check_grid_curtailment_fin()",
-        "{",
-        "\tis_compensated = (financing() == 'Merchant Plant' || financing() == 'Single Owner' );",
-        "\tcaption = '';",
-        "\tif ( is_compensated )",
-        "\t{",
-        "\t\tcaption = 'Click Edit Array to enter values in the curtailment schedule table. SAM limits the system power output to the MW power values in the table. Any curtailed system power is compensated at the curtailment rate on the Revenue page.';",
-        "\t}",
-        "\telse",
-        "\t{",
-        "\t\tcaption = 'Click Edit Array to enter values in the curtailment schedule table. SAM limits the system power output to the MW power values in the table. Curtailed power is not compensated.';",
-        "\t}",
-        "\tproperty('grid_curtailment_label', 'Caption', caption);",
-        "\tshow('grid_curtailment_label', true);",
-        "\trefresh();",
-        "}"
-    ]
+    "Label": {
+      "Visible": 0.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_curtailment_uncompensated"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 30.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 782.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 41.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "点击“编辑数组”在限电计划表中输入值。SAM 将系统功率输出限制为表中的 MW 功率值。被削减的功率不予补偿。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "GroupBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "object 4"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 6.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 850.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 99.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "电网限电"
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    }
+  },
+  "VarDatabase": {
+    "grid_curtailment": {
+      "Version": 4.0,
+      "Type": 2.0,
+      "Label": "限电",
+      "Units": "MWac",
+      "Group": "电网限制",
+      "IndexLabels": "MWac|1",
+      "Flags": 2.0,
+      "DefaultValue": [
+        0.0
+      ],
+      "UIObject": "DataArray",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    }
+  },
+  "Equations": [],
+  "Callbacks": [
+    "on_load{'Grid Curtailment'} = define() {",
+    "\tcheck_grid_curtailment_fin();",
+    "};",
+    "",
+    "function check_grid_curtailment_fin()",
+    "{",
+    "\tis_compensated = (financing() == 'Merchant Plant' || financing() == 'Single Owner' );",
+    "\tif ( is_compensated )",
+    "\t{",
+    "\t\tproperty('lbl_curtailment_compensated', 'Visible', 1);",
+    "\t\tproperty('lbl_curtailment_uncompensated', 'Visible', 0);",
+    "\t}",
+    "\telse",
+    "\t{",
+    "\t\tproperty('lbl_curtailment_compensated', 'Visible', 0);",
+    "\t\tproperty('lbl_curtailment_uncompensated', 'Visible', 1);",
+    "\t}",
+    "\trefresh();",
+    "}"
+  ]
 }

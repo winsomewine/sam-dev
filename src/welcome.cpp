@@ -119,31 +119,31 @@ WelcomeScreen::WelcomeScreen(wxWindow *parent)
 	SetBackgroundColour( *wxWHITE );
 
 #ifdef _DEBUG
-	new wxButton( this, ID_TEST_SEGFAULT, "!!!", wxPoint(0,0), wxSize(25,25) );
+	new wxButton( this, ID_TEST_SEGFAULT, L"!!!", wxPoint(0,0), wxSize(25,25) );
 #endif
 
 	m_messageStatus = DOWNLOADING;
 
 	m_htmlWin = new wxHtmlWindow(this, ID_MESSAGES_HTML, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE);
 	m_htmlWin->SetFont( *wxNORMAL_FONT );
-	m_htmlWin->SetFonts( wxNORMAL_FONT->GetFaceName(), "courier" );
-	m_htmlWin->SetPage( "<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>Loading news...</font></body></html>" );
+	m_htmlWin->SetFonts( wxNORMAL_FONT->GetFaceName(), L"courier" );
+	m_htmlWin->SetPage( L"<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>\u6b63\u5728\u52a0\u8f7d\u65b0\u95fb...</font></body></html>" );
 
 
-	m_createCase = new wxMetroButton(this, ID_CREATE_PROJECT, "Start a new project", wxNullBitmap, 
+	m_createCase = new wxMetroButton(this, ID_CREATE_PROJECT, L"\u65b0\u5efa\u9879\u76ee", wxNullBitmap, 
 		wxPoint(459,51), wxSize(208,21), wxMB_RIGHTARROW);
 	m_createCase->SetFont( wxMetroTheme::Font( wxMT_NORMAL, 14) );
 
-	m_openExisting = new wxMetroButton( this, ID_OPEN_EXISTING, "Open a project file", wxNullBitmap );
+	m_openExisting = new wxMetroButton( this, ID_OPEN_EXISTING, L"\u6253\u5f00\u9879\u76ee\u6587\u4ef6", wxNullBitmap );
 	m_openExisting->SetFont( wxMetroTheme::Font( wxMT_NORMAL, 14) );
 
-	m_openScript = new wxMetroButton( this, ID_OPEN_SCRIPT, "Open script" );
-	m_newScript = new wxMetroButton( this, ID_NEW_SCRIPT, "New script" );
+	m_openScript = new wxMetroButton( this, ID_OPEN_SCRIPT, L"\u6253\u5f00\u811a\u672c" );
+	m_newScript = new wxMetroButton( this, ID_NEW_SCRIPT, L"\u65b0\u5efa\u811a\u672c" );
 	
-	m_btnGetStarted = new wxMetroButton( this, ID_QUICK_START, "Quick start for new users", wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxMB_RIGHTARROW);
-	m_btnHelp = new wxMetroButton( this, wxID_HELP, "Help contents" );
-	m_btnAbout = new wxMetroButton( this, wxID_ABOUT, "About" );
-	m_btnQuit = new wxMetroButton( this, wxID_EXIT, "Quit" );
+	m_btnGetStarted = new wxMetroButton( this, ID_QUICK_START, L"\u65b0\u624b\u5feb\u901f\u5165\u95e8", wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxMB_RIGHTARROW);
+	m_btnHelp = new wxMetroButton( this, wxID_HELP, L"\u5e2e\u52a9\u5185\u5bb9" );
+	m_btnAbout = new wxMetroButton( this, wxID_ABOUT, L"\u5173\u4e8e" );
+	m_btnQuit = new wxMetroButton( this, wxID_EXIT, L"\u9000\u51fa" );
 	
 	m_recent = new wxMetroListBox(this, ID_RECENT_FILES );
 	
@@ -169,7 +169,7 @@ void WelcomeScreen::AbortDownloadThreads()
 
 void WelcomeScreen::OnDownloadTimeout( wxTimerEvent & )
 {
-	wxLogStatus("timeout: aborting download threads if they are still running...");
+	wxLogStatus(L"\u8d85\u65f6\uff1a\u82e5\u4e0b\u8f7d\u7ebf\u7a0b\u4ecd\u5728\u8fd0\u884c\u5219\u7ec8\u6b62...");
 	AbortDownloadThreads();
 }
 
@@ -180,7 +180,7 @@ void WelcomeScreen::OnMessagesLinkClicked(wxHtmlLinkEvent &e)
 
 void WelcomeScreen::OnMessageDownloadThread(wxEasyCurlEvent &e)
 {
-	wxLogStatus("OnMessageDownloadThread: " + e.GetMessage());
+	wxLogStatus(L"OnMessageDownloadThread: " + e.GetMessage());
 	if (e.GetStatusCode() == wxEasyCurlEvent::FINISHED)
 	{
 		RunWelcomeScript( m_ssCurlMessage.GetDataAsString() );
@@ -209,15 +209,15 @@ void WelcomeScreen::RunWelcomeScript( const wxString &script )
 	if ( parse.error_count() != 0
 		|| parse.token() != lk::lexer::END)
 	{
-		wxString text = "parsing did not reach end of input\n";
+		wxString text = L"\u89e3\u6790\u672a\u5230\u8fbe\u8f93\u5165\u672b\u5c3e\n";
 		for (int x=0; x < parse.error_count(); x++)
-			text += "parse: " + parse.error(x) + "\n";
+			text += L"\u89e3\u6790: " + parse.error(x) + L"\n";
 
 		text.Replace( "<", "&lt" );
 		text.Replace( ">", "&gt" );
 		text.Replace( "&", "&amp" );
 
-		UpdateMessagesHtml( "<pre>" + text + "</pre>" );
+		UpdateMessagesHtml( L"<pre>" + text + L"</pre>" );
 		return;
 	}
 
@@ -246,7 +246,7 @@ void WelcomeScreen::RunWelcomeScript( const wxString &script )
 	lk::codegen cg;
 	if  ( !cg.generate( root.get() ) )
 	{
-		UpdateMessagesHtml( "<pre>lkcg: " + cg.error() + "</pre>" );
+		UpdateMessagesHtml( L"<pre>lkcg: " + cg.error() + L"</pre>" );
 		return;
 	}
 
@@ -256,21 +256,21 @@ void WelcomeScreen::RunWelcomeScript( const wxString &script )
 	lk::vm vm;
 	vm.load( &bc );
 	
-	UpdateMessagesHtml( "<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=11>"
-		"Loading..."
-			"</font></body></html>" );
+	UpdateMessagesHtml( L"<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=11>"
+		L"\u6b63\u5728\u52a0\u8f7d..."
+			L"</font></body></html>" );
 
 	if ( !vm.initialize( &env ) || !vm.run() )
 	{
-		if (vm.error().Lower() == "[0] no bytecode loaded")
+		if (vm.error().Lower() == L"[0] no bytecode loaded")
 		{
 			if (strlen(sam_api_key) == 0)
-				UpdateMessagesHtml( "<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>Please setup API keys, see private.h for details...</font></body></html>" );
+				UpdateMessagesHtml( L"<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>\u8bf7\u914d\u7f6e API Key\uff0c\u8be6\u89c1 private.h...</font></body></html>" );
 			else
-				UpdateMessagesHtml( "<pre></pre>" );
+				UpdateMessagesHtml( L"<pre></pre>" );
 		}
 		else
-			UpdateMessagesHtml( "<pre>lkvm: " + vm.error() + "</pre>" );
+			UpdateMessagesHtml( L"<pre>lkvm: " + vm.error() + L"</pre>" );
 		return;
 	}	
 
@@ -289,9 +289,9 @@ void WelcomeScreen::UpdateMessagesHtml(const wxString &html)
 	else
 	{
 		
-		m_htmlWin->SetPage( "<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>"
-			"Could not connect to the SAM news feed."
-			"</font></body></html>" );
+		m_htmlWin->SetPage( L"<html><body><font color=#a9a9a9 face=\"Segoe UI Light\" size=10>"
+			L"\u65e0\u6cd5\u8fde\u63a5\u5230 SAM \u65b0\u95fb\u6e90\u3002"
+			L"</font></body></html>" );
 		m_messageStatus = FAILED;
 	}
 
@@ -379,7 +379,7 @@ void WelcomeScreen::OnPaint(wxPaintEvent &)
 	
 	dc.SetFont( wxMetroTheme::Font( wxMT_LIGHT, 28 ) );	
 	dc.SetTextForeground( grey );
-	wxString title(wxString::Format("System Advisor Model (Open Source) %d", SamApp::VersionMajor() ));
+	wxString title(wxString::Format(L"System Advisor Model\uff08\u5f00\u6e90\u7248\uff09%d", SamApp::VersionMajor() ));
 	wxSize tsz( dc.GetTextExtent( title ) );
 	dc.DrawText( title, BORDER, y/2-tsz.y/2 );
 
@@ -393,7 +393,7 @@ void WelcomeScreen::OnPaint(wxPaintEvent &)
 	if (m_messageStatus == FAILED)
 	{
 		dc.SetTextForeground( *wxRED );
-		wxString stat_text = "Could not connect.";
+		wxString stat_text = L"\u65e0\u6cd5\u8fde\u63a5\u3002";
 		int tw = dc.GetTextExtent( stat_text ).GetWidth();
 		dc.DrawText( stat_text, sz.GetWidth()-BORDER-tw-2, y );		
 	}
@@ -423,7 +423,7 @@ void WelcomeScreen::OnCommand( wxCommandEvent &evt )
 		}
 
 		wxMetroPopupMenu menu;
-		menu.Append( ID_GET_STARTED, "Getting started guide..." );
+		menu.Append( ID_GET_STARTED, L"\u5165\u95e8\u6307\u5357..." );
 		
 		m_qstartScripts.clear();
 		wxDir::GetAllFiles( SamApp::GetRuntimePath() + "/quickstart", &m_qstartScripts, "*.lk" );
@@ -447,7 +447,7 @@ void WelcomeScreen::OnCommand( wxCommandEvent &evt )
 		break;
 	case ID_OPEN_EXISTING:
 	{
-		wxFileDialog dlg( this, "Open a SAM file", wxEmptyString, wxEmptyString, "SAM Project Files (*.sam)|*.sam" );
+		wxFileDialog dlg( this, L"\u6253\u5f00 SAM \u6587\u4ef6", wxEmptyString, wxEmptyString, L"SAM \u9879\u76ee\u6587\u4ef6 (*.sam)|*.sam" );
 		if ( wxID_OK == dlg.ShowModal() && SamApp::Window()->CloseProject())
 			SamApp::Window()->LoadProject( dlg.GetPath() );
 	}
@@ -457,7 +457,7 @@ void WelcomeScreen::OnCommand( wxCommandEvent &evt )
 		wxString fn = m_recent->GetSelectionString();
 		if ( !wxFileExists(fn) )
 		{
-			wxMessageBox( "The file you selected no longer exists:\n\n" + fn );
+			wxMessageBox( L"\u4f60\u9009\u62e9\u7684\u6587\u4ef6\u5df2\u4e0d\u5b58\u5728\uff1a\n\n" + fn );
 			size_t n = SamApp::FileHistory().GetCount();
 			for( size_t i=0;i<n;i++ )
 			{
@@ -474,7 +474,7 @@ void WelcomeScreen::OnCommand( wxCommandEvent &evt )
 		}
 		if ( SamApp::Window()->CloseProject())
 			if ( !SamApp::Window()->LoadProject( fn ) )
-				wxMessageBox("The selected file could not be opened:\n\n" + fn );
+				wxMessageBox(L"\u6240\u9009\u6587\u4ef6\u65e0\u6cd5\u6253\u5f00\uff1a\n\n" + fn );
 	}
 		break;
 
@@ -509,9 +509,9 @@ void WelcomeScreen::OnQStartScript( wxCommandEvent &evt )
 
 		MacroEngine me;
 		if ( !me.Run( buf ) )
-			wxMessageBox("Quick start script failed.\n\n", file);
+			wxMessageBox(L"\u5feb\u901f\u5165\u95e8\u811a\u672c\u8fd0\u884c\u5931\u8d25\u3002\n\n", file);
 	}
 	else
-		wxMessageBox("Could not open quick start script.\n\n", file);
+		wxMessageBox(L"\u65e0\u6cd5\u6253\u5f00\u5feb\u901f\u5165\u95e8\u811a\u672c\u3002\n\n", file);
 	
 }
