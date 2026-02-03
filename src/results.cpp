@@ -413,7 +413,7 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     m_sim(0)
 {
     m_summaryLayout = new wxSnapLayout(this, wxID_ANY);
-    AddPage(m_summaryLayout, "Summary", true);
+    AddPage(m_summaryLayout, wxString::FromUTF8("\xe6\xa6\x82\xe8\xa7\x88"), true);
 //    m_metricsTable = new MetricsTable(m_summaryLayout);
 //    matrix_t<wxString> data(1, 2);
 //    data.at(0, 0) = "Metric"; data.at(0, 1) = "Value";
@@ -421,19 +421,19 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
 //    m_summaryLayout->Add(m_metricsTable);
 
     m_tables = new TabularBrowser(this);
-    AddPage(m_tables, "Data tables");
+    AddPage(m_tables, wxString::FromUTF8("\xe6\x95\xb0\xe6\x8d\xae\xe8\xa1\xa8"));
 
     m_lossDiagramScroller = new wxScrolledWindow(this);
     m_lossDiagramScroller->SetBackgroundColour(*wxWHITE);
     m_lossDiagram = new LossDiagramCtrl(m_lossDiagramScroller);
-    AddPage(m_lossDiagramScroller, "Losses");
+    AddPage(m_lossDiagramScroller, wxString::FromUTF8("\xe6\x8d\x9f\xe5\xa4\xb1"));
 
     m_graphViewer = new GraphViewer(this);
-    AddPage(m_graphViewer, "Graphs");
+    AddPage(m_graphViewer, wxString::FromUTF8("\xe5\x9b\xbe\xe8\xa1\xa8"));
 
 
     m_cf_panel = new wxPanel(this);
-    AddPage(m_cf_panel, "Cash flow");
+    AddPage(m_cf_panel, wxString::FromUTF8("\xe7\x8e\xb0\xe9\x87\x91\xe6\xb5\x81"));
 
     wxBoxSizer* cf_main_sizer = new wxBoxSizer(wxHORIZONTAL);
     m_cf_splitter = new wxSplitterWindow(m_cf_panel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSP_NOBORDER | wxSP_LIVE_UPDATE | wxSP_3DSASH);
@@ -477,11 +477,11 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     m_depreciationTable->EnablePasteEvent(false);
 
     wxBoxSizer* cf_tools = new wxBoxSizer(wxHORIZONTAL);
-    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_COPY, "Copy to clipboard"), 0, wxALL, 0);
-    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SAVECSV, "Save as CSV"), 0, wxALL, 0);
+    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_COPY, wxString::FromUTF8("\xe5\xa4\x8d\xe5\x88\xb6\xe5\x88\xb0\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf")), 0, wxALL, 0);
+    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SAVECSV, wxString::FromUTF8("\xe4\xbf\x9d\xe5\xad\x98\xe4\xb8\xba CSV")), 0, wxALL, 0);
 #ifdef __WXMSW__
-    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SENDEXCEL, "Send to Excel"), 0, wxALL, 0);
-    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SENDEQNEXCEL, "Send to Excel with Equations"), 0, wxALL, 0);
+    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SENDEXCEL, wxString::FromUTF8("\xe5\x8f\x91\xe9\x80\x81\xe5\x88\xb0 Excel")), 0, wxALL, 0);
+    cf_tools->Add(new wxMetroButton(m_cf_top_panel, ID_CF_SENDEQNEXCEL, wxString::FromUTF8("\xe5\x8f\x91\xe9\x80\x81\xe5\x88\xb0  Excel\xef\xbc\x88\xe5\xb8\xa6\xe5\x85\xac\xe5\xbc\x8f\xef\xbc\x89")), 0, wxALL, 0);
 #endif
     wxBoxSizer* cf_top_sizer = new wxBoxSizer(wxVERTICAL);
     cf_top_sizer->Add(cf_tools, 0, wxALL | wxEXPAND, 0);
@@ -504,19 +504,19 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     //m_timeSeries = new wxDVTimeSeriesCtrl(this, wxID_ANY, wxDV_RAW, wxDV_AVERAGE);
     //AddPage(m_timeSeries, "Time series");
     m_timeSeries = new wxDVTimeSeriesCtrl(this, wxID_ANY, wxDV_RAW, wxDV_AVERAGE);
-    AddPage(m_timeSeries, "Time series");
+    AddPage(m_timeSeries, wxString::FromUTF8("\xe6\x97\xb6\xe9\x97\xb4\xe5\xba\x8f\xe5\x88\x97"));
 
     //m_dailySeries = new wxDVTimeSeriesCtrl(this, wxID_ANY, wxDV_DAILY, wxDV_AVERAGE);
     //AddPage( m_dailySeries, "Daily" );
 
     m_profilePlots = new wxDVProfileCtrl(this, wxID_ANY);
-    AddPage(m_profilePlots, "Profiles");
+    AddPage(m_profilePlots, wxString::FromUTF8("\xe5\x89\x96\xe9\x9d\xa2"));
 
     m_statTable = new wxDVStatisticsTableCtrl(this, wxID_ANY);
-    AddPage(m_statTable, "Statistics");
+    AddPage(m_statTable, wxString::FromUTF8("\xe7\xbb\x9f\xe8\xae\xa1"));
 
     m_dMap = new wxDVDMapCtrl(this, wxID_ANY);
-    AddPage(m_dMap, "Heat map");
+    AddPage(m_dMap, wxString::FromUTF8("\xe7\x83\xad\xe5\x9b\xbe"));
 
     //m_scatterPlot = new wxDVScatterPlotCtrl( this, wxID_ANY );
     //AddPage( m_scatterPlot, "Scatter" );
@@ -533,21 +533,21 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
         if (tech_model == "Wind Power")
         {
             m_uncertaintiesViewer = new UncertaintiesViewer(this);
-            AddPage(m_uncertaintiesViewer, "Uncertainties");
+            AddPage(m_uncertaintiesViewer, wxString::FromUTF8("\xe4\xb8\x8d\xe7\xa1\xae\xe5\xae\x9a\xe6\x80\xa7"));
         }
         
         if (tech_model == "Flat Plate PV" || tech_model == "PV Battery")
         {
             m_spatialLayout = new wxSnapLayout(this, wxID_ANY);
-            AddPage(m_spatialLayout, "Spatial", true);
+            AddPage(m_spatialLayout, wxString::FromUTF8("\xe7\xa9\xba\xe9\x97\xb4"), true);
         }
 
     }
     //m_durationCurve = new wxDVDCCtrl( this, wxID_ANY );
     //AddPage( m_durationCurve, "Duration curve" );
 
-    m_messages = new wxTextCtrl(this, wxID_ANY, "Detailed simulation report will appear here.", wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE | wxTE_READONLY | wxBORDER_NONE);
-    AddPage(m_messages, "Notices");
+    m_messages = new wxTextCtrl(this, wxID_ANY, wxString::FromUTF8("\xe8\xaf\xa6\xe7\xbb\x86\xe7\x9a\x84\xe6\xa8\xa1\xe6\x8b\x9f\xe6\x8a\xa5\xe5\x91\x8a\xe5\xb0\x86\xe5\x87\xba\xe7\x8e\xb0\xe5\x9c\xa8\xe8\xbf\x99\xe9\x87\x8c\xe3\x80\x82"), wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE | wxTE_READONLY | wxBORDER_NONE);
+    AddPage(m_messages, wxString::FromUTF8("\xe9\x80\x9a\xe7\x9f\xa5"));
 }
 
 wxDVPlotCtrlSettings ResultsViewer::GetDViewState()

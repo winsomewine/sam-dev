@@ -2887,22 +2887,22 @@ ConfigDialog::ConfigDialog( wxWindow *parent, const wxSize &size )
 	choice_sizer->Add( m_pFin, 1, wxALL|wxEXPAND, 0 );
 
 	wxStaticText *label = new wxStaticText( this, wxID_ANY,
-		"Choose a performance model, and then choose from the available financial models." );
+		wxString::FromUTF8("\xe9\x80\x89\xe6\x8b\xa9\xe4\xb8\x80\xe4\xb8\xaa\xe6\x80\xa7\xe8\x83\xbd\xe6\xa8\xa1\xe5\x9e\x8b\xef\xbc\x8c\xe7\x84\xb6\xe5\x90\x8e\xe4\xbb\x8e\xe5\x8f\xaf\xe7\x94\xa8\xe7\x9a\x84\xe8\xb4\xa2\xe5\x8a\xa1\xe6\xa8\xa1\xe5\x9e\x8b\xe4\xb8\xad\xe8\xbf\x9b\xe8\xa1\x8c\xe9\x80\x89\xe6\x8b\xa9\xe3\x80\x82") );
 	label->SetFont( font );
 	label->SetForegroundColour( *wxWHITE );
 
-	m_pChkUseDefaults = new wxCheckBox(this, wxID_ANY, "Reset new inputs to default values" );
+	m_pChkUseDefaults = new wxCheckBox(this, wxID_ANY, wxString::FromUTF8("\xe5\xb0\x86\xe6\x96\xb0\xe8\xbe\x93\xe5\x85\xa5\xe9\x87\x8d\xe7\xbd\xae\xe4\xb8\xba\xe9\xbb\x98\xe8\xae\xa4\xe5\x80\xbc") );
 	m_pChkUseDefaults->SetValue(true);
 
 	wxBoxSizer *hbox = new wxBoxSizer (wxHORIZONTAL );
-	hbox->Add( new wxMetroButton(this, wxID_HELP, "Help" ), 0, wxALL|wxEXPAND, 0 );
+	hbox->Add( new wxMetroButton(this, wxID_HELP, wxString::FromUTF8("\xe5\xb8\xae\xe5\x8a\xa9") ), 0, wxALL|wxEXPAND, 0 );
 //	hbox->Add(m_pChkUseDefaults, 0, wxALL | wxEXPAND | wxALIGN_CENTER_VERTICAL, 4);
 	hbox->Add(m_pChkUseDefaults, 0, wxALL | wxEXPAND, 4);
 	m_pChkUseDefaults->SetForegroundColour(*wxWHITE);
 	hbox->AddStretchSpacer();
 	//hbox->Add( CreateButtonSizer( wxOK|wxCANCEL ) );
-	hbox->Add( new wxMetroButton(this, wxID_OK, "   OK   "), 0, wxALL, 0 );
-	hbox->Add( new wxMetroButton(this, wxID_CANCEL, "Cancel"), 0, wxALL, 0 );
+	hbox->Add( new wxMetroButton(this, wxID_OK, wxString::FromUTF8("   \xe7\xa1\xae\xe5\xae\x9a   ")), 0, wxALL, 0 );
+	hbox->Add( new wxMetroButton(this, wxID_CANCEL, wxString::FromUTF8("\xe5\x8f\x96\xe6\xb6\x88")), 0, wxALL, 0 );
 
 	wxBoxSizer *vbox = new wxBoxSizer( wxVERTICAL );
 //	vbox->Add(label, 0, wxALL | wxEXPAND | wxALIGN_CENTER_VERTICAL, 8);
@@ -3097,14 +3097,14 @@ void ConfigDialog::UpdateFinTree()
 	for (size_t i = 0; i < m_fnames.Count(); i++) {
 		wxString TP(SamApp::Config().Options(m_fnames[i]).TreeParent);
 		if (TP.Find("PPA") != wxNOT_FOUND)	{
-			cont_ppa = m_pFin->AppendContainer(wxDataViewItem(0), "Power Purchase Agreement");
+			cont_ppa = m_pFin->AppendContainer(wxDataViewItem(0), wxString::FromUTF8("\xe8\xb4\xad\xe7\x94\xb5\xe5\x8d\x8f\xe8\xae\xae"));
 			break;
 		}
 	}
 	for (size_t i = 0; i < m_fnames.Count(); i++) {
 		wxString TP(SamApp::Config().Options(m_fnames[i]).TreeParent);
 		if (TP.Find("DISTRIBUTED") != wxNOT_FOUND) {
-			cont_dist = m_pFin->AppendContainer(wxDataViewItem(0), "Distributed");
+			cont_dist = m_pFin->AppendContainer(wxDataViewItem(0), wxString::FromUTF8("\xe5\x88\x86\xe5\xb8\x83\xe5\xbc\x8f"));
 			break;
 		}
 	}

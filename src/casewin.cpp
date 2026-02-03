@@ -212,35 +212,35 @@ CaseWindow::CaseWindow( wxWindow *parent, Case *c )
 	// box for simulation and results buttons
 	wxBoxSizer *szhl = new wxBoxSizer( wxHORIZONTAL );
 
-	m_simButton = new wxMetroButton(m_left_panel, ID_SIMULATE, "Simulate", wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxMB_RIGHTARROW);
+	m_simButton = new wxMetroButton(m_left_panel, ID_SIMULATE, wxString::FromUTF8("\xe6\xa8\xa1\xe6\x8b\x9f"), wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxMB_RIGHTARROW);
 	m_simButton->SetFont(wxMetroTheme::Font(wxMT_NORMAL, 14));
 	szhl->Add( m_simButton, 1, wxALL|wxEXPAND, 0 );
 
 	m_resultsButton = new wxMetroButton(m_left_panel, ID_RESULTSPAGE, wxEmptyString, wxBITMAP_PNG_FROM_DATA(graph));
-    m_resultsButton->SetToolTip(wxString("Show results without running a simulation."));
+    m_resultsButton->SetToolTip(wxString::FromUTF8("\xe6\x98\xbe\xe7\xa4\xba\xe7\xbb\x93\xe6\x9e\x9c\xef\xbc\x8c\xe6\x97\xa0\xe9\x9c\x80\xe8\xbf\x90\xe8\xa1\x8c\xe6\xa8\xa1\xe6\x8b\x9f\xe3\x80\x82"));
 	szhl->Add( m_resultsButton, 0, wxALL|wxEXPAND, 0 );
 
 	// grid for parametric buttons etc.
     if (m_case->GetTechnology().Contains("wave") || m_case->GetTechnology().Contains("tidal")) {
         m_szsims = new wxGridSizer(1, 0, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, "Stochastic"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, wxString::FromUTF8("\xe9\x9a\x8f\xe6\x9c\xba\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
     }
     else if (!m_case->GetTechnology().Contains("Hybrid")) {
         m_szsims = new wxGridSizer(2, 0, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, "Stochastic"), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, wxString::FromUTF8("\xe9\x9a\x8f\xe6\x9c\xba\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
         if ((m_case->GetTechnology() == "PVWatts") || (m_case->GetTechnology() == "Flat Plate PV"))
-            m_szsims->Add(new wxMetroButton(m_left_panel, ID_PVUNCERTAINTY, "Uncertainty"), 0, wxALL | wxEXPAND, 0);
+            m_szsims->Add(new wxMetroButton(m_left_panel, ID_PVUNCERTAINTY, wxString::FromUTF8("\xe4\xb8\x8d\xe7\xa1\xae\xe5\xae\x9a\xe6\x80\xa7")), 0, wxALL | wxEXPAND, 0);
         else
             m_szsims->Add(new wxMetroButton(m_left_panel, ID_P50P90, "P50 / P90"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
     }
     else { //Remove Stochastic and P50/P90 buttons for hybrid technologies
         m_szsims = new wxGridSizer(1, 0, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
     }
 
 	szvl->Add( szhl, 0, wxALL|wxEXPAND, 0 );
@@ -405,7 +405,7 @@ bool CaseWindow::RunBaseCase( bool silent, wxString *messages )
 			ExcelExchange::RunExcelExchange(ex, m_case->Values(i), &bcsim);
 	}
 
-	SimulationDialog tpd( "Simulating...", 1 );
+	SimulationDialog tpd( wxString::FromUTF8("\xe6\xad\xa3\xe5\x9c\xa8\xe6\xa8\xa1\xe6\x8b\x9f..."), 1 );
 
 	int nok = 0;
 	if ( bcsim.Prepare() )
@@ -417,12 +417,12 @@ bool CaseWindow::RunBaseCase( bool silent, wxString *messages )
 	else
 	{
 		tpd.Log( bcsim.GetErrors() );
-		tpd.Log("Error preparing simulation.");
+		tpd.Log(wxString::FromUTF8("\xe5\x87\x86\xe5\xa4\x87\xe6\xa8\xa1\xe6\x8b\x9f\xe6\x97\xb6\xe5\x87\xba\xe9\x94\x99\xe3\x80\x82"));
 	}
 
 	if ( !silent ) tpd.Finalize( nok == 0 
-			? "Simulation failed." 
-			: "Simulation finished with warnings." );
+			? wxString::FromUTF8("\xe6\xa8\xa1\xe6\x8b\x9f\xe5\xa4\xb1\xe8\xb4\xa5\xe3\x80\x82") 
+			: wxString::FromUTF8("\xe6\xa8\xa1\xe6\x8b\x9f\xe5\xae\x8c\xe6\x88\x90\xef\xbc\x8c\xe4\xbd\x86\xe6\x9c\x89\xe8\xad\xa6\xe5\x91\x8a\xe3\x80\x82") );
 	
 	if (messages) *messages = tpd.Dialog().GetMessages();
 	
@@ -460,7 +460,7 @@ bool CaseWindow::RunSSCBaseCase(wxString& fn, bool silent, wxString* messages)
 	bcsim.Clear();
 	bcsim.SetModels();
 
-	SimulationDialog tpd("Simulating...", 1);
+	SimulationDialog tpd(wxString::FromUTF8("\xe6\xad\xa3\xe5\x9c\xa8\xe6\xa8\xa1\xe6\x8b\x9f..."), 1);
 
 	int nok = 0;
 
@@ -470,8 +470,8 @@ bool CaseWindow::RunSSCBaseCase(wxString& fn, bool silent, wxString* messages)
 	nok += Simulation::DispatchThreads(tpd, list, 1);
 
 	if (!silent) tpd.Finalize(nok == 0
-		? "Simulation failed."
-		: "Simulation finished with warnings.");
+		? wxString::FromUTF8("\xe6\xa8\xa1\xe6\x8b\x9f\xe5\xa4\xb1\xe8\xb4\xa5\xe3\x80\x82")
+		: wxString::FromUTF8("\xe6\xa8\xa1\xe6\x8b\x9f\xe5\xae\x8c\xe6\x88\x90\xef\xbc\x8c\xe4\xbd\x86\xe6\x9c\x89\xe8\xad\xa6\xe5\x91\x8a\xe3\x80\x82"));
 
 	if (messages) *messages = tpd.Dialog().GetMessages();
 
@@ -1564,24 +1564,24 @@ void CaseWindow::UpdateConfiguration()
 	m_szsims->Clear(true);
 	if (m_case->GetTechnology().Contains("wave") || m_case->GetTechnology().Contains("tidal")) {
         m_szsims->SetCols(1);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, "Stochastic"), 0, wxALL | wxEXPAND, 0);
-        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, wxString::FromUTF8("\xe9\x9a\x8f\xe6\x9c\xba\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+        m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
     }
     else if (!m_case->GetTechnology().Contains("Hybrid")) {
 		m_szsims->SetCols(2);
-		m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-		m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, "Stochastic"), 0, wxALL | wxEXPAND, 0);
+		m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+		m_szsims->Add(new wxMetroButton(m_left_panel, ID_STOCHASTIC, wxString::FromUTF8("\xe9\x9a\x8f\xe6\x9c\xba\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
 		if ((m_case->GetTechnology() == "PVWatts") || (m_case->GetTechnology() == "Flat Plate PV"))
-			m_szsims->Add(new wxMetroButton(m_left_panel, ID_PVUNCERTAINTY, "Uncertainty"), 0, wxALL | wxEXPAND, 0);
+			m_szsims->Add(new wxMetroButton(m_left_panel, ID_PVUNCERTAINTY, wxString::FromUTF8("\xe4\xb8\x8d\xe7\xa1\xae\xe5\xae\x9a\xe6\x80\xa7")), 0, wxALL | wxEXPAND, 0);
 		else
 			m_szsims->Add(new wxMetroButton(m_left_panel, ID_P50P90, "P50 / P90"), 0, wxALL | wxEXPAND, 0);
-		m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+		m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
 	}
 	else { //Remove Stochastic and P50/P90 buttons for hybrid technologies
 		m_szsims->SetCols(1);
-		m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, "Parametrics"), 0, wxALL | wxEXPAND, 0);
-		m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, "Macros"), 0, wxALL | wxEXPAND, 0);
+		m_szsims->Add(new wxMetroButton(m_left_panel, ID_PARAMETRICS, wxString::FromUTF8("\xe5\x8f\x82\xe6\x95\xb0\xe5\x88\x86\xe6\x9e\x90")), 0, wxALL | wxEXPAND, 0);
+		m_szsims->Add(new wxMetroButton(m_left_panel, ID_MACRO, wxString::FromUTF8("\xe5\xae\x8f")), 0, wxALL | wxEXPAND, 0);
 	}
 	m_szsims->Layout();
 
