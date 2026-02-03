@@ -977,7 +977,7 @@
     "function enable_sales_tax() ",
     "{",
     "",
-    "\tstr = 'Sales tax rate applies to Total Direct Cost on Installation Costs page.';",
+    "\tstr = '\\u9500\\u552e\\u7a0e\\u7387\\u9002\\u7528\\u4e8e\\u201c\\u5b89\\u88c5\\u6210\\u672c\\u201d\\u9875\\u9762\\u4e0a\\u7684\\u201c\\u603b\\u76f4\\u63a5\\u6210\\u672c\\u201d\\u3002';",
     "\tcolor = 'black';",
     "\t",
     "\ttech = technology();",

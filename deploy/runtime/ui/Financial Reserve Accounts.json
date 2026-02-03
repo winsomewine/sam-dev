@@ -152,7 +152,7 @@
         },
         "Y": {
           "Type": 3.0,
-          "Integer": 159.0
+          "Integer": 189.0
         },
         "Width": {
           "Type": 3.0,
@@ -210,11 +210,11 @@
         },
         "X": {
           "Type": 3.0,
-          "Integer": 600.0
+          "Integer": 650.0
         },
         "Y": {
           "Type": 3.0,
-          "Integer": 168.0
+          "Integer": 189.0
         },
         "Width": {
           "Type": 3.0,
@@ -230,7 +230,7 @@
         },
         "Caption": {
           "Type": 5.0,
-          "String": "折旧处理 (applies to all major equipment expenditures)"
+          "String": "折旧处理"
         },
         "TextColour": {
           "Type": 4.0,
@@ -338,7 +338,7 @@
         },
         "Y": {
           "Type": 3.0,
-          "Integer": 171.0
+          "Integer": 189.0
         },
         "Width": {
           "Type": 3.0,

@@ -1547,7 +1547,7 @@
       "Label": "偿债模式 (0=等额还本付息,1=等额本金)",
       "Units": " ",
       "Group": "Project Term Debt",
-      "IndexLabels": "Equal payments (standard amortization)|Fixed principal declining interest",
+      "IndexLabels": "等额还款（标准分期偿还）|固定本金，利息递减",
       "Flags": 3.0,
       "DefaultValue": 0.0,
       "UIObject": "RadioChoice",
