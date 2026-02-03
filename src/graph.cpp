@@ -303,7 +303,7 @@ static const char *s_monthNames[12] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun"
 	}
 	if ( ndata < 0 )
 	{
-		SetTitle( "All variables must have the same number of data values." );
+		SetTitle( wxString::FromUTF8("\xe6\x89\x80\xe6\x9c\x89\xe5\x8f\x98\xe9\x87\x8f\xe5\xbf\x85\xe9\xa1\xbb\xe5\x85\xb7\xe6\x9c\x89\xe7\x9b\xb8\xe5\x90\x8c\xe6\x95\xb0\xe9\x87\x8f\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe5\x80\xbc\xe3\x80\x82") );
 		Refresh();
 		return -1;
 	}
@@ -634,11 +634,11 @@ int GraphCtrl::DisplayParametrics(std::vector<Simulation*> sims, Graph& g)
 			}
 			// check for valid setup
 			if (xv.size() == 1 || yv.size() == 1) {
-				SetTitle("Contour plot is not available when one independent variable has only one value.");
+				SetTitle(wxString::FromUTF8("\xe5\xbd\x93\xe4\xb8\x80\xe4\xb8\xaa\xe8\x87\xaa\xe5\x8f\x98\xe9\x87\x8f\xe5\x8f\xaa\xe6\x9c\x89\xe4\xb8\x80\xe4\xb8\xaa\xe5\x80\xbc\xe6\x97\xb6\xef\xbc\x8c\xe7\xad\x89\xe9\xab\x98\xe7\xba\xbf\xe5\x9b\xbe\xe4\xb8\x8d\xe5\x8f\xaf\xe7\x94\xa8\xe3\x80\x82"));
 				return -1;
 			}
 			if (xv.size() * yv.size() != sims.size()) {
-				SetTitle("Contour plot is not available when the number of runs is not equal to the product of number values of each variable.");
+				SetTitle(wxString::FromUTF8("\xe5\xbd\x93\xe8\xbf\x90\xe8\xa1\x8c\xe6\xac\xa1\xe6\x95\xb0\xe4\xb8\x8d\xe7\xad\x89\xe4\xba\x8e\xe5\x90\x84\xe5\x8f\x98\xe9\x87\x8f\xe5\x80\xbc\xe6\x95\xb0\xe9\x87\x8f\xe7\x9a\x84\xe4\xb9\x98\xe7\xa7\xaf\xe6\x97\xb6\xef\xbc\x8c\xe7\xad\x89\xe9\xab\x98\xe7\xba\xbf\xe5\x9b\xbe\xe4\xb8\x8d\xe5\x8f\xaf\xe7\x94\xa8\xe3\x80\x82"));
 				return -1;
 			}
 
@@ -717,7 +717,7 @@ int GraphCtrl::DisplayParametrics(std::vector<Simulation*> sims, Graph& g)
 
 	if (ndata < 0)
 	{
-		SetTitle("All variables must have the same number of data values.");
+		SetTitle(wxString::FromUTF8("\xe6\x89\x80\xe6\x9c\x89\xe5\x8f\x98\xe9\x87\x8f\xe5\xbf\x85\xe9\xa1\xbb\xe5\x85\xb7\xe6\x9c\x89\xe7\x9b\xb8\xe5\x90\x8c\xe6\x95\xb0\xe9\x87\x8f\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe5\x80\xbc\xe3\x80\x82"));
 		Refresh();
 		return -1;
 	}
@@ -908,7 +908,7 @@ int GraphCtrl::Display(std::vector<Simulation *>sims, Graph &gi)
 
 	if (ndata < 0)
 	{
-		SetTitle("All variables must have the same number of data values.");
+		SetTitle(wxString::FromUTF8("\xe6\x89\x80\xe6\x9c\x89\xe5\x8f\x98\xe9\x87\x8f\xe5\xbf\x85\xe9\xa1\xbb\xe5\x85\xb7\xe6\x9c\x89\xe7\x9b\xb8\xe5\x90\x8c\xe6\x95\xb0\xe9\x87\x8f\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe5\x80\xbc\xe3\x80\x82"));
 		Refresh();
 		return -1;
 	}
@@ -1092,10 +1092,10 @@ GraphProperties::GraphProperties( wxWindow *parent, int id )
 
 	m_type = new wxRadioChoice( this, ID_TYPE );
 	m_type->SetHorizontal( true );
-	m_type->Add( "Bar" );
-	m_type->Add( "Stack" );
-	m_type->Add( "Line" );
-	m_type->Add( "Scatter" );
+	m_type->Add( wxString::FromUTF8("\xe6\x9f\xb1\xe7\x8a\xb6\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe5\xa0\x86\xe5\x8f\xa0\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe6\x8a\x98\xe7\xba\xbf\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe6\x95\xa3\xe7\x82\xb9\xe5\x9b\xbe") );
 	m_type->SetSelection( 0 );
 
 	m_title = new wxExtTextCtrl( this, ID_TITLE );
@@ -1105,39 +1105,39 @@ GraphProperties::GraphProperties( wxWindow *parent, int id )
 	m_size = new wxSlider( this, ID_SIZE, 0, 0, 35);
 	m_scale = new wxSlider( this, ID_SCALE, 10, 5, 15 );
 
-	m_coarse = new wxCheckBox( this, ID_COARSE, "Coarse grid" );
+	m_coarse = new wxCheckBox( this, ID_COARSE, wxString::FromUTF8("\xe7\xb2\x97\xe7\xbd\x91\xe6\xa0\xbc") );
 	m_coarse->SetValue( true );
-	m_fine = new wxCheckBox( this, ID_FINE, "Fine grid" );
+	m_fine = new wxCheckBox( this, ID_FINE, wxString::FromUTF8("\xe7\xbb\x86\xe7\xbd\x91\xe6\xa0\xbc") );
 	m_fine->SetValue( true );
 
 
-	m_showLegend = new wxCheckBox( this, ID_SHOW_LEGEND, "Legend" );
+	m_showLegend = new wxCheckBox( this, ID_SHOW_LEGEND, wxString::FromUTF8("\xe5\x9b\xbe\xe4\xbe\x8b") );
 
-	wxString lpos[] = { "Manual", 
-		"Northwest", "Southwest", "Northeast", "Southeast", 
-		"North", "South", "East", "West", 
-		"Bottom", "Right" };
+	wxString lpos[] = { wxString::FromUTF8("\xe6\x89\x8b\xe5\x8a\xa8"),
+		wxString::FromUTF8("\xe8\xa5\xbf\xe5\x8c\x97"), wxString::FromUTF8("\xe8\xa5\xbf\xe5\x8d\x97"), wxString::FromUTF8("\xe4\xb8\x9c\xe5\x8c\x97"), wxString::FromUTF8("\xe4\xb8\x9c\xe5\x8d\x97"),
+		wxString::FromUTF8("\xe5\x8c\x97"), wxString::FromUTF8("\xe5\x8d\x97"), wxString::FromUTF8("\xe4\xb8\x9c"), wxString::FromUTF8("\xe8\xa5\xbf"),
+		wxString::FromUTF8("\xe5\xba\x95\xe9\x83\xa8"), wxString::FromUTF8("\xe5\x8f\xb3\xe4\xbe\xa7") };
 	m_legendPos = new wxChoice( this, ID_LEGENDPOS, wxDefaultPosition, wxDefaultSize, 11, lpos );
 
-	wxString faces[] = { "Default", "Modern", "Sanserif", "Serif", "Fixed" };
+	wxString faces[] = { wxString::FromUTF8("\xe9\xbb\x98\xe8\xae\xa4"), wxString::FromUTF8("\xe7\x8e\xb0\xe4\xbb\xa3"), wxString::FromUTF8("\xe6\x97\xa0\xe8\xa1\xac\xe7\xba\xbf"), wxString::FromUTF8("\xe8\xa1\xac\xe7\xba\xbf"), wxString::FromUTF8("\xe7\xad\x89\xe5\xae\xbd") };
 	m_font = new wxChoice( this, ID_FONT_FACE, wxDefaultPosition, wxDefaultSize, 5, faces );
 	
 	wxFlexGridSizer *prop_sizer = new wxFlexGridSizer( 2 );
 	prop_sizer->AddGrowableCol( 1 );
 
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Title:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe6\xa0\x87\xe9\xa2\x98:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_title, 0, wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "X label:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("X\xe8\xbd\xb4\xe6\xa0\x87\xe7\xad\xbe:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_xlabel, 0, wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Y label:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("Y\xe8\xbd\xb4\xe6\xa0\x87\xe7\xad\xbe:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_ylabel, 0,  wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Size:" ),0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe5\xa4\xa7\xe5\xb0\x8f:") ),0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_size, 0, wxALL|wxEXPAND, 1 );
 
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Text:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe6\x96\x87\xe6\x9c\xac:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	
 	wxBoxSizer *text_sizer = new wxBoxSizer( wxHORIZONTAL );
 	text_sizer->Add( m_scale, 1, wxALL|wxEXPAND, 1 );
@@ -1312,8 +1312,8 @@ GraphViewer::GraphViewer(wxWindow *parent) : wxPanel(parent, wxID_ANY)
 
 	m_lpanel = new wxPanel(splitter);
 	wxBoxSizer *sizer_tools = new wxBoxSizer( wxHORIZONTAL );
-	sizer_tools->Add( new wxMetroButton( m_lpanel, ID_CREATE_GRAPH, "Create graph" ), 1, wxALL|wxEXPAND, 0 );
-	sizer_tools->Add( m_delButton = new wxMetroButton( m_lpanel, ID_DELETE_GRAPH, "Delete" ), 0, wxALL|wxEXPAND, 0 );
+	sizer_tools->Add( new wxMetroButton( m_lpanel, ID_CREATE_GRAPH, wxString::FromUTF8("\xe5\x88\x9b\xe5\xbb\xba\xe5\x9b\xbe\xe8\xa1\xa8") ), 1, wxALL|wxEXPAND, 0 );
+	sizer_tools->Add( m_delButton = new wxMetroButton( m_lpanel, ID_DELETE_GRAPH, wxString::FromUTF8("\xe5\x88\xa0\xe9\x99\xa4") ), 0, wxALL|wxEXPAND, 0 );
 		
 	m_props = new GraphProperties( m_lpanel, ID_GRAPH_PROPS );
 
@@ -1445,7 +1445,7 @@ void GraphViewer::UpdateProperties()
 		m_props->Clear();
 		m_props->Hide();
 		m_delButton->Hide();
-		m_layout->SetBackgroundText( "Click Create Graph to begin" );
+		m_layout->SetBackgroundText( wxString::FromUTF8("\xe7\x82\xb9\xe5\x87\xbb\xe5\x88\x9b\xe5\xbb\xba\xe5\x9b\xbe\xe8\xa1\xa8\xe5\xbc\x80\xe5\xa7\x8b") );
 	}
 
 	Layout();

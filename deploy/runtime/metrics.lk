@@ -10,287 +10,287 @@ function is_btm()
 
 function rescom_metrics()
 {
-	metric( 'lcoe_nom',{'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real',{'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'utility_bill_wo_sys_year1',{'label'='Electricity bill without system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'utility_bill_w_sys_year1',{'label'='Electricity bill with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'savings_year1',{'label'='Net savings with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'npv', {'label'='Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'payback', {'label'='Simple payback period', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' years' } );
-	metric( 'discounted_payback', {'label'='Discounted payback period', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' years' } );
-	metric( 'adjusted_installed_cost', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'first_cost', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'loan_amount', {'label'='Debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'lcoe_nom',{'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real',{'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'utility_bill_wo_sys_year1',{'label'='\u65e0\u7cfb\u7edf\u65f6\u7684\u7535\u8d39\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Electricity bill without system (year 1)
+	metric( 'utility_bill_w_sys_year1',{'label'='\u6709\u7cfb\u7edf\u65f6\u7684\u7535\u8d39\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Electricity bill with system (year 1)
+	metric( 'savings_year1',{'label'='\u7cfb\u7edf\u7684\u51c0\u8282\u7701\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Net savings with system (year 1)
+	metric( 'npv', {'label'='\u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net present value
+	metric( 'payback', {'label'='\u7b80\u5355\u56de\u6536\u671f', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' \u5e74' } ); // Simple payback period
+	metric( 'discounted_payback', {'label'='\u6298\u73b0\u56de\u6536\u671f', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' \u5e74' } ); // Discounted payback period
+	metric( 'adjusted_installed_cost', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
+	metric( 'first_cost', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Equity
+	metric( 'loan_amount', {'label'='\u503a\u52a1', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Debt
 }
 
 function rescom_metrics_heat()
 {
-	metric( 'lcoe_nom',{'label'='LCOH Levelized cost of heat nominal', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real',{'label'='LCOH Levelized cost of heat real', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
-	metric( 'thermal_cost_without_system_year1',{'label'='Thermal bill without system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'thermal_cost_with_system_year1',{'label'='Thermal bill with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'thermal_savings_year1',{'label'='Net savings with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'npv', {'label'='Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'payback', {'label'='Simple payback period', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' years' } );
-	metric( 'discounted_payback', {'label'='Discounted payback period', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' years' } );
-	metric( 'adjusted_installed_cost', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'first_cost', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'loan_amount', {'label'='Debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'lcoe_nom',{'label'='LCOH \u5e73\u51c6\u5316\u70ed\u80fd\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
+	metric( 'lcoe_real',{'label'='LCOH \u5e73\u51c6\u5316\u70ed\u80fd\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
+	metric( 'thermal_cost_without_system_year1',{'label'='\u70ed\u80fd\u8d26\u5355\u65e0\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
+	metric( 'thermal_cost_with_system_year1',{'label'='\u70ed\u80fd\u8d26\u5355\u6709\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
+	metric( 'thermal_savings_year1',{'label'='\u51c0\u8282\u7701\u6709\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
+	metric( 'npv', {'label'='\u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'payback', {'label'='\u7b80\u5355\u56de\u6536\u671f', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' \u5e74' } );
+	metric( 'discounted_payback', {'label'='\u6298\u73b0\u56de\u6536\u671f', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' \u5e74' } );
+	metric( 'adjusted_installed_cost', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'first_cost', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'loan_amount', {'label'='\u503a\u52a1', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
 }
 
 function third_party_metrics()
 {
-	metric( 'npv', {'label'='Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'npv', {'label'='\u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
 }
 
 function host_developer_metrics()
 {
 	tech = technology();
-	metric_table('TPOProjectMetrics', {'headers'='Project Metrics, '});
+	metric_table('TPOProjectMetrics', {'headers'='\u9879\u76ee\u6307\u6807, '});
 	if ( tech == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid' || tech == 'Photovoltaic Wind Battery Hybrid' || tech == 'PVWatts Wind FuelCell Battery Hybrid' || tech == 'PVWatts Wind Battery Hybrid' )
 	{
-		  metric_row( 'annual_energy', {'label'='Total Year 1 generation', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='TPOProjectMetrics' } );
+		  metric_row( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74\u603b\u53d1\u7535\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='TPOProjectMetrics' } );
 	}
-	metric_row( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
-	metric_row( 'size_of_debt', {'label'='Size of debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u7535\u4ef7', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2', 'thousep'='false', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
+	metric_row( 'size_of_debt', {'label'='\u503a\u52a1\u89c4\u6a21', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOProjectMetrics' } );
 	if ( value('debt_option')==0 )
 	{
-		metric_row( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2', 'tableName'='TPOProjectMetrics' } );
+		metric_row( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2', 'tableName'='TPOProjectMetrics' } );
 	}
 	else
 	{
-		metric_row( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%', 'tableName'='TPOProjectMetrics' } );
+		metric_row( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%', 'tableName'='TPOProjectMetrics' } );
 	}
 	
-	metric_table('TPODeveloperMetrics', {'headers'='Developer Metrics, '});
-	metric_row( 'flip_actual_irr', {'label'='IRR Developer internal rate of return', 'mode'='f', 'post'='%', 'deci'='2', 'thousep'='false', 'tableName'='TPODeveloperMetrics' } );
-	metric_row( 'flip_actual_year', {'label'='Year developer IRR is achieved', 'post'=' ', 'thousep'='false', 'tableName'='TPODeveloperMetrics' } );
-	metric_row( 'project_return_aftertax_npv', {'label'='NPV Developer net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPODeveloperMetrics' } );
+	metric_table('TPODeveloperMetrics', {'headers'='\u5f00\u53d1\u5546\u6307\u6807, '});
+	metric_row( 'flip_actual_irr', {'label'='IRR \u5f00\u53d1\u5546\u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'='%', 'deci'='2', 'thousep'='false', 'tableName'='TPODeveloperMetrics' } );
+	metric_row( 'flip_actual_year', {'label'='\u5b9e\u73b0\u5f00\u53d1\u5546IRR\u7684\u5e74\u4efd', 'post'=' ', 'thousep'='false', 'tableName'='TPODeveloperMetrics' } );
+	metric_row( 'project_return_aftertax_npv', {'label'='NPV \u5f00\u53d1\u5546\u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPODeveloperMetrics' } );
 
-	metric_table('TPOHostMetrics', {'headers'='Host Metrics, '});
-	metric_row( 'npv', {'label'='Host net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOHostMetrics' } );
-	metric_row( 'year1_nte', {'label'='Host indifference point in year 1', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
-	metric_row( 'lnte_nom', {'label'='Host indifference point levelized nominal', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
-	metric_row( 'lnte_real', {'label'='Host indifference point levelized real', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
+	metric_table('TPOHostMetrics', {'headers'='\u4e1a\u4e3b\u6307\u6807, '});
+	metric_row( 'npv', {'label'='\u4e1a\u4e3b\u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ', 'tableName'='TPOHostMetrics' } );
+	metric_row( 'year1_nte', {'label'='\u7b2c\u4e00\u5e74\u4e1a\u4e3b\u65e0\u5dee\u522b\u70b9', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
+	metric_row( 'lnte_nom', {'label'='\u4e1a\u4e3b\u65e0\u5dee\u522b\u70b9\u5e73\u51c6\u5316\uff08\u540d\u4e49\uff09', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
+	metric_row( 'lnte_real', {'label'='\u4e1a\u4e3b\u65e0\u5dee\u522b\u70b9\u5e73\u51c6\u5316\uff08\u5b9e\u9645\uff09', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='\u00A2/kWh', 'tableName'='TPOHostMetrics' } );
 }
 
 function lcoefcr_metrics()
 {
-	metric( 'lcoe_fcr', {'label'='LCOE Levelized cost of energy', 'mode'='f', 'deci'='2', 'post'=' \u00A2/kWh' , 'scale'='100'} ); //
+	metric( 'lcoe_fcr', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c', 'mode'='f', 'deci'='2', 'post'=' \u00A2/kWh' , 'scale'='100'} ); //
 }
 
 function iph_lcoefcr_metrics()
 {
-	metric( 'lcoe_fcr', {'label'='LCOH Levelized cost of heat', 'mode'='f', 'deci'='2', 'post'=' \u00A2/kWht' , 'scale'='100'} );
+	metric( 'lcoe_fcr', {'label'='LCOH \u5e73\u51c6\u5316\u70ed\u80fd\u6210\u672c', 'mode'='f', 'deci'='2', 'post'=' \u00A2/kWht' , 'scale'='100'} );
 }
 
 function so_metrics()
 {
-	metric( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'ppa_escalation', {'label'='PPA price escalation', 'mode'='f', 'post'=' %/year', 'deci'='2' } );
-	metric( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'project_return_aftertax_npv', {'label'='NPV Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'flip_actual_irr', {'label'='IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Year IRR is achieved', 'post'=' '} );
-	metric( 'project_return_aftertax_irr', {'label'='IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_debt', {'label'='Size of debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u7535\u4ef7', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // PPA price in Year 1
+	metric( 'ppa_escalation', {'label'='PPA\u7535\u4ef7\u589e\u957f\u7387', 'mode'='f', 'post'=' %/\u5e74', 'deci'='2' } ); // PPA price escalation
+	metric( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price nominal
+	metric( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price real
+	metric( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'project_return_aftertax_npv', {'label'='NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // NPV Net present value
+	metric( 'flip_actual_irr', {'label'='IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR Internal rate of return
+	metric( 'flip_actual_year', {'label'='\u5b9e\u73b0IRR\u7684\u5e74\u4efd', 'post'=' '} ); // Year IRR is achieved
+	metric( 'project_return_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675fIRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR at end of project
+	metric( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
+	metric( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Equity
+	metric( 'size_of_debt', {'label'='\u503a\u52a1\u89c4\u6a21', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Size of debt
 	if ( value('debt_option')==0 )
 	{
-		metric( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2' } );
+		metric( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2' } ); // Minimum DSCR
 	}
 	else
 	{
-		metric( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%' } );
+		metric( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%' } ); // Debt percent
 	}
 }
 
 function so_metrics_heat()
 {
-	metric( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
-	metric( 'ppa_escalation', {'label'='PPA price escalation', 'mode'='f', 'post'=' %/year', 'deci'='2' } );
-	metric( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWht', 'deci'='2' } );
-	metric( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWht', 'deci'='2' } );
-	metric( 'lcoe_nom', {'label'='LCOH Levelized cost of heat nominal', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOH Levelized cost of heat real', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } );
-	metric( 'project_return_aftertax_npv', {'label'='NPV Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'flip_actual_irr', {'label'='IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Year IRR is achieved', 'post'=' '} );
-	metric( 'project_return_aftertax_irr', {'label'='IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_debt', {'label'='Size of debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u70ed\u4ef7', 'post'= ' \u00A2/kWht', 'mode'='f', 'deci'='2' } ); // PPA price in Year 1
+	metric( 'ppa_escalation', {'label'='PPA\u70ed\u4ef7\u589e\u957f\u7387', 'mode'='f', 'post'=' %/\u5e74', 'deci'='2' } ); // PPA price escalation
+	metric( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u70ed\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWht', 'deci'='2' } ); // LPPA Levelized PPA price nominal
+	metric( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u70ed\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWht', 'deci'='2' } ); // LPPA Levelized PPA price real
+	metric( 'lcoe_nom', {'label'='LCOH \u5e73\u51c6\u5316\u70ed\u80fd\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } ); // LCOH Levelized cost of heat nominal
+	metric( 'lcoe_real', {'label'='LCOH \u5e73\u51c6\u5316\u70ed\u80fd\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWht', 'mode'='f', 'deci'='2' } ); // LCOH Levelized cost of heat real
+	metric( 'project_return_aftertax_npv', {'label'='NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // NPV Net present value
+	metric( 'flip_actual_irr', {'label'='IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR Internal rate of return
+	metric( 'flip_actual_year', {'label'='\u5b9e\u73b0IRR\u7684\u5e74\u4efd', 'post'=' '} ); // Year IRR is achieved
+	metric( 'project_return_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR at end of project
+	metric( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
+	metric( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Equity
+	metric( 'size_of_debt', {'label'='\u503a\u52a1\u89c4\u6a21', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Size of debt
 	if ( value('debt_option')==0 )
 	{
-		metric( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2' } );
+		metric( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2' } ); // Minimum DSCR
 	}
 	else
 	{
-		metric( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%' } );
+		metric( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%' } ); // Debt percent
 	}
 }
 
 
 function mp_metrics()
 {
-	metric( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'project_return_aftertax_npv', {'label'='NPV Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'flip_actual_irr', {'label'='IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Year IRR is achieved', 'post'=' '} );
-	metric( 'project_return_aftertax_irr', {'label'='IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_debt', {'label'='Size of debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'project_return_aftertax_npv', {'label'='NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // NPV Net present value
+	metric( 'flip_actual_irr', {'label'='IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR Internal rate of return
+	metric( 'flip_actual_year', {'label'='\u5b9e\u73b0IRR\u7684\u5e74\u4efd', 'post'=' '} ); // Year IRR is achieved
+	metric( 'project_return_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // IRR at end of project
+	metric( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
+	metric( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Equity
+	metric( 'size_of_debt', {'label'='\u503a\u52a1\u89c4\u6a21', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Size of debt
 	if ( value('debt_option')==0 )
 	{
-		metric( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2' } );
+		metric( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2' } ); // Minimum DSCR
 	}
 	else
 	{
-		metric( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%' } );
+		metric( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%' } ); // Debt percent
 	}
 }
 
 function aepf_metrics()
 {
-	metric( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'ppa_escalation', {'label'='PPA price escalation', 'mode'='f', 'post'=' %/year', 'deci'='2' } );
-	metric( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'flip_actual_irr', {'label'='Investor IRR in flip year', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Flip year', 'post'=' '} );
-	metric( 'tax_investor_aftertax_irr', {'label'='Investor IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'tax_investor_aftertax_npv', {'label'='Investor NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'sponsor_aftertax_irr', {'label'='Developer IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'sponsor_aftertax_npv', {'label'='Developer NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-    metric( 'adjusted_installed_cost', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u7535\u4ef7', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // PPA price in Year 1
+	metric( 'ppa_escalation', {'label'='PPA\u7535\u4ef7\u589e\u957f\u7387', 'mode'='f', 'post'=' %/\u5e74', 'deci'='2' } ); // PPA price escalation
+	metric( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price nominal
+	metric( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price real
+	metric( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'flip_actual_irr', {'label'='\u7ffb\u8f6c\u5e74\u6295\u8d44\u8005IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR in flip year
+	metric( 'flip_actual_year', {'label'='\u7ffb\u8f6c\u5e74', 'post'=' '} ); // Flip year
+	metric( 'tax_investor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u6295\u8d44\u8005IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR at end of project
+	metric( 'tax_investor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u6295\u8d44\u8005NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Investor NPV over project life
+	metric( 'sponsor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u5f00\u53d1\u5546IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Developer IRR at end of project
+	metric( 'sponsor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u5f00\u53d1\u5546NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Developer NPV over project life
+    metric( 'adjusted_installed_cost', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
 }
 
 function lpf_metrics()
 {
-	metric( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'ppa_escalation', {'label'='PPA price escalation', 'mode'='f', 'post'=' %/year', 'deci'='2' } );
-	metric( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'flip_actual_irr', {'label'='Investor IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Flip year', 'post'=' '} );
-	metric( 'tax_investor_aftertax_irr', {'label'='Investor IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'tax_investor_aftertax_npv', {'label'='Investor NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'sponsor_aftertax_irr', {'label'='Developer IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'sponsor_aftertax_npv', {'label'='Developer NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'size_of_debt', {'label'='Debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u7535\u4ef7', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // PPA price in Year 1
+	metric( 'ppa_escalation', {'label'='PPA\u7535\u4ef7\u589e\u957f\u7387', 'mode'='f', 'post'=' %/\u5e74', 'deci'='2' } ); // PPA price escalation
+	metric( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price nominal
+	metric( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price real
+	metric( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'flip_actual_irr', {'label'='\u6295\u8d44\u8005IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR Internal rate of return
+	metric( 'flip_actual_year', {'label'='\u7ffb\u8f6c\u5e74', 'post'=' '} ); // Flip year
+	metric( 'tax_investor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u6295\u8d44\u8005IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR at end of project
+	metric( 'tax_investor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u6295\u8d44\u8005NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Investor NPV over project life
+	metric( 'sponsor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u5f00\u53d1\u5546IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Developer IRR at end of project
+	metric( 'sponsor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u5f00\u53d1\u5546NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Developer NPV over project life
+	metric( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Net capital cost
+	metric( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Equity
+	metric( 'size_of_debt', {'label'='\u503a\u52a1', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Debt
 	if ( value('debt_option')==0 )
 	{
-		metric( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2' } );
+		metric( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2' } ); // Minimum DSCR
 	}
 	else
 	{
-		metric( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%' } );
+		metric( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%' } ); // Debt percent
 	}
 }
 
 function cs_metrics()
 {
-	metric_table('table_cs_owner', {'headers'='Owner Metrics,'});
-	metric_row( 'lcoe_nom', {'label'='LCOE levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2','tableName'='table_cs_owner' } );
-	metric_row( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2','tableName'='table_cs_owner' } );
-	metric_row( 'project_return_aftertax_npv', {'label'='NPV Net present value', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } );
-	metric_row( 'project_return_aftertax_irr', {'label'='IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2','tableName'='table_cs_owner' } );
-	metric_row( 'cost_installed', {'label'='Net capital cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } );
-	metric_row( 'size_of_equity', {'label'='Equity', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } );
-	metric_row( 'size_of_debt', {'label'='Size of debt', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } );
+	metric_table('table_cs_owner', {'headers'='\u4e1a\u4e3b\u6307\u6807,'}); // Owner Metrics
+	metric_row( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2','tableName'='table_cs_owner' } ); // LCOE levelized cost of energy nominal
+	metric_row( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2','tableName'='table_cs_owner' } ); // LCOE Levelized cost of energy real
+	metric_row( 'project_return_aftertax_npv', {'label'='NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } ); // NPV Net present value
+	metric_row( 'project_return_aftertax_irr', {'label'='IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2','tableName'='table_cs_owner' } ); // IRR Internal rate of return
+	metric_row( 'cost_installed', {'label'='\u51c0\u8d44\u672c\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } ); // Net capital cost
+	metric_row( 'size_of_equity', {'label'='\u6743\u76ca', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } ); // Equity
+	metric_row( 'size_of_debt', {'label'='\u503a\u52a1\u89c4\u6a21', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ','tableName'='table_cs_owner' } ); // Size of debt
 	if ( value('debt_option')==0 )
 	{
-		metric_row( 'min_dscr', {'label'='Minimum DSCR','mode'='f', 'deci'='2', 'tableName'='table_cs_owner' } );
+		metric_row( 'min_dscr', {'label'='\u6700\u5c0fDSCR','mode'='f', 'deci'='2', 'tableName'='table_cs_owner' } ); // Minimum DSCR
 	}
 	else
 	{
-		metric_row( 'debt_fraction', {'label'='Debt percent','mode'='f', 'deci'='2', 'post'='%', 'tableName'='table_cs_owner' } );
+		metric_row( 'debt_fraction', {'label'='\u503a\u52a1\u5360\u6bd4','mode'='f', 'deci'='2', 'post'='%', 'tableName'='table_cs_owner' } ); // Debt percent
 	}
 
-	metric_table('table_cs_subscriber', {'headers'='Subscriber Metrics by Class,'});
-	if ( value('subscriber1_name') != '' ) { metric_row( 'subscriber1_name', {'label'='Subscriber 1 Name','tableName'='table_cs_subscriber' }); }
-	if ( value('subscriber2_name') != '' && sum(value('subscriber2_share')) > 0 ) { metric_row( 'subscriber2_name', {'label'='Subscriber 2 Name','tableName'='table_cs_subscriber' }); }
-	if ( value('subscriber3_name') != '' && sum(value('subscriber3_share')) > 0 ) { metric_row( 'subscriber3_name', {'label'='Subscriber 3 Name','tableName'='table_cs_subscriber' }); }
-	if ( value('subscriber4_name') != '' && sum(value('subscriber4_share')) > 0 ) { metric_row( 'subscriber4_name', {'label'='Subscriber 4 Name','tableName'='table_cs_subscriber' }); }
-	metric_row( 'subscriber1_npv', {'label'='Subscriber 1 NPV Net present value', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' });
-	if ( sum(value('subscriber2_share')) > 0  ) { metric_row( 'subscriber2_npv', {'label'='Subscriber 2 NPV Net present value', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); }
-	if ( sum(value('subscriber3_share')) > 0  ) { metric_row( 'subscriber3_npv', {'label'='Subscriber 3 NPV Net present value', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); }
-	if ( sum(value('subscriber4_share')) > 0  ) { metric_row( 'subscriber4_npv', {'label'='Subscriber 4 NPV Net present value', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); }
+	metric_table('table_cs_subscriber', {'headers'='\u8ba2\u9605\u8005\u6307\u6807\uff08\u6309\u7c7b\u522b\uff09,'}); // Subscriber Metrics by Class
+	if ( value('subscriber1_name') != '' ) { metric_row( 'subscriber1_name', {'label'='\u8ba2\u9605\u8005 1 \u540d\u79f0','tableName'='table_cs_subscriber' }); } // Subscriber 1 Name
+	if ( value('subscriber2_name') != '' && sum(value('subscriber2_share')) > 0 ) { metric_row( 'subscriber2_name', {'label'='\u8ba2\u9605\u8005 2 \u540d\u79f0','tableName'='table_cs_subscriber' }); } // Subscriber 2 Name
+	if ( value('subscriber3_name') != '' && sum(value('subscriber3_share')) > 0 ) { metric_row( 'subscriber3_name', {'label'='\u8ba2\u9605\u8005 3 \u540d\u79f0','tableName'='table_cs_subscriber' }); } // Subscriber 3 Name
+	if ( value('subscriber4_name') != '' && sum(value('subscriber4_share')) > 0 ) { metric_row( 'subscriber4_name', {'label'='\u8ba2\u9605\u8005 4 \u540d\u79f0','tableName'='table_cs_subscriber' }); } // Subscriber 4 Name
+	metric_row( 'subscriber1_npv', {'label'='\u8ba2\u9605\u8005 1 NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); // Subscriber 1 NPV Net present value
+	if ( sum(value('subscriber2_share')) > 0  ) { metric_row( 'subscriber2_npv', {'label'='\u8ba2\u9605\u8005 2 NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); } // Subscriber 2 NPV Net present value
+	if ( sum(value('subscriber3_share')) > 0  ) { metric_row( 'subscriber3_npv', {'label'='\u8ba2\u9605\u8005 3 NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); } // Subscriber 3 NPV Net present value
+	if ( sum(value('subscriber4_share')) > 0  ) { metric_row( 'subscriber4_npv', {'label'='\u8ba2\u9605\u8005 4 NPV \u51c0\u73b0\u503c', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'= ' ', 'pre'='$','tableName'='table_cs_subscriber' }); } // Subscriber 4 NPV Net present value
 }
 
 function sl_metrics()
 {
-	metric( 'ppa', {'label'='PPA price in Year 1', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'ppa_escalation', {'label'='PPA price escalation', 'mode'='f', 'post'=' %/year', 'deci'='2' } );
-	metric( 'lppa_nom', {'label'='LPPA Levelized PPA price nominal', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lppa_real', {'label'='LPPA Levelized PPA price real', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } );
-	metric( 'lcoe_nom', {'label'='LCOE Levelized cost of energy nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'lcoe_real', {'label'='LCOE Levelized cost of energy real', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
-	metric( 'flip_actual_irr', {'label'='Investor IRR Internal rate of return', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'flip_actual_year', {'label'='Year investor IRR acheived', 'post'=' '} );
-	metric( 'tax_investor_aftertax_irr', {'label'='Investor IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'tax_investor_aftertax_npv', {'label'='Investor NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'sponsor_aftertax_irr', {'label'='Developer IRR at end of project', 'mode'='f', 'post'=' %', 'deci'='2' } );
-	metric( 'sponsor_aftertax_npv', {'label'='Developer NPV over project life', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
-	metric( 'sale_of_property', {'label'='Sale of property', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } );
+	metric( 'ppa', {'label'='\u7b2c\u4e00\u5e74PPA\u7535\u4ef7', 'post'= ' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // PPA price in Year 1
+	metric( 'ppa_escalation', {'label'='PPA\u7535\u4ef7\u589e\u957f\u7387', 'mode'='f', 'post'=' %/\u5e74', 'deci'='2' } ); // PPA price escalation
+	metric( 'lppa_nom', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u540d\u4e49\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price nominal
+	metric( 'lppa_real', {'label'='LPPA \u5e73\u51c6\u5316PPA\u7535\u4ef7\uff08\u5b9e\u9645\uff09', 'mode'='f', 'post'=' \u00A2/kWh', 'deci'='2' } ); // LPPA Levelized PPA price real
+	metric( 'lcoe_nom', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u540d\u4e49\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy nominal
+	metric( 'lcoe_real', {'label'='LCOE \u5e73\u51c6\u5316\u80fd\u6e90\u6210\u672c\uff08\u5b9e\u9645\uff09', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } ); // LCOE Levelized cost of energy real
+	metric( 'flip_actual_irr', {'label'='\u6295\u8d44\u8005IRR \u5185\u90e8\u6536\u76ca\u7387', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR Internal rate of return
+	metric( 'flip_actual_year', {'label'='\u5b9e\u73b0\u6295\u8d44\u8005IRR\u7684\u5e74\u4efd', 'post'=' '} ); // Year investor IRR acheived
+	metric( 'tax_investor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u6295\u8d44\u8005IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Investor IRR at end of project
+	metric( 'tax_investor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u6295\u8d44\u8005NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Investor NPV over project life
+	metric( 'sponsor_aftertax_irr', {'label'='\u9879\u76ee\u7ed3\u675f\u65f6\u5f00\u53d1\u5546IRR', 'mode'='f', 'post'=' %', 'deci'='2' } ); // Developer IRR at end of project
+	metric( 'sponsor_aftertax_npv', {'label'='\u9879\u76ee\u5168\u5468\u671f\u5f00\u53d1\u5546NPV', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Developer NPV over project life
+	metric( 'sale_of_property', {'label'='\u8d44\u4ea7\u51fa\u552e', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' ' } ); // Sale of property
 }
 
 function pvwatts_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='DC capacity factor in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'kwh_per_kw', {'label'='Energy yield in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh/kW' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy in Year 1
+	metric( 'capacity_factor', {'label'='\u76f4\u6d41\u5bb9\u91cf\u56e0\u5b50\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // DC capacity factor in Year 1
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74\u80fd\u6e90\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh/kW' } ); // Energy yield in Year 1
 }
 
 function pvwatts_battery_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='DC capacity factor in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'kwh_per_kw', {'label'='Energy yield in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh/kW' } );
-	metric( 'average_battery_roundtrip_efficiency', {'label'='Battery roundtrip efficiency', 'mode'='f', 'deci'='2', 'post'='%' } );
-	metric( 'batt_system_charge_percent', {'label'='Battery charge energy from system', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy in Year 1
+	metric( 'capacity_factor', {'label'='\u76f4\u6d41\u5bb9\u91cf\u56e0\u5b50\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // DC capacity factor in Year 1
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74\u80fd\u6e90\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh/kW' } ); // Energy yield in Year 1
+	metric( 'average_battery_roundtrip_efficiency', {'label'='\u7535\u6c60\u5f80\u8fd4\u6548\u7387', 'mode'='f', 'deci'='2', 'post'='%' } ); // Battery roundtrip efficiency
+	metric( 'batt_system_charge_percent', {'label'='\u7535\u6c60\u4ece\u7cfb\u7edf\u5145\u7535\u7684\u80fd\u91cf', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } ); // Battery charge energy from system
 }
 
 function pv_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='DC capacity factor in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'kwh_per_kw', {'label'='Energy yield in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true' } );
-	metric( 'performance_ratio', {'label'='Performance ratio in Year 1', 'mode'='f', 'deci'='2', 'post'='' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy in Year 1
+	metric( 'capacity_factor', {'label'='\u76f4\u6d41\u5bb9\u91cf\u56e0\u5b50\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // DC capacity factor in Year 1
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74\u80fd\u6e90\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true' } ); // Energy yield in Year 1
+	metric( 'performance_ratio', {'label'='\u7b2c\u4e00\u5e74\u6027\u80fd\u6bd4', 'mode'='f', 'deci'='2', 'post'='' } ); // Performance ratio in Year 1
 	// where is the total land area metric?
 }
 
 function pv_battery_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='DC capacity factor in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'kwh_per_kw', {'label'='Energy yield in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true' } );
-	metric( 'performance_ratio', {'label'='Performance ratio in Year 1', 'mode'='f', 'deci'='2', 'post'='' } );
-	metric( 'average_battery_roundtrip_efficiency', {'label'='Battery roundtrip efficiency', 'mode'='f', 'deci'='2', 'post'='%' } );//includes inverter and ancillary
-	metric( 'batt_system_charge_percent', {'label'='Battery charge energy from system', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy in Year 1
+	metric( 'capacity_factor', {'label'='\u76f4\u6d41\u5bb9\u91cf\u56e0\u5b50\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // DC capacity factor in Year 1
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74\u80fd\u6e90\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true' } ); // Energy yield in Year 1
+	metric( 'performance_ratio', {'label'='\u7b2c\u4e00\u5e74\u6027\u80fd\u6bd4', 'mode'='f', 'deci'='2', 'post'='' } ); // Performance ratio in Year 1
+	metric( 'average_battery_roundtrip_efficiency', {'label'='\u7535\u6c60\u5f80\u8fd4\u6548\u7387', 'mode'='f', 'deci'='2', 'post'='%' } );//includes inverter and ancillary // Battery roundtrip efficiency
+	metric( 'batt_system_charge_percent', {'label'='\u7535\u6c60\u4ece\u7cfb\u7edf\u5145\u7535\u7684\u80fd\u91cf', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } ); // Battery charge energy from system
 	if ( is_btm() )
 	{
 		if ( value('run_resiliency_calcs') == 1 )
 		{
-			metric('resilience_hrs_avg', {'label'='Battery average hours of autonomy', 'mode'='f', 'deci'='2', 'post'=' hours' });
+			metric('resilience_hrs_avg', {'label'='\u7535\u6c60\u5e73\u5747\u81ea\u4e3b\u8fd0\u884c\u5c0f\u65f6\u6570', 'mode'='f', 'deci'='2', 'post'=' hours' }); // Battery average hours of autonomy
 		}
 	}
 	//metric( 'lcos_nom', {'label'='LCOS Levelized cost of storage nominal', 'post'=' \u00A2/kWh', 'mode'='f', 'deci'='2' } );
@@ -299,225 +299,225 @@ function pv_battery_metrics()
 
 function wind_power_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy in Year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric('system_capacity', {'label'='Capacity','mode'='f','deci'='0','thousep'='true','post'=' kW'} );// where is wind farm capacity metric?
-	metric( 'capacity_factor', {'label'='Capacity factor in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy in Year 1
+	metric('system_capacity', {'label'='\u5bb9\u91cf','mode'='f','deci'='0','thousep'='true','post'=' kW'} );// where is wind farm capacity metric? // Capacity
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // Capacity factor in Year 1
 	// where is the approximate land use metric?
 	if ( value( 'en_wind_uncertainty' ) )
 	{
-		metric( 'annual_energy_p90', {'label'='P90 AC Energy in Year 1', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } );
+		metric( 'annual_energy_p90', {'label'='\u7b2c\u4e00\u5e74P90\u4ea4\u6d41\u53d1\u7535\u91cf', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } ); // P90 AC Energy in Year 1
 	}
 }
 
 function physical_trough_metrics()
 {
 	//metric( 'annual_gross_energy', {'label'='Annual Gross Electrical Energy Production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'annual_energy', {'label'='Annual AC energy in year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_thermal_consumption', {'label'='Annual freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_tes_freeze_protection', {'label'='Annual TES freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_field_freeze_protection', {'label'='Annual field freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_W_cycle_gross', {'label'='Power cycle gross electrical output', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'kwh_per_kw', {'label'='First year kWh/kW', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' -' } );
-	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } ); // Annual AC energy in year 1
+	metric( 'annual_thermal_consumption', {'label'='\u5e74\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } ); // Annual freeze protection
+	metric( 'annual_tes_freeze_protection', {'label'='\u5e74\u50a8\u70ed\u7cfb\u7edf\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } ); // Annual TES freeze protection
+	metric( 'annual_field_freeze_protection', {'label'='\u5e74\u573a\u57df\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } ); // Annual field freeze protection
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // Capacity factor
+	metric( 'annual_W_cycle_gross', {'label'='\u52a8\u529b\u5faa\u73af\u603b\u7535\u529b\u8f93\u51fa', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } ); // Power cycle gross electrical output
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74 kWh/kW', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' -' } ); // First year kWh/kW
+	metric( 'conversion_factor', {'label'='\u603b-\u51c0\u8f6c\u6362', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } ); // Gross-to-net conversion
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } ); // Annual water usage
 }
 
 function physical_trough_iph_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'annual_energy_heat_btu', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'heat_load_capacity_factor', {'label'='Heat load capacity factor (full availability)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_electricity_consumption', {'label'='Annual electricity load (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
-	metric( 'total_installed_cost', {'label'='Total installed cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'annual_energy_heat_btu', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'heat_load_capacity_factor', {'label'='\u70ed\u8d1f\u8f7d\u5bb9\u91cf\u56e0\u5b50\uff08\u5b8c\u5168\u53ef\u7528\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_electricity_consumption', {'label'='\u5e74\u7528\u7535\u8d1f\u8f7d\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'total_installed_cost', {'label'='\u603b\u5b89\u88c5\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
 }
 
 function mspt_iph_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'annual_energy_heat_btu', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_electricity_consumption', {'label'='Annual electricity load (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
-	metric( 'total_installed_cost', {'label'='Total installed cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'annual_energy_heat_btu', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_electricity_consumption', {'label'='\u5e74\u7528\u7535\u8d1f\u8f7d\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'total_installed_cost', {'label'='\u603b\u5b89\u88c5\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
 }
 
 function dsgl_iph_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'annual_energy_heat_btu', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
-	metric( 'annual_field_energy', {'label'='Annual field energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'annual_thermal_consumption', {'label'='Annual thermal freeze protection (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_electricity_consumption', {'label'='Annual electricity load (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'annual_energy_heat_btu', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
+	metric( 'annual_field_energy', {'label'='\u5e74\u573a\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'annual_thermal_consumption', {'label'='\u5e74\u70ed\u9632\u51bb\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_electricity_consumption', {'label'='\u5e74\u7528\u7535\u8d1f\u8f7d\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
 }
 
 function empirical_trough_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 //	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 }
 
 function ETES_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'annual_E_cycle_gross', {'label'='Annual cycle gross output (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_E_cycle_gross', {'label'='\u5e74\u5faa\u73af\u603b\u8f93\u51fa\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MWh' } );
 }
 
 function PTES_metrics()
 {
-	metric( 'annual_energy', {'label'='Net electricity to grid (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74\u5f52\u5165\u7f51\u7edc\u7684\u7ebf\u4e0a\u7535\u529b', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 }
 
 function MSPT_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 //	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
 }
 
 function ISCC_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 }
 
 
 function DSPT_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 //	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
 }
 
 function MSLF_IPH_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
-	metric( 'annual_energy_heat_btu', {'label'='Annual energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_electricity_consumption', {'label'='Annual electricity load (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
-	metric( 'total_installed_cost', {'label'='Total installed cost', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWht' } );
+	metric( 'annual_energy_heat_btu', {'label'='\u5e74\u4ea7\u80fd\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' MMBtu' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_electricity_consumption', {'label'='\u5e74\u7528\u7535\u8d1f\u8f7d\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'total_installed_cost', {'label'='\u603b\u5b89\u88c5\u6210\u672c', 'mode'='f', 'deci'='0', 'thousep'='true', 'pre'='$', 'post'=' '} );
 }
 
 function MSLF_metrics()
 {
 	//metric( 'annual_gross_energy', {'label'='Annual Gross Electrical Energy Production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'annual_energy', {'label'='Annual AC energy in year 1', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_thermal_consumption', {'label'='Annual freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_tes_freeze_protection', {'label'='Annual TES freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'annual_field_freeze_protection', {'label'='Annual field freeze protection', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'annual_W_cycle_gross', {'label'='Power cycle gross electrical output', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
-	metric( 'kwh_per_kw', {'label'='First year kWh/kW', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' -' } );
-	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_thermal_consumption', {'label'='\u5e74\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_tes_freeze_protection', {'label'='\u5e74TES\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'annual_field_freeze_protection', {'label'='\u5e74\u573a\u9632\u51bb\u4fdd\u62a4', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_W_cycle_gross', {'label'='\u52a8\u529b\u5faa\u73af\u603b\u7535\u529b\u8f93\u51fa', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWhe' } );
+	metric( 'kwh_per_kw', {'label'='\u7b2c\u4e00\u5e74 kWh/kW', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' -' } );
+	metric( 'conversion_factor', {'label'='\u603b-\u51c0\u8f6c\u6362', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
 }
 
 function DSLF_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 //	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
-	metric( 'annual_total_water_use', {'label'='Annual water usage','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
+	metric( 'annual_total_water_use', {'label'='\u5e74\u7528\u6c34\u91cf','mode'='f','deci'='0','thousep'='true','post'=' m^3' } );
 }
 
 
 function geothermal_metrics()
 {
-	metric( 'first_year_output', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'first_year_output', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
 	//metric( 'lifetime_output', {'label'='Lifetime Energy', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function custom_generation_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy (year 1)
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // Capacity factor (year 1)
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function custom_generation_battery_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
-	metric( 'average_battery_roundtrip_efficiency', {'label'='Battery roundtrip efficiency', 'mode'='f', 'deci'='2', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u4ea4\u6d41\u53d1\u7535\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Annual AC energy (year 1)
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } ); // Capacity factor (year 1)
+	metric( 'average_battery_roundtrip_efficiency', {'label'='\u7535\u6c60\u5f80\u8fd4\u6548\u7387', 'mode'='f', 'deci'='2', 'post'='%' } ); // Battery roundtrip efficiency
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
-	metric( 'batt_system_charge_percent', {'label'='Battery charge energy from system', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } );
+	metric( 'batt_system_charge_percent', {'label'='\u7535\u6c60\u4ece\u7cfb\u7edf\u5145\u7535\u7684\u80fd\u91cf', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } ); // Battery charge energy from system
 }
 
 function standalone_battery_metrics()
 {
-	metric( 'average_battery_roundtrip_efficiency', {'label'='Battery roundtrip efficiency', 'mode'='f', 'deci'='2', 'post'='%' } );
+	metric( 'average_battery_roundtrip_efficiency', {'label'='\u7535\u6c60\u5f80\u8fd4\u6548\u7387', 'mode'='f', 'deci'='2', 'post'='%' } ); // Battery roundtrip efficiency
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 	//metric( 'batt_system_charge_percent', {'label'='Battery charge energy from system', 'mode'='f', 'deci'='1', 'thousep'='false', 'post'='%' } );
-	metric( 'batt_year1_charge_from_grid', {'label'='Battery energy charged from grid (Year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'batt_year1_charge_from_grid', {'label'='\u7535\u6c60\u4ece\u7535\u7f51\u5145\u7535\u80fd\u91cf\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } ); // Battery energy charged from grid (Year 1)
 
 }
 
 function generic_csp_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'conversion_factor', {'label'='Gross-to-net conversion', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'conversion_factor', {'label'='\u603b-\u51c0\u8f6c\u6362', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' %' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function generic_hcpv_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='DC capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74 DC \u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function dish_stirling_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function solar_water_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy saved (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'solar_fraction', {'label'='Solar fraction (year 1)', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='' } );
-	metric( 'annual_Q_aux', {'label'='Aux with solar (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'annual_Q_auxonly', {'label'='Aux without solar (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74\u8282\u7ea6\u7684 AC \u7535\u80fd', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'solar_fraction', {'label'='\u7b2c\u4e00\u5e74\u592a\u9633\u80fd\u5360\u6bd4', 'mode'='f', 'deci'='2', 'thousep'='false', 'post'='' } );
+	metric( 'annual_Q_aux', {'label'='\u6709\u592a\u9633\u80fd\u65f6\u7684\u8f85\u52a9\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'annual_Q_auxonly', {'label'='\u65e0\u592a\u9633\u80fd\u65f6\u7684\u8f85\u52a9\uff08\u7b2c\u4e00\u5e74\uff09', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 }
 
 function biopower_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual AC energy (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'system.annual.biomass', {'label'='Annual biomass usage (year 1)', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' dry tons/yr' } );
-	metric( 'capacity_factor', {'label'='Capacity factor (year 1)', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u7b2c\u4e00\u5e74 AC \u7535\u4ea7\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'system.annual.biomass', {'label'='\u7b2c\u4e00\u5e74\u751f\u7269\u8d28\u4f7f\u7528\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' dry tons/yr' } );
+	metric( 'capacity_factor', {'label'='\u7b2c\u4e00\u5e74\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 	//metric( 'kwh_per_kw', {'label'='First year kWhAC/kWDC', 'mode'='f', 'deci'='0', 'thousep'='true' } );
 }
 
 function MHKwave_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u53d1\u7535\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 }
 
 function MHKtidal_metrics()
 {
-	metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
-	metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
+	metric( 'annual_energy', {'label'='\u5e74\u53d1\u7535\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh' } );
+	metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='1', 'thousep'='true', 'post'='%' } );
 }
 
 function resiliency_metrics()
 {
 	if (!${crit_load_is_shown})
 		return;
-	metric( 'resilience_hrs_avg', {'label'='Avg hours of autonomy for resilience', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'=' hrs' } );
+	metric( 'resilience_hrs_avg', {'label'='\u97e7\u6027\u5e73\u5747\u81ea\u6301\u5c0f\u65f6\u6570', 'mode'='f', 'deci'='2', 'thousep'='true', 'post'=' hrs' } );
 }
 
 // Technology Metrics
@@ -537,10 +537,10 @@ metrics{ 'PVWatts' } = define() {
 metrics{ 'Fuel Cell' } = define() {
 	pvwatts_metrics();
 	if ( value('en_batt') == 1 )
-	{ metric( 'average_battery_roundtrip_efficiency', {'label'='Battery roundtrip efficiency', 'mode'='f', 'deci'='2', 'post'='%' } ); }
-	metric( 'thermal_cost_without_system_year1',{'label'='Thermal bill without system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'thermal_cost_with_system_year1',{'label'='Thermal bill with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
-	metric( 'thermal_savings_year1',{'label'='Net thermal savings with system (year 1)', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } );
+	{ metric( 'average_battery_roundtrip_efficiency', {'label'='\u7535\u6c60\u5f80\u8fd4\u6548\u7387', 'mode'='f', 'deci'='2', 'post'='%' } ); }
+	metric( 'thermal_cost_without_system_year1',{'label'='\u70ed\u80fd\u8d26\u5355\u65e0\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Thermal bill without system (year 1)
+	metric( 'thermal_cost_with_system_year1',{'label'='\u70ed\u80fd\u8d26\u5355\u6709\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Thermal bill with system (year 1)
+	metric( 'thermal_savings_year1',{'label'='\u70ed\u80fd\u51c0\u8282\u7701\u6709\u7cfb\u7edf\uff08\u7b2c\u4e00\u5e74\uff09', 'pre'='$', 'post'=' ', 'thousep'='true', 'mode'='f', 'deci'='0' } ); // Net thermal savings with system (year 1)
 
 };
 
@@ -552,25 +552,25 @@ function MEwave_metrics()
 	//metric_table('Table1', {'headers'='Metric,Value'});
 	//me_lcoefcr_metrics();
 	if(value('system_capacity') > 1) {
-		metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1' } );
-		metric( 'device_average_power', {'label'='Average power per device', 'mode'='f', 'deci'='0', 'thousep'='true','post'=' kW', 'tableName'='Table1' } );
-		metric( 'system_capacity', {'label'='System capacity', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1'});
-		metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' %', 'tableName'='Table1'});
+		metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1' } ); // Annual energy production
+		metric( 'device_average_power', {'label'='\u6bcf\u8bbe\u5907\u5e73\u5747\u529f\u7387', 'mode'='f', 'deci'='0', 'thousep'='true','post'=' kW', 'tableName'='Table1' } ); // Average power per device
+		metric( 'system_capacity', {'label'='\u7cfb\u7edf\u5bb9\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1'}); // System capacity
+		metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' %', 'tableName'='Table1'}); // Capacity factor
 	}
 	else {
-		metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1', 'scale'='1' } );
-		metric( 'device_average_power', {'label'='Average power per device', 'mode'='f', 'deci'='3', 'thousep'='true','post'=' kW', 'tableName'='Table1','scale'='1' } );
-		metric( 'system_capacity', {'label'='System capacity', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1','scale'='1'});
-		metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' %', 'tableName'='Table1','scale'='1'});
+		metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1', 'scale'='1' } ); // Annual energy production
+		metric( 'device_average_power', {'label'='\u6bcf\u8bbe\u5907\u5e73\u5747\u529f\u7387', 'mode'='f', 'deci'='3', 'thousep'='true','post'=' kW', 'tableName'='Table1','scale'='1' } ); // Average power per device
+		metric( 'system_capacity', {'label'='\u7cfb\u7edf\u5bb9\u91cf', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1','scale'='1'}); // System capacity
+		metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' %', 'tableName'='Table1','scale'='1'}); // Capacity factor
 	}
 
 	if (financing()  != "None") {
-		metric_table('Table2', {'headers'='Category,Cost,Cost per capacity,LCOE'});
-		metric_row( 'total_installed_cost,total_capital_cost_per_kw,total_capital_cost_kwh', {'label'='Capital cost', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' });
-		metric_row( 'device_costs_total,total_device_cost_per_kw,total_device_cost_kwh', {'label'='-  Device cost', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' });
-		metric_row( 'balance_of_system_cost_total,total_bos_cost_per_kw,total_bos_cost_kwh', {'label'='-  Balance of system cost', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' });
-		metric_row( 'financial_cost_total,total_financial_cost_per_kw,total_financial_cost_kwh', {'label'='-  Financial cost', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' });
-		metric_row( 'total_operating_cost,total_operations_cost_per_kw,total_om_cost_kwh', {'label'='O&M cost', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' /yr, $/kW/yr, $/kWh', 'tableName'='Table2' });
+		metric_table('Table2', {'headers'='\u7c7b\u522b,\u6210\u672c,\u5355\u4f4d\u5bb9\u91cf\u6210\u672c,LCOE'}); // Category,Cost,Cost per capacity,LCOE
+		metric_row( 'total_installed_cost,total_capital_cost_per_kw,total_capital_cost_kwh', {'label'='\u8d44\u672c\u6210\u672c', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' }); // Capital cost
+		metric_row( 'device_costs_total,total_device_cost_per_kw,total_device_cost_kwh', {'label'='-  \u8bbe\u5907\u6210\u672c', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' }); // Device cost
+		metric_row( 'balance_of_system_cost_total,total_bos_cost_per_kw,total_bos_cost_kwh', {'label'='-  \u7cfb\u7edf\u5e73\u8861\u6210\u672c', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' }); // Balance of system cost
+		metric_row( 'financial_cost_total,total_financial_cost_per_kw,total_financial_cost_kwh', {'label'='-  \u8d22\u52a1\u6210\u672c', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' , $/kW, $/kWh', 'tableName'='Table2' }); // Financial cost
+		metric_row( 'total_operating_cost,total_operations_cost_per_kw,total_om_cost_kwh', {'label'='\u8fd0\u7ef4\u6210\u672c', 'mode'='f,f,f', 'deci'='0,0,2', 'thousep'='true,true,true', 'pre'=' $,,', 'post'= ' /\u5e74, $/kW/\u5e74, $/kWh', 'tableName'='Table2' }); // O&M cost
 	}
 
 }
@@ -580,24 +580,24 @@ function MEtidal_metrics()
 	//metric_table('Table1', {'headers'='Metric,Value'});
 	//me_lcoefcr_metrics();
 	if(value('system_capacity') > 1) {
-		metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1' } );
-		metric( 'device_average_power', {'label'='Average power per device', 'mode'='f', 'deci'='0', 'thousep'='true','post'=' kW', 'tableName'='Table1' } );
-		metric( 'system_capacity', {'label'='System capacity', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1'});
-		metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' %', 'tableName'='Table1'});
+		metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1' } ); // Annual energy production
+		metric( 'device_average_power', {'label'='\u6bcf\u8bbe\u5907\u5e73\u5747\u529f\u7387', 'mode'='f', 'deci'='0', 'thousep'='true','post'=' kW', 'tableName'='Table1' } ); // Average power per device
+		metric( 'system_capacity', {'label'='\u7cfb\u7edf\u5bb9\u91cf', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1'}); // System capacity
+		metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='0', 'thousep'='true', 'post'= ' %', 'tableName'='Table1'}); // Capacity factor
 	}
 	else {
-		metric( 'annual_energy', {'label'='Annual energy production', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1', 'scale'='1' } );
-		metric( 'device_average_power', {'label'='Average power per device', 'mode'='f', 'deci'='3', 'thousep'='true','post'=' kW', 'tableName'='Table1','scale'='1' } );
-		metric( 'system_capacity', {'label'='System capacity', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1','scale'='1'});
-		metric( 'capacity_factor', {'label'='Capacity factor', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' %', 'tableName'='Table1','scale'='1'});
+		metric( 'annual_energy', {'label'='\u5e74\u4ea7\u80fd', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'=' kWh', 'tableName'='Table1', 'scale'='1' } ); // Annual energy production
+		metric( 'device_average_power', {'label'='\u6bcf\u8bbe\u5907\u5e73\u5747\u529f\u7387', 'mode'='f', 'deci'='3', 'thousep'='true','post'=' kW', 'tableName'='Table1','scale'='1' } ); // Average power per device
+		metric( 'system_capacity', {'label'='\u7cfb\u7edf\u5bb9\u91cf', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' kW', 'tableName'='Table1','scale'='1'}); // System capacity
+		metric( 'capacity_factor', {'label'='\u5bb9\u91cf\u56e0\u5b50', 'mode'='f', 'deci'='3', 'thousep'='true', 'post'= ' %', 'tableName'='Table1','scale'='1'}); // Capacity factor
 	}
 	if (financing() != "None") {
-		metric_table('Table2', {'headers'='Category,Costs,Costs per capacity,LCOE'});
-		metric_row( 'capital_cost,total_capital_cost_per_kw,total_capital_cost_kwh', {'label'='Capital cost', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,','tableName'='Table2' });
-		metric_row( 'device_costs_total,total_device_cost_per_kw,total_device_cost_kwh', {'label'='-  Device cost', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,','tableName'='Table2' });
-		metric_row( 'balance_of_system_cost_total,total_bos_cost_per_kw,total_bos_cost_kwh', {'label'='-  Balance of system cost', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh','pre'='$,,', 'tableName'='Table2' });
-		metric_row( 'financial_cost_total,total_financial_cost_per_kw,total_financial_cost_kwh', {'label'='-  Financial cost', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,', 'tableName'='Table2' });
-		metric_row( 'total_operating_cost,total_operations_cost_per_kw,total_om_cost_kwh', {'label'='O&M cost', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' /yr, $/kW/yr, $/kWh', 'pre'='$,,','tableName'='Table2' });
+		metric_table('Table2', {'headers'='\u7c7b\u522b,\u6210\u672c,\u5355\u4f4d\u5bb9\u91cf\u6210\u672c,LCOE'}); // Category,Costs,Costs per capacity,LCOE
+		metric_row( 'capital_cost,total_capital_cost_per_kw,total_capital_cost_kwh', {'label'='\u8d44\u672c\u6210\u672c', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,','tableName'='Table2' }); // Capital cost
+		metric_row( 'device_costs_total,total_device_cost_per_kw,total_device_cost_kwh', {'label'='-  \u8bbe\u5907\u6210\u672c', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,','tableName'='Table2' }); // Device cost
+		metric_row( 'balance_of_system_cost_total,total_bos_cost_per_kw,total_bos_cost_kwh', {'label'='-  \u7cfb\u7edf\u5e73\u8861\u6210\u672c', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh','pre'='$,,', 'tableName'='Table2' }); // Balance of system cost
+		metric_row( 'financial_cost_total,total_financial_cost_per_kw,total_financial_cost_kwh', {'label'='-  \u8d22\u52a1\u6210\u672c', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' , $/kW, $/kWh', 'pre'='$,,', 'tableName'='Table2' }); // Financial cost
+		metric_row( 'total_operating_cost,total_operations_cost_per_kw,total_om_cost_kwh', {'label'='\u8fd0\u7ef4\u6210\u672c', 'mode'='f,f,f', 'deci'='2,0,2', 'thousep'='true,true,true', 'post'= ' /\u5e74, $/kW/\u5e74, $/kWh', 'pre'='$,,','tableName'='Table2' }); // O&M cost
 	}
 	//put $ in pre
 

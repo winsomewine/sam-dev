@@ -668,7 +668,7 @@ int UncertaintiesCtrl::Display(std::vector<Simulation *>sims, Uncertainties &gi)
 
 	if (ndata < 0)
 	{
-		SetTitle("All variables must have the same number of data values.");
+		SetTitle(wxString::FromUTF8("\xe6\x89\x80\xe6\x9c\x89\xe5\x8f\x98\xe9\x87\x8f\xe5\xbf\x85\xe9\xa1\xbb\xe5\x85\xb7\xe6\x9c\x89\xe7\x9b\xb8\xe5\x90\x8c\xe6\x95\xb0\xe9\x87\x8f\xe7\x9a\x84\xe6\x95\xb0\xe6\x8d\xae\xe5\x80\xbc\xe3\x80\x82"));
 		Refresh();
 		return -1;
 	}
@@ -852,10 +852,10 @@ UncertaintiesProperties::UncertaintiesProperties( wxWindow *parent, int id )
 
 	m_type = new wxRadioChoice( this, ID_TYPE );
 	m_type->SetHorizontal( true );
-	m_type->Add( "Bar" );
-	m_type->Add( "Stack" );
-	m_type->Add( "Line" );
-	m_type->Add( "Scatter" );
+	m_type->Add( wxString::FromUTF8("\xe6\x9f\xb1\xe7\x8a\xb6\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe5\xa0\x86\xe5\x8f\xa0\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe6\x8a\x98\xe7\xba\xbf\xe5\x9b\xbe") );
+	m_type->Add( wxString::FromUTF8("\xe6\x95\xa3\xe7\x82\xb9\xe5\x9b\xbe") );
 	m_type->SetSelection( 0 );
 
 	m_title = new wxExtTextCtrl( this, ID_TITLE );
@@ -865,39 +865,39 @@ UncertaintiesProperties::UncertaintiesProperties( wxWindow *parent, int id )
 	m_size = new wxSlider( this, ID_SIZE, 0, 0, 35);
 	m_scale = new wxSlider( this, ID_SCALE, 10, 5, 15 );
 
-	m_coarse = new wxCheckBox( this, ID_COARSE, "Coarse grid" );
+	m_coarse = new wxCheckBox( this, ID_COARSE, wxString::FromUTF8("\xe7\xb2\x97\xe7\xbd\x91\xe6\xa0\xbc") );
 	m_coarse->SetValue( true );
-	m_fine = new wxCheckBox( this, ID_FINE, "Fine grid" );
+	m_fine = new wxCheckBox( this, ID_FINE, wxString::FromUTF8("\xe7\xbb\x86\xe7\xbd\x91\xe6\xa0\xbc") );
 	m_fine->SetValue( true );
 
 
-	m_showLegend = new wxCheckBox( this, ID_SHOW_LEGEND, "Legend" );
+	m_showLegend = new wxCheckBox( this, ID_SHOW_LEGEND, wxString::FromUTF8("\xe5\x9b\xbe\xe4\xbe\x8b") );
 
-	wxString lpos[] = { "Manual", 
-		"Northwest", "Southwest", "Northeast", "Southeast", 
-		"North", "South", "East", "West", 
-		"Bottom", "Right" };
+	wxString lpos[] = { wxString::FromUTF8("\xe6\x89\x8b\xe5\x8a\xa8"),
+		wxString::FromUTF8("\xe8\xa5\xbf\xe5\x8c\x97"), wxString::FromUTF8("\xe8\xa5\xbf\xe5\x8d\x97"), wxString::FromUTF8("\xe4\xb8\x9c\xe5\x8c\x97"), wxString::FromUTF8("\xe4\xb8\x9c\xe5\x8d\x97"),
+		wxString::FromUTF8("\xe5\x8c\x97"), wxString::FromUTF8("\xe5\x8d\x97"), wxString::FromUTF8("\xe4\xb8\x9c"), wxString::FromUTF8("\xe8\xa5\xbf"),
+		wxString::FromUTF8("\xe5\xba\x95\xe9\x83\xa8"), wxString::FromUTF8("\xe5\x8f\xb3\xe4\xbe\xa7") };
 	m_legendPos = new wxChoice( this, ID_LEGENDPOS, wxDefaultPosition, wxDefaultSize, 11, lpos );
 
-	wxString faces[] = { "Default", "Modern", "Sanserif", "Serif", "Fixed" };
+	wxString faces[] = { wxString::FromUTF8("\xe9\xbb\x98\xe8\xae\xa4"), wxString::FromUTF8("\xe7\x8e\xb0\xe4\xbb\xa3"), wxString::FromUTF8("\xe6\x97\xa0\xe8\xa1\xac\xe7\xba\xbf"), wxString::FromUTF8("\xe8\xa1\xac\xe7\xba\xbf"), wxString::FromUTF8("\xe7\xad\x89\xe5\xae\xbd") };
 	m_font = new wxChoice( this, ID_FONT_FACE, wxDefaultPosition, wxDefaultSize, 5, faces );
 	
 	wxFlexGridSizer *prop_sizer = new wxFlexGridSizer( 2 );
 	prop_sizer->AddGrowableCol( 1 );
 
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Title:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe6\xa0\x87\xe9\xa2\x98:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_title, 0, wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "X label:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("X\xe8\xbd\xb4\xe6\xa0\x87\xe7\xad\xbe:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_xlabel, 0, wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Y label:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("Y\xe8\xbd\xb4\xe6\xa0\x87\xe7\xad\xbe:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_ylabel, 0,  wxALL|wxEXPAND, 1 );
 	
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Size:" ),0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe5\xa4\xa7\xe5\xb0\x8f:") ),0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	prop_sizer->Add( m_size, 0, wxALL|wxEXPAND, 1 );
 
-	prop_sizer->Add( new wxStaticText( this, wxID_ANY, "Text:" ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
+	prop_sizer->Add( new wxStaticText( this, wxID_ANY, wxString::FromUTF8("\xe6\x96\x87\xe6\x9c\xac:") ), 0, wxALL|wxALIGN_CENTER_VERTICAL, 2 );
 	
 	wxBoxSizer *text_sizer = new wxBoxSizer( wxHORIZONTAL );
 	text_sizer->Add( m_scale, 1, wxALL|wxEXPAND, 1 );
@@ -1064,13 +1064,13 @@ void UncertaintiesViewer::DisplayStdDevs() {
     double stddev = vv_uncert->Value()/100. * vv_aep->Value();
     matrix_t<wxString> metrics;
     metrics.resize( 4, 2 );
-    metrics(0,0) = "Std Dev, year 1";
+    metrics(0,0) = wxString::FromUTF8("\xe6\xa0\x87\xe5\x87\x86\xe5\xb7\xae, \xe7\xac\xac 1\xe5\xb9\xb4");
 
     bool useMWH = vv_aep->Value() > 1e6;
     if (useMWH)
-        metrics(0,1) = "Energy (MWh)";
+        metrics(0,1) = wxString::FromUTF8("\xe7\x94\xb5\xe9\x87\x8f (MWh)");
     else
-        metrics(0,1) = "Energy (kWh)";
+        metrics(0,1) = wxString::FromUTF8("\xe7\x94\xb5\xe9\x87\x8f (kWh)");
 
     for (size_t i = 0; i < 3; i++){
         metrics(1+i, 0) = std::to_string(i+1);
@@ -1106,13 +1106,13 @@ void UncertaintiesViewer::DisplayProbOfExceedances() {
 
     matrix_t<wxString> metrics;
     metrics.resize( pXX_names.size()+1, 4 );
-    metrics(0,0) = "PXX";
+    metrics(0,0) = wxString::FromUTF8("\xe8\xb6\x85\xe8\xb6\x8a\xe6\xa6\x82\xe7\x8e\x87");
 
     bool useMWH = vv_aep->Value() > 1e6;
     std::string units = useMWH ? " (MWh)" : " (kWh)";
-    metrics(0,1) = "Year 1" + units;
-    metrics(0,2) = "10-Yr Avg" + units;
-    metrics(0,3) = "20-Yr Avg" + units;
+    metrics(0,1) = wxString::FromUTF8("\xe7\xac\xac 1\xe5\xb9\xb4") + units;
+    metrics(0,2) = wxString::FromUTF8("10\xe5\xb9\xb4\xe5\xb9\xb3\xe5\x9d\x87") + units;
+    metrics(0,3) = wxString::FromUTF8("20\xe5\xb9\xb4\xe5\xb9\xb3\xe5\x9d\x87") + units;
 
 
     for( size_t i=0;i<pXX_names.size();i++ )
@@ -1168,7 +1168,7 @@ void UncertaintiesViewer::Setup( Simulation *sim )
 	// add single year probability of exceedances as a metrics table
 	m_exceedanceTable = new MetricsTable(m_layout);
 	matrix_t<wxString> data(1, 2);
-	data.at(0, 0) = "Metric"; data.at(0, 1) = "Value";
+	data.at(0, 0) = wxString::FromUTF8("\xe6\x8c\x87\xe6\xa0\x87"); data.at(0, 1) = wxString::FromUTF8("\xe5\x80\xbc");
 	m_exceedanceTable->SetData(data);
 	m_layout->Add(m_exceedanceTable);
 	DisplayProbOfExceedances();

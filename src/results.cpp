@@ -31,6 +31,44 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 
+
+/*
+ * ============================================================
+ * 中文翻译对照表 (Chinese Translation Reference)
+ * ============================================================
+ * 数据分组:
+ *   Single Values = 单值数据
+ *   Monthly Data = 月度数据
+ *   Hourly Data = 小时数据
+ *   Annual Data = 年度数据
+ *   Three Hour Data = 三小时数据
+ *   Matrix Data = 矩阵数据
+ *   Lifetime Monthly Data = 全寿命月度数据
+ *   Lifetime Hourly Data = 全寿命小时数据
+ *   Lifetime Three Hour Data = 全寿命三小时数据
+ *   %d Minute Data = %d分钟数据
+ *   Lifetime %d Minute Data = 全寿命%d分钟数据
+ *   Data: %d values = 数据: %d个值
+ *
+ * 电价数据分组:
+ *   Electricity Rate Data by Tier and Period = 分层分时电价数据
+ *   Electricity Rate Data by Year = 年度电价数据
+ *   Electricity Demand Data by Period = 分时需量数据
+ *   Lifetime Merchant Plant = 全寿命商业电厂
+ *   Wind Turbine Power Curve Data = 风机功率曲线数据
+ *
+ * 按钮:
+ *   Copy to clipboard = 复制到剪贴板
+ *   Save as CSV... = 保存为CSV...
+ *   Send to Excel = 发送到Excel
+ *   Clear all = 清除全部
+ *
+ * 其他:
+ *   No data. = 无数据
+ *   Time stamp = 时间戳
+ * ============================================================
+ */
+
 #include <algorithm>
 #include <cmath>
 #include <numeric>
@@ -169,29 +207,29 @@ void PopulateSelectionList(wxDVSelectionListCtrl* sel, wxArrayString* names, Sim
 
         wxString group;
         if (row_length == 1)
-            group = "Single Values";
+            group = wxString::FromUTF8("\xe5\x8d\x95\xe5\x80\xbc\xe6\x95\xb0\xe6\x8d\xae");
         else if (row_length == 12 && col_length == 1)
-            group = "Monthly Data";
+            group = wxString::FromUTF8("\xe6\x9c\x88\xe5\xba\xa6\xe6\x95\xb0\xe6\x8d\xae");
         else if (row_length == 8760 && col_length == 1)
-            group = "Hourly Data";
+            group = wxString::FromUTF8("\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
         else if ((int)row_length == an_period && col_length == 1)
-            group = "Annual Data";
+            group = wxString::FromUTF8("\xe5\xb9\xb4\xe5\xba\xa6\xe6\x95\xb0\xe6\x8d\xae");
         else if ((int)row_length == 2920 && col_length == 1)
-            group = "Three Hour Data";
+            group = wxString::FromUTF8("\xe4\xb8\x89\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
         else if (((int)row_length == (an_period - 1) * 12) && (lifetime) && (col_length == 1))
-            group = "Lifetime Monthly Data";
+            group = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe6\x9c\x88\xe5\xba\xa6\xe6\x95\xb0\xe6\x8d\xae");
         else if (((int)row_length == (an_period - 1) * 8760) && (lifetime) && (col_length == 1))
-            group = "Lifetime Hourly Data";
+            group = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
         else if (((int)row_length == (an_period - 1) * 2920) && (lifetime) && (col_length == 1))
-            group = "Lifetime Three Hour Data";
+            group = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe4\xb8\x89\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
         else if ((steps_per_hour_lt >= 2 && steps_per_hour_lt <= 60) && (lifetime) && col_length == 1)
-            group = wxString::Format("Lifetime %d Minute Data", 60 / (steps_per_hour_lt));
+            group = wxString::Format(wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\x25\x64\xe5\x88\x86\xe9\x92\x9f\xe6\x95\xb0\xe6\x8d\xae"), 60 / (steps_per_hour_lt));
         else if ((steps_per_hour >= 2 && steps_per_hour <= 60) && (col_length == 1))
-            group = wxString::Format("%d Minute Data", 60 / steps_per_hour);
+            group = wxString::Format(wxString::FromUTF8("\x25\x64\xe5\x88\x86\xe9\x92\x9f\xe6\x95\xb0\xe6\x8d\xae"), 60 / steps_per_hour);
         else if (col_length == 1)
-            group.Printf("Data: %d values", (int)row_length);
+            group.Printf(wxString::FromUTF8("\xe6\x95\xb0\xe6\x8d\xae\x3a\x20\x25\x64\xe4\xb8\xaa\xe5\x80\xbc"), (int)row_length);
         else
-            group = "Matrix Data";
+            group = wxString::FromUTF8("\xe7\x9f\xa9\xe9\x98\xb5\xe6\x95\xb0\xe6\x8d\xae");
 
         wxArrayString labels;
         for (size_t j = 0; j < list.Count(); j++)
@@ -209,15 +247,15 @@ void PopulateSelectionList(wxDVSelectionListCtrl* sel, wxArrayString* names, Sim
             {
                 wxString grp = ui_hint["GROUP"];
                 if (grp == "UR_MTP")
-                    gbn = "Electricity Rate Data by Tier and Period"; // monthly tier x period
+                    gbn = wxString::FromUTF8("\xe5\x88\x86\xe5\xb1\x82\xe5\x88\x86\xe6\x97\xb6\xe7\x94\xb5\xe4\xbb\xb7\xe6\x95\xb0\xe6\x8d\xae"); // monthly tier x period
                 else if (grp == "UR_AM")
-                    gbn = "Electricity Rate Data by Year"; // annual monthly
+                    gbn = wxString::FromUTF8("\xe5\xb9\xb4\xe5\xba\xa6\xe7\x94\xb5\xe4\xbb\xb7\xe6\x95\xb0\xe6\x8d\xae"); // annual monthly
                 else if (grp == "UR_DMP")
-                    gbn = "Electricity Demand Data by Period"; // monthly period
+                    gbn = wxString::FromUTF8("\xe5\x88\x86\xe6\x97\xb6\xe9\x9c\x80\xe9\x87\x8f\xe6\x95\xb0\xe6\x8d\xae"); // monthly period
                 else if (grp == "LIFETIME_MP")
-                        gbn = "Lifetime Merchant Plant"; // merchant plant output - SAM issue 485 - can be the same or different from other Lifetime data (e.g. hourly, 15minute, monthly, etc.)
+                        gbn = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe5\x95\x86\xe4\xb8\x9a\xe7\x94\xb5\xe5\x8e\x82"); // merchant plant output - SAM issue 485 - can be the same or different from other Lifetime data (e.g. hourly, 15minute, monthly, etc.)
                 else if (grp == "WTPCD")
-                    gbn = "Wind Turbine Power Curve Data";
+                    gbn = wxString::FromUTF8("\xe9\xa3\x8e\xe6\x9c\xba\xe5\x8a\x9f\xe7\x8e\x87\xe6\x9b\xb2\xe7\xba\xbf\xe6\x95\xb0\xe6\x8d\xae");
             }
 
             group_by_name[list[j]] = gbn;
@@ -453,7 +491,7 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     m_cashFlowTable->DisableDragRowSize();
     m_cashFlowTable->DisableDragColMove();
     m_cashFlowTable->DisableDragGridSize();
-    m_cashFlowTable->SetCellValue(0, 0, "No data.");
+    m_cashFlowTable->SetCellValue(0, 0, wxString::FromUTF8("\xe6\x97\xa0\xe6\x95\xb0\xe6\x8d\xae"));
     m_cashFlowTable->EnableEditing(false);
     m_cashFlowTable->EnableCopyPaste(true);
     m_cashFlowTable->EnablePasteEvent(false);
@@ -471,7 +509,7 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     m_depreciationTable->DisableDragRowSize();
     m_depreciationTable->DisableDragColMove();
     m_depreciationTable->DisableDragGridSize();
-    m_depreciationTable->SetCellValue(0, 0, "No data.");
+    m_depreciationTable->SetCellValue(0, 0, wxString::FromUTF8("\xe6\x97\xa0\xe6\x95\xb0\xe6\x8d\xae"));
     m_depreciationTable->EnableEditing(false);
     m_depreciationTable->EnableCopyPaste(true);
     m_depreciationTable->EnablePasteEvent(false);
@@ -522,7 +560,7 @@ ResultsViewer::ResultsViewer(wxWindow* parent, int id)
     //AddPage( m_scatterPlot, "Scatter" );
 
     m_pnCdf = new wxDVPnCdfCtrl(this, wxID_ANY);
-    AddPage(m_pnCdf, "PDF / CDF");
+    AddPage(m_pnCdf, wxString::FromUTF8("\xe6\xa6\x82\xe7\x8e\x87\xe5\xaf\x86\xe5\xba\xa6 / \xe7\xb4\xaf\xe7\xa7\xaf\xe5\x88\x86\xe5\xb8\x83"));
 
 
     // TODO: remove this after adding for other technologies...
@@ -981,8 +1019,8 @@ void ResultsViewer::Setup(Simulation* sim)
         if (m_metrics.size() > 0) {
             matrix_t<wxString> metrics;
             metrics.resize(m_metrics.size() + 1, 2);
-            metrics(0, 0) = "Metric";
-            metrics(0, 1) = "Value";
+            metrics(0, 0) = wxString::FromUTF8("\xe6\x8c\x87\xe6\xa0\x87");
+            metrics(0, 1) = wxString::FromUTF8("\xe5\x80\xbc");
             for (size_t i = 0; i < m_metrics.size(); i++)
             {
                 MetricData& md = m_metrics[i];
@@ -1119,8 +1157,8 @@ void ResultsViewer::Setup(Simulation* sim)
         if (mvars.size() > 0)
         {
             matrix_t<wxString> metrics(mvars.size() + 1, 2);
-            metrics(0, 0) = "Auto-metric";
-            metrics(0, 1) = "Value";
+            metrics(0, 0) = wxString::FromUTF8("\xe8\x87\xaa\xe5\x8a\xa8\xe6\x8c\x87\xe6\xa0\x87");
+            metrics(0, 1) = wxString::FromUTF8("\xe5\x80\xbc");
             for (size_t i = 0; i < mvars.size(); i++)
             {
                 wxString label = m_sim->GetLabel(mvars[i]);
@@ -1139,8 +1177,8 @@ void ResultsViewer::Setup(Simulation* sim)
         m_summaryLayout->Add(m_metricsTable);
 
         matrix_t<wxString> metrics(2, 1);
-        metrics(0, 0) = "No results are available.";
-        metrics(1, 0) = "Click the 'Simulate' button first to run a simulation.";
+        metrics(0, 0) = wxString::FromUTF8("\xe6\xb2\xa1\xe6\x9c\x89\xe5\x8f\xaf\xe7\x94\xa8\xe7\x9a\x84\xe7\xbb\x93\xe6\x9e\x9c\xe3\x80\x82");
+        metrics(1, 0) = wxString::FromUTF8("\xe8\xaf\xb7\xe5\x85\x88\xe7\x82\xb9\xe5\x87\xbb\xe2\x80\x9c\xe6\xa8\xa1\xe6\x8b\x9f\xe2\x80\x9d\xe6\x8c\x89\xe9\x92\xae\xe8\xbf\x90\xe8\xa1\x8c\xe6\xa8\xa1\xe6\x8b\x9f\xe3\x80\x82");
         m_metricsTable->SetData(metrics);
     }
 
@@ -1237,36 +1275,36 @@ void ResultsViewer::Setup(Simulation* sim)
                         steps_per_hour_lt = -1;
                 }
 
-                wxString group("Hourly Data");
+                wxString group(wxString::FromUTF8("\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae"));
                 double time_step = -1;
 
                 if (n == 8760)
                 {
-                    group = "Hourly Data";
+                    group = wxString::FromUTF8("\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
                     time_step = 1;
                 }
                 else if (n == 2920)
                 {
-                    group = "Three Hour Data";
+                    group = wxString::FromUTF8("\xe4\xb8\x89\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
                     time_step = 3;
                 }
                 else if (((int)n == (an_period - 1) * 8760) && (use_lifetime))
                 {
-                    group = "Lifetime Hourly Data";
+                    group = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
                     time_step = 1;
                 }
                 else if (((int)n == (an_period - 1) * 2920) && (use_lifetime)) {
-                    group = "Lifetime Three Hour Data";
+                    group = wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\xe4\xb8\x89\xe5\xb0\x8f\xe6\x97\xb6\xe6\x95\xb0\xe6\x8d\xae");
                     time_step = 3;
                 }
                 else if ((steps_per_hour_lt >= 2 && steps_per_hour_lt <= 60) && (use_lifetime))
                 {
-                    group = wxString::Format("Lifetime %d Minute Data", 60 / (steps_per_hour_lt));
+                    group = wxString::Format(wxString::FromUTF8("\xe5\x85\xa8\xe5\xaf\xbf\xe5\x91\xbd\x25\x64\xe5\x88\x86\xe9\x92\x9f\xe6\x95\xb0\xe6\x8d\xae"), 60 / (steps_per_hour_lt));
                     time_step = 1.0 / steps_per_hour_lt;
                 }
                 else if ((steps_per_hour >= 2 && steps_per_hour <= 60))
                 {
-                    group = wxString::Format("%d Minute Data", 60 / steps_per_hour);
+                    group = wxString::Format(wxString::FromUTF8("\x25\x64\xe5\x88\x86\xe9\x92\x9f\xe6\x95\xb0\xe6\x8d\xae"), 60 / steps_per_hour);
                     time_step = 1.0 / steps_per_hour;
                 }
 
@@ -1309,7 +1347,7 @@ void ResultsViewer::Setup(Simulation* sim)
                 // if model was changed from another technology, the ResultsViewer was not initialized with Uncertainties
                 if (!m_uncertaintiesViewer) {
                     m_uncertaintiesViewer = new UncertaintiesViewer(this);
-                    AddPage(m_uncertaintiesViewer, "Uncertainties");
+                    AddPage(m_uncertaintiesViewer, wxString::FromUTF8("\xe4\xb8\x8d\xe7\xa1\xae\xe5\xae\x9a\xe6\x80\xa7"));
                 }
                     // testing Uncertainties - remove after added for other technologies and add to uncertainties.lk (like autographs.lk)
                     std::vector<Uncertainties> ul;
@@ -1397,7 +1435,7 @@ void ResultsViewer::Setup(Simulation* sim)
             // if model was changed from another technology, the ResultsViewer was not initialized with Uncertainties
             if (!m_spatialLayout) {
                 m_spatialLayout = new wxSnapLayout(this, wxID_ANY);
-                AddPage(m_spatialLayout, "Spatial", true);
+                AddPage(m_spatialLayout, wxString::FromUTF8("\xe7\xa9\xba\xe9\x97\xb4"), true);
             }
             else
                 m_spatialLayout->DeleteAll();
@@ -1783,7 +1821,7 @@ void ResultsViewer::Export(int data, int mechanism)
 
     if (table.nrows() == 0 || table.ncols() == 0)
     {
-        wxMessageBox("No data to export!");
+        wxMessageBox(wxString::FromUTF8("\xe6\xb2\xa1\xe6\x9c\x89\xe6\x95\xb0\xe6\x8d\xae\xe5\x8f\xaf\xe5\xaf\xbc\xe5\x87\xba\xef\xbc\x81"));
         return;
     }
 
@@ -1793,7 +1831,7 @@ void ResultsViewer::Export(int data, int mechanism)
     {
         if (wxTheClipboard->Open())
         {
-            wxBusyInfo info("Copying to clipboard...");
+            wxBusyInfo info(wxString::FromUTF8("\xe6\xad\xa3\xe5\x9c\xa8\xe5\xa4\x8d\xe5\x88\xb6\xe5\x88\xb0\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf..."));
             wxString tab_data = UnsplitCells(table, '\t', '\n', false);
             // remove commas per request from Paul 5/23/12 meeting
             tab_data.Replace(",", "");
@@ -1807,8 +1845,8 @@ void ResultsViewer::Export(int data, int mechanism)
     {
         wxString csv_data = UnsplitCells(table, ',', '\n', true);
 
-        wxFileDialog fdlg(this, "Save Data", "", "samdata.csv",
-            "CSV Data Files (*.csv)|*.csv", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+        wxFileDialog fdlg(this, wxString::FromUTF8("\xe4\xbf\x9d\xe5\xad\x98\xe6\x95\xb0\xe6\x8d\xae"), "", "samdata.csv",
+            wxString::FromUTF8("CSV\xe6\x95\xb0\xe6\x8d\xae\xe6\x96\x87\xe4\xbb\xb6 (*.csv)|*.csv"), wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
 
         if (fdlg.ShowModal() == wxID_OK)
         {
@@ -1828,7 +1866,7 @@ void ResultsViewer::Export(int data, int mechanism)
                     fclose(fp);
                 }
                 else
-                    wxMessageBox("Could not write to file:\n\n" + fn, "Save Error", wxICON_ERROR);
+                    wxMessageBox(wxString::FromUTF8("\xe6\x97\xa0\xe6\xb3\x95\xe5\x86\x99\xe5\x85\xa5\xe6\x96\x87\xe4\xbb\xb6:\n\n") + fn, wxString::FromUTF8("\xe4\xbf\x9d\xe5\xad\x98\xe9\x94\x99\xe8\xaf\xaf"), wxICON_ERROR);
             }
         }
     }
@@ -1839,7 +1877,7 @@ void ResultsViewer::Export(int data, int mechanism)
         wxExcelAutomation xl;
         if (!xl.StartExcel())
         {
-            wxMessageBox("Could not start Excel.");
+            wxMessageBox(wxString::FromUTF8("\xe6\x97\xa0\xe6\xb3\x95\xe5\x90\xaf\xe5\x8a\xa8 Excel\xe3\x80\x82"));
             return;
         }
 
@@ -1847,7 +1885,7 @@ void ResultsViewer::Export(int data, int mechanism)
 
         if (!xl.NewWorkbook())
         {
-            wxMessageBox("Could not create a new Excel worksheet.");
+            wxMessageBox(wxString::FromUTF8("\xe6\x97\xa0\xe6\xb3\x95\xe5\x88\x9b\xe5\xbb\xba\xe6\x96\xb0\xe7\x9a\x84 Excel\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xa1\xa8\xe3\x80\x82"));
             return;
         }
         // Excel 2013 requires starting before copying to clipboard
@@ -1897,7 +1935,7 @@ void ResultsViewer::CreateAutoGraphs()
     ConfigInfo* cfg = (m_sim != 0 ? m_sim->GetCase()->GetConfiguration() : 0);
     if (!cfg)
     {
-        wxMessageBox("no configuration could be determined");
+        wxMessageBox(wxString::FromUTF8("\xe6\x97\xa0\xe6\xb3\x95\xe7\xa1\xae\xe5\xae\x9a\xe9\x85\x8d\xe7\xbd\xae"));
         return;
     }
 
@@ -1974,7 +2012,7 @@ void ResultsViewer::ExportEqnExcel()
     ConfigInfo* cfg = (m_sim != 0 ? m_sim->GetCase()->GetConfiguration() : 0);
     if (!cfg)
     {
-        wxMessageBox("no configuration could be determined");
+        wxMessageBox(wxString::FromUTF8("\xe6\x97\xa0\xe6\xb3\x95\xe7\xa1\xae\xe5\xae\x9a\xe9\x85\x8d\xe7\xbd\xae"));
         return;
     }
 
@@ -2947,12 +2985,12 @@ TabularBrowser::TabularBrowser(wxWindow* parent)
     SetBackgroundColour(wxMetroTheme::Colour(wxMT_FOREGROUND));
 
     wxBoxSizer* tb_sizer = new wxBoxSizer(wxHORIZONTAL);
-    tb_sizer->Add(new wxMetroButton(this, IDOB_COPYCLIPBOARD, "Copy to clipboard"), 0, wxEXPAND | wxALL, 0);
-    tb_sizer->Add(new wxMetroButton(this, IDOB_SAVECSV, "Save as CSV..."), 0, wxEXPAND | wxALL, 0);
+    tb_sizer->Add(new wxMetroButton(this, IDOB_COPYCLIPBOARD, wxString::FromUTF8("\xe5\xa4\x8d\xe5\x88\xb6\xe5\x88\xb0\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf")), 0, wxEXPAND | wxALL, 0);
+    tb_sizer->Add(new wxMetroButton(this, IDOB_SAVECSV, wxString::FromUTF8("\xe4\xbf\x9d\xe5\xad\x98\xe4\xb8\xba\x43\x53\x56\x2e\x2e\x2e")), 0, wxEXPAND | wxALL, 0);
 #ifdef __WXMSW__
-    tb_sizer->Add(new wxMetroButton(this, IDOB_SENDEXCEL, "Send to Excel"), 0, wxEXPAND | wxALL, 0);
+    tb_sizer->Add(new wxMetroButton(this, IDOB_SENDEXCEL, wxString::FromUTF8("\xe5\x8f\x91\xe9\x80\x81\xe5\x88\xb0\x45\x78\x63\x65\x6c")), 0, wxEXPAND | wxALL, 0);
 #endif
-    tb_sizer->Add(new wxMetroButton(this, IDOB_CLEAR_ALL, "Clear all"), 0, wxEXPAND | wxALL, 0);
+    tb_sizer->Add(new wxMetroButton(this, IDOB_CLEAR_ALL, wxString::FromUTF8("\xe6\xb8\x85\xe9\x99\xa4\xe5\x85\xa8\xe9\x83\xa8")), 0, wxEXPAND | wxALL, 0);
     tb_sizer->AddStretchSpacer(1);
 
     wxSplitterWindow* splitwin = new wxSplitterWindow(this, wxID_ANY,
@@ -3690,7 +3728,7 @@ void TabularBrowser::GetTextData(wxString& dat, char sep)
 
     if (!IsSingleValues)
     {
-        wxString ts_label = "Time stamp";
+        wxString ts_label = wxString::FromUTF8("\xe6\x97\xb6\xe9\x97\xb4\xe6\x88\xb3");
         dat += '"' + ts_label + '"' + sep;
         for (c = 0; c < columns; c++)
         {
