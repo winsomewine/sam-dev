@@ -1,235 +1,235 @@
 {
-    "Name": "Degradation Lifetime Variables",
-    "Width": 788.0,
-    "Height": 126.0,
-    "FormObjects": {
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_warning"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 438.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 27.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 342.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+  "Name": "Degradation Lifetime Variables",
+  "Width": 788.0,
+  "Height": 126.0,
+  "FormObjects": {
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_warning"
         },
-        "GroupBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "lifetime vars group box"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 780.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 118.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Memory Saving Option for Sub-hourly Simulations"
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "X": {
+          "Type": 3.0,
+          "Integer": 438.0
         },
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "object 7"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 18.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 57.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 763.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 56.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "If you are running sub-hourly simulations and experiencing display or memory problems on the Results page, clear the checkbox to reduce the number of variables displayed over the analysis period to a selection of key outputs. This will cause some output variables to appear on the Results page under \"Hourly\" instead of \"Lifetime Hourly Data\"."
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Y": {
+          "Type": 3.0,
+          "Integer": 27.0
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "save_full_lifetime_variables"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 27.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 406.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Save all output variables over analysis period"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                }
-            }
+        "Width": {
+          "Type": 3.0,
+          "Integer": 342.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
         }
+      }
     },
-    "VarDatabase": {
-        "save_full_lifetime_variables": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Save all outputs as lifetime",
-            "Units": " ",
-            "Group": "Degradation and Lifetime",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 1.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+    "GroupBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lifetime vars group box"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 6.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 780.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 118.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "亚小时模拟的内存节省选项"
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
         }
+      }
     },
-    "Equations": [],
-    "Callbacks": [
-        "on_load{'Degradation Lifetime Variables'} = define()\r",
-        "{\r",
-        "\tif ( technology() == 'PV Battery' ) { \r",
-        "\t\tenable('save_full_lifetime_variables', 0); \r",
-        "\t\tproperty('batt_warning',\r",
-        "\t\t'Caption',\"This option must be enabled for PV Battery configurations.\");\r",
-        "\t}\r",
-        "};"
-    ]
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "object 7"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 18.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 57.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 763.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 56.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "如果您正在运行亚小时仿真并在“结果”页面上遇到显示或内存问题，请清除该复选框，以将整个分析周期内显示的变量数量减少为关键输出的选择集。这将导致某些输出变量显示在“结果”页面的“每小时”下，而不是“整个生命周期逐时数据”下。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "save_full_lifetime_variables"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 27.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 406.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "保存分析期间的所有输出变量"
+        },
+        "State": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 1.0
+        }
+      }
+    }
+  },
+  "VarDatabase": {
+    "save_full_lifetime_variables": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "将所有输出保存为全生命周期数据",
+      "Units": " ",
+      "Group": "退化和寿命",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 1.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    }
+  },
+  "Equations": [],
+  "Callbacks": [
+    "on_load{'Degradation Lifetime Variables'} = define()\r",
+    "{\r",
+    "\tif ( technology() == 'PV Battery' ) { \r",
+    "\t\tenable('save_full_lifetime_variables', 0); \r",
+    "\t\tproperty('batt_warning',\r",
+    "\t\t'Caption',\"\\u5bf9\\u4e8e\\u5149\\u4f0f\\u7535\\u6c60\\u914d\\u7f6e\\uff0c\\u5fc5\\u987b\\u542f\\u7528\\u6b64\\u9009\\u9879\\u3002\");\r",
+    "\t}\r",
+    "};"
+  ]
 }

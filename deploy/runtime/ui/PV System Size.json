@@ -1,1427 +1,1427 @@
 {
-    "Name": "PV System Size",
-    "Width": 1012.0,
-    "Height": 310.0,
-    "FormObjects": {
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_max_power"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 159.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 9999.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+  "Name": "PV System Size",
+  "Width": 1012.0,
+  "Height": 310.0,
+  "FormObjects": {
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_max_power"
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "calculated_dcac_ratio"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 105.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 1.1
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 2.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "desired_dcac_ratio"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 518.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 108.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 0.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 2.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                }
-            }
+        "Y": {
+          "Type": 3.0,
+          "Integer": 159.0
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "desired_size"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 518.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 81.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 0.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 2.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 2.0
-                }
-            }
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
         },
-        "RadioChoice": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "enable_auto_size"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 75.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 349.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 54.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Selection": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Items": {
-                    "Type": 6.0,
-                    "StringList": "Specify number of modules and inverters|Specify desired size and DC/AC ratio"
-                },
-                "ShowCaptions": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Horizontal": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                }
-            }
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "inverter_count"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 518.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 135.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 1.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 4.0
-                }
-            }
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
         },
-        "MultilineText": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "layout_warning"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 18.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 165.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 600.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 132.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Text": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "Value": {
+          "Type": 1.0,
+          "Double": 9999.0
         },
-        "GroupBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "object 4"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 1000.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 302.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "System Size"
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
         },
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "sizing_instructions"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 15.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 980.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 48.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "If your system has one subarray, you can choose Specify Desired Size and DC/AC Ratio to automatically determine the number of modules per string and strings in parallel. Choose Specify Number of Modules and Inverters to size the system yourself and for systems with more than one subarray."
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "system_capacity"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 78.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 9999.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "total_inverter_capacity"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 132.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 9999.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "total_module_area"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 216.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 0.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
         },
-        "Numeric": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "total_modules"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 849.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 186.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Value": {
-                    "Type": 1.0,
-                    "Double": 99999.0
-                },
-                "Mode": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Format": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Decimals": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Prefix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Suffix": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "ThousandsSep": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "ui_chkbox_nmodx_eq_mod_per_string"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 132.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 351.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 24.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Set row dimensions when modules per string changes"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
         }
+      }
     },
-    "VarDatabase": {
-        "batt_max_power": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery maximum power",
-            "Units": "kWdc",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "calculated_dcac_ratio"
         },
-        "calculated_dcac_ratio": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "DC to AC ratio",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
         },
-        "desired_dcac_ratio": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Desired DC to AC ratio",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 2.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Y": {
+          "Type": 3.0,
+          "Integer": 105.0
         },
-        "desired_size": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Desired array size",
-            "Units": "kWdc",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 2.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
         },
-        "enable_auto_size": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "System size option",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "Specify number of modules and inverters|Specify desired size and DC/AC ratio",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "RadioChoice",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
         },
-        "inverter_count": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Number of inverters",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 2.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
         },
-        "layout_warning": {
-            "Version": 4.0,
-            "Type": 4.0,
-            "Label": "System sizing messages",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 9.0,
-            "DefaultValue": "",
-            "UIObject": "MultilineText",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Value": {
+          "Type": 1.0,
+          "Double": 1.1
         },
-        "system_capacity": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Nameplate DC capacity",
-            "Units": "kWdc",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
         },
-        "total_inverter_capacity": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Total AC capacity",
-            "Units": "kWac",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
         },
-        "total_module_area": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Total module area",
-            "Units": "m²",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
         },
-        "total_modules": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Number of modules",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Numeric",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
         },
-        "ui_chkbox_nmodx_eq_mod_per_string": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Set modules along bottom of row equal to modules per string",
-            "Units": "",
-            "Group": "PV System Size",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
         }
+      }
     },
-    "Equations": [
-        "equations{ '$MIMO$ pv_size_array' } = define()\r",
-        "{\r",
-        "\tif (${enable_auto_size}==1) {\r",
-        "\t\t//disable subarrays 2-4- this only works for a single subarray\r",
-        "\t\t${subarray2_enable} = 0;\r",
-        "\t\t${subarray3_enable} = 0;\r",
-        "\t\t${subarray4_enable} = 0;\r",
-        "\t\t\r",
-        "\t\t//Now size subarray 1 only\r",
-        "\t\t/* Sizing rules\r",
-        "\t\t1. Voc < Vdcmax\r",
-        "\t\t2. Vmp > Vmppt_min\r",
-        "\t\t3. Vmp < Vmppt_max\r",
-        "\t\t4. num series * num_parallel is about desired array size (num_parallel = desired / (num series * mod_power)\r",
-        "\t\t5. num inverters is about desired array size (num_inv = num_series * num_parallel * mod_power) / inv_power\r",
-        "\t\t*/\r",
-        "\t\t\t\r",
-        "\t\t// module parameters\r",
-        "\t\tmod_vmp= ?${module_model} [\t${spe_vmp},${cec_v_mp_ref},${6par_vmp},${snl_ref_vmp},${sd11par_Vmp0}];\r",
-        "\t\tmod_voc= ?${module_model} [\t${spe_voc},${cec_v_oc_ref},${6par_voc},${snl_ref_voc},${sd11par_Voc0}];\r",
-        "\t\tmod_power= ?${module_model} [${spe_power}, ${cec_p_mp_ref}, ${6par_pmp}, ${snl_ref_pmp},${sd11par_Pmp0}];\r",
-        "\r",
-        "\t\t// inverter power\r",
-        "\t\tinv_power= ?${inverter_model} [${inv_snl_paco}, ${inv_ds_paco}, ${inv_pd_paco},${inv_cec_cg_paco}];\r",
-        "\t\t\r",
-        "\t\t// DC-connected battery parameters (assumed to use common inverter)\r",
-        "\t\tbatt_max_power_dc = 0; // TO DO is this used?\r",
-        "\t\tif ( technology() == 'PV Battery' ) {\r",
-        "\t\t\tif (${batt_ac_or_dc} == 0) {\r",
-        "\t\t\t\tbatt_max_power_dc = ${batt_max_power};\r",
-        "\t\t\t}\r",
-        "\t\t}\r",
-        "\t\t\r",
-        "\t\t// calculations\r",
-        "\t\tif(mod_vmp>0) {\r",
-        "\t\t\tnum_series= 0.5 * (${mppt_low_inverter} + ${mppt_hi_inverter})/mod_vmp;}\r",
-        "\t\t\tif(${vdcmax_inverter} > 0){\r",
-        "\t\t\t\twhile ((num_series > 0) && ((num_series*mod_voc) > ${vdcmax_inverter})){\r",
-        "\t\t\t\t\tnum_series = num_series - 1;\r",
-        "\t\t\t\t}\r",
-        "\t\t\t}\r",
-        "\t\tif (num_series < 1) num_series= 1;\r",
-        "\t\tnum_series= round(num_series);\r",
-        "\t\tnum_parallel= ${desired_size} * 1000 /(num_series * mod_power);\r",
-        "\t\tif (num_parallel < 1) num_parallel= 1;\r",
-        "\t\tnum_parallel= round(num_parallel);\r",
-        "\t\tif (${desired_dcac_ratio} > 0) { \tinverters = ((num_series * num_parallel * mod_power) /* + batt_max_power_dc */) / (${desired_dcac_ratio} * inv_power);\r",
-        "\t\t\t//round inverters for best DC-AC ratio\r",
-        "\t\t\tif((inverters - floor(inverters)) < 0.5) {\r",
-        "\t\t\t\tnum_inverters = floor(inverters); \r",
-        "\t\t\t}\r",
-        "\t\t\telse {\r",
-        "\t\t\t\tnum_inverters = ceil(inverters); \r",
-        "\t\t\t}\r",
-        "\t\t}\t\t\t\t\r",
-        "\t\telse { \r",
-        "\t\t\tnum_inverters = ceil(((num_series * num_parallel * mod_power) /* + batt_max_power_dc */) / inv_power);\r",
-        "\t\t}\r",
-        "\t\tif (num_inverters < 1) {\r",
-        "\t\t\tnum_inverters = 1;\r",
-        "\t\t}\r",
-        "\t\t\r",
-        "\t\t//check that the sizing was close to the desired sizes, otherwise, error out if more than 10% away\r",
-        "\t\tproposed_size = num_series * num_parallel * mod_power / 1000; //convert W to kW\r",
-        "\t\tproposed_ratio = proposed_size / (num_inverters * inv_power / 1000); //convert inverter W to kW\r",
-        "\t\tif (abs(proposed_size - ${desired_size}) / ${desired_size} > 0.2) { // || abs(proposed_ratio - ${desired_dcac_ratio}) / ${desired_dcac_ratio} > 0.1)\r",
-        "\t\t\tnum_series = 0;\r",
-        "\t\t\tnum_parallel = 0;\r",
-        "\t\t\tinverter_count = 0;\r",
-        "\t\t\tmsgbox('Warning!\\nSAM was not able to calculate a system size close to the desired size. Please size the system manually, try another desired size, or try a different module and/or inverter.\\n\\nDesired size: ' + ${desired_size} +' kWdc\\nCalculated size: ' + proposed_size + ' kWdc');\r",
-        "\t\t}\t\r",
-        "\t\t\r",
-        "\t\t//assign the final calculated numbers\r",
-        "\t\t${subarray1_modules_per_string} = num_series;\r",
-        "\t\t${subarray1_nstrings} = num_parallel;\r",
-        "\t\t${inverter_count} = num_inverters;\r",
-        "\t\t\r",
-        "\t\t// set row dimensions if enabled\r",
-        "\t\tif (${ui_chkbox_nmodx_eq_mod_per_string}==1) {\r",
-        "\t\t\t${subarray1_nmodx} = num_series;\r",
-        "\t\t\t${subarray1_nmody} = 1;\r",
-        "\t\t}\r",
-        "\t}\r",
-        "\r",
-        "};\r",
-        "\r",
-        "equations{'system_capacity'} = define() {\r",
-        "\treturn ?${module_model} [ \r",
-        "\t${spe_power},\r",
-        "\t${cec_p_mp_ref},\r",
-        "\t${6par_pmp},\r",
-        "\t${snl_ref_pmp},\r",
-        "\t${sd11par_Pmp0} ] \r",
-        "\t* ${total_modules} / 1000; };\r",
-        "\r",
-        "equations{'calculated_dcac_ratio'} = define() {\r",
-        "\treturn ${system_capacity} /${total_inverter_capacity} ;\r",
-        "};\r",
-        "\r",
-        "equations{'total_inverter_capacity'} = define() {\r",
-        "\treturn ?${inverter_model} [ \r",
-        "\t${inv_snl_paco},\r",
-        "\t${inv_ds_paco}, \r",
-        "\t${inv_pd_paco}, \r",
-        "\t${inv_cec_cg_paco} ] \r",
-        "\t* ${inverter_count} /1000; \r",
-        "};\r",
-        "\r",
-        "equations{'batt_max_power'} = define() {\r",
-        "\tmax_power = 0;\r",
-        "\tif ( technology() == 'PV Battery') {\r",
-        "\t\tmax_power = ${batt_power_discharge_max_kwdc};\r",
-        "\t}\r",
-        "\treturn max_power;\r",
-        "};\r",
-        "\r",
-        "\t\r",
-        "equations{'total_modules'} = define() {\r",
-        "\ta = ${subarray1_modules_per_string} * ${subarray1_nstrings}\r",
-        "\t\t+ (${subarray2_modules_per_string} * ${subarray2_nstrings}) * ${subarray2_enable}\r",
-        "\t\t+ (${subarray3_modules_per_string} * ${subarray3_nstrings}) * ${subarray3_enable}\r",
-        "\t\t+ (${subarray4_modules_per_string} * ${subarray4_nstrings}) * ${subarray4_enable};\r",
-        "\r",
-        "\treturn a; \r",
-        "};\r",
-        "\r",
-        "equations{'total_module_area'} = define() {\r",
-        "\treturn ?${module_model} [ \r",
-        "\t${spe_area}, \r",
-        "\t${cec_area}, \r",
-        "\t${6par_area}, \r",
-        "\t${snl_area}, \r",
-        "\t${sd11par_area} ] \r",
-        "\t* ${total_modules};\r",
-        "};\r",
-        "\r",
-        "equations{'layout_warning'} = define(){\r",
-        "\r",
-        "\tmessage = '';\r",
-        "\t\r",
-        "\t// DC-connected battery parameters (assumed to use common inverter)\r",
-        "\t//dc_connected_battery = false; TO DO remove?\r",
-        "\tif (technology() == 'PV Battery')\r",
-        "\t{\r",
-        "\t\tif (${batt_ac_or_dc} == 0) // dc connected battery\r",
-        "\t\t{\r",
-        "\t\t\tx = (${system_capacity} + ${batt_max_power})/${total_inverter_capacity};\r",
-        "\t\t\tx_no_batt = (${system_capacity})/${total_inverter_capacity};\r",
-        "\t\t\tmessage += ('PV array DC to inverter AC capacity ratio is ' + sprintf('%.2f', x_no_batt) + '.\\nPV array + battery DC to inverter AC capacity ratio is ' +  sprintf('%.2f', x) + '.\\n');\r",
-        "\t\t\t//dc_connected_battery = true;\r",
-        "\t\t}\r",
-        "\t}\r",
-        "\t\r",
-        "\t//string voltage information\t\r",
-        "\tmod_vmp= ?${module_model} [\t${spe_vmp},${cec_v_mp_ref},${6par_vmp},${snl_ref_vmp},${sd11par_Vmp0}];\r",
-        "\tmod_voc= ?${module_model} [\t${spe_voc},${cec_v_oc_ref},${6par_voc},${snl_ref_voc},${sd11par_Voc0}];\r",
-        "\r",
-        "\tmin_modules = ceil(${mppt_low_inverter} / mod_vmp);\r",
-        "\tmax_modules = floor(${mppt_hi_inverter} / mod_voc);\r",
-        "\tif ( ${mppt_low_inverter} == 0 || ${mppt_hi_inverter} == 0 )\r",
-        "\t{\r",
-        "\t\tmessage +='SAM cannot cannot calculate voltage clipping when MPPT voltage limits are zero.\\n';\r",
-        "\t}\r",
-        "\telseif (max_modules < min_modules)\r",
-        "\t{\r",
-        "\t\tmessage += 'For this combination of module and inverter, it is not possible to size the string to keep string Voc and Vmp within the MPPT voltage limits. ';\r",
-        "\t\tmessage += 'To avoid inverter MPPT clipping, try a different module or inverter.\\n';\r",
-        "\t}\r",
-        "\telse \r",
-        "\t{\r",
-        "\t\t//string voc & vmp, set to zero for disabled subarays\r",
-        "\t\tvoc = [${subarray1_string_voc}, ${subarray2_enable} * ${subarray2_string_voc}, ${subarray3_enable} * ${subarray3_string_voc}, ${subarray4_enable} * ${subarray4_string_voc}];\r",
-        "\t\tvmp = [${subarray1_string_vmp}, ${subarray2_enable} * ${subarray2_string_vmp}, ${subarray3_enable} * ${subarray3_string_vmp}, ${subarray4_enable} * ${subarray4_string_vmp}];\r",
-        "\r",
-        "\t\tmore = '';\r",
-        "\t\tless = '';\r",
-        "\t\t// assume voc is always greater than vmp \r",
-        "\t\t// to avoid confusing messages like \r",
-        "\t\t// \"vmp > vdcmax and voc > vdcmax\"\r",
-        "\t\t// less confusing to just say \"vmp > vdcmax\"\r",
-        "\t\tfor (i=0; i<4; i++)\r",
-        "\t\t{\r",
-        "\t\t\tif ( voc[i] > 0 && voc[i] < ${mppt_low_inverter} ) { \r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Voc < Vmppt_low\\n';\r",
-        "\t\t\t\tif (strpos(more,to_string(i+1)) < 0) { more += ' ' + to_string(i+1); } \r",
-        "\t\t\t}\r",
-        "\t\t\telseif ( vmp[i] > 0 && vmp[i] < ${mppt_low_inverter} ) {\r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Vmp < Vmppt_low\\n';\r",
-        "\t\t\t\tif (strpos(more,to_string(i+1)) < 0) { more += ' ' + to_string(i+1); } \r",
-        "\t\t\t}\r",
-        "\t\t\t\r",
-        "\t\t\tif ( vmp[i] > 0 && vmp[i] > ${vdcmax_inverter} ) {\r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Vmp > Vdc_max\\n';\r",
-        "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
-        "\t\t\t}\r",
-        "\t\t\telseif ( voc[i] > 0 && voc[i] > ${vdcmax_inverter} ) {\r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Voc > Vdc_max\\n';\r",
-        "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); }  \r",
-        "\t\t\t}\r",
-        "\t\t\t\r",
-        "\t\t\tif ( vmp[i] > 0 && vmp[i] > ${mppt_hi_inverter} ) {\r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Vmp > Vmppt_high\\n';\r",
-        "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
-        "\t\t\t}\r",
-        "\t\t\telseif ( voc[i] > 0 && voc[i] > ${mppt_hi_inverter} ) {\r",
-        "\t\t\t\tmessage += 'Subarray ' + to_string(i+1) + ' Voc > Vmppt_high\\n';\r",
-        "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
-        "\t\t\t}\r",
-        "\t\t}\r",
-        "\t\tif ( more != '' ) { message += 'Consider increasing the number of modules per string for Subarray(s)' + more + '.\\n'; }\r",
-        "\t\tif ( less != '' ) { message += 'Consider decreasing the number of modules per string for Subarray(s)' + less + '.\\n'; }\r",
-        "\t}\r",
-        "\t\r",
-        "\t// nameplate capacity is zero when autosize fails\r",
-        "\tif ( ${system_capacity} == 0 ) {\r",
-        "\t\tmessage += 'Nameplate DC capacity is zero. Specify a different desired size or use the Specify Number of Modules and Inverters option.';\r",
-        "\t}\r",
-        "\r",
-        "\tif (message == '') { message = 'No system sizing messages.'; }\r",
-        "\r",
-        "\treturn message; \r",
-        "};\r",
-        "\r",
-        "equations{ 'batt_max_power' } = define() {\r",
-        "\tmax_power = 0;\r",
-        "\tif ( technology() == 'PV Battery') {\r",
-        "\t\tmax_power = ${batt_power_discharge_max_kwdc};\r",
-        "\t}\r",
-        "\treturn max_power;\r",
-        "};\r",
-        ""
-    ],
-    "Callbacks": [
-        "function size_option_inputs() {\r",
-        "\tif (value('enable_auto_size') == 1) {\r",
-        "\t\tshow_calculated('inverter_count', true); // defined on PV Subarrays and String Size form\r",
-        "\t\tenable('desired_size', 1);\r",
-        "\t\tenable('desired_dcac_ratio', 1);\r",
-        "\t}\r",
-        "\telse {\r",
-        "\t\tshow_calculated('inverter_count', false);\r",
-        "\t\tenable('desired_size', 0);\r",
-        "\t\tenable('desired_dcac_ratio', 0);\r",
-        "\t}\r",
-        "}\r",
-        "\r",
-        "on_load{'PV System Size'} = define() {\r",
-        "\tsize_option_inputs();\r",
-        "\t// show/hide battery max power input\r",
-        "\tshow('batt_max_power', (technology() == 'PV Battery') );\r",
-        "\trefresh();\r",
-        "};\r",
-        "\r",
-        "on_change{'enable_auto_size'} = define () {\r",
-        "\tsize_option_inputs();\r",
-        "\tauto_size_subarray_enable(); // defined on PV Subarrays and String Size form\r",
-        "};\r",
-        "\r",
-        "on_change{'inverter_count'} = define () {\r",
-        "\t// these are defined on PV Inverter Input Voltage form\r",
-        "\tenable_mppt();\r",
-        "\tmppt_warning();\r",
-        "};\r",
-        "\r",
-        ""
-    ]
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "desired_dcac_ratio"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 518.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 108.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 3.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "desired_size"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 518.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 81.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 2.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 2.0
+        }
+      }
+    },
+    "RadioChoice": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "enable_auto_size"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 75.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 349.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 54.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Selection": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Items": {
+          "Type": 6.0,
+          "StringList": "\u6307\u5b9a\u7ec4\u4ef6\u548c\u9006\u53d8\u5668\u6570\u91cf|\u6307\u5b9a\u671f\u671b\u89c4\u6a21\u548c DC/AC \u6bd4"
+        },
+        "ShowCaptions": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Horizontal": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 1.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "inverter_count"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 518.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 135.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 1.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 4.0
+        }
+      }
+    },
+    "MultilineText": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "layout_warning"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 18.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 165.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 600.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 132.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Text": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "GroupBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "object 4"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 6.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 1000.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 302.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "\u7cfb\u7edf\u89c4\u6a21"
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "sizing_instructions"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 15.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 980.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 48.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "\u5982\u679c\u60a8\u7684\u7cfb\u7edf\u53ea\u6709\u4e00\u4e2a\u5b50\u65b9\u9635\uff0c\u60a8\u53ef\u4ee5\u9009\u62e9\u201c\u6307\u5b9a\u671f\u671b\u89c4\u6a21\u548c DC/AC \u6bd4\u201d\u6765\u81ea\u52a8\u786e\u5b9a\u6bcf\u4e2a\u4e32\u7684\u7ec4\u4ef6\u6570\u91cf\u548c\u5e76\u8054\u4e32\u6570\u3002\u5bf9\u4e8e\u5177\u6709\u591a\u4e2a\u5b50\u65b9\u9635\u7684\u7cfb\u7edf\u6216\u5e0c\u671b\u81ea\u884c\u8bbe\u5b9a\u89c4\u6a21\uff0c\u8bf7\u9009\u62e9\u201c\u6307\u5b9a\u7ec4\u4ef6\u548c\u9006\u53d8\u5668\u6570\u91cf\u201d\u3002"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "system_capacity"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 78.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 9999.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "total_inverter_capacity"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 132.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 9999.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "total_module_area"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 216.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 0.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 1.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "Numeric": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "total_modules"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 849.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 186.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Value": {
+          "Type": 1.0,
+          "Double": 99999.0
+        },
+        "Mode": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Format": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Decimals": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Prefix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Suffix": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "ThousandsSep": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "ui_chkbox_nmodx_eq_mod_per_string"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 132.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 351.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 24.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "\u5f53\u6bcf\u4e32\u7ec4\u4ef6\u6570\u53d8\u5316\u65f6\u8bbe\u7f6e\u884c\u5c3a\u5bf8"
+        },
+        "State": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    }
+  },
+  "VarDatabase": {
+    "batt_max_power": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u7535\u6c60\u6700\u5927\u529f\u7387",
+      "Units": "kWdc",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "calculated_dcac_ratio": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "DC/AC \u6bd4",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "desired_dcac_ratio": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u671f\u671b DC/AC \u6bd4",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 2.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "desired_size": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u671f\u671b\u65b9\u9635\u89c4\u6a21",
+      "Units": "kWdc",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 2.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "enable_auto_size": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u7cfb\u7edf\u89c4\u6a21\u9009\u9879",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "\u6307\u5b9a\u7ec4\u4ef6\u548c\u9006\u53d8\u5668\u6570\u91cf|\u6307\u5b9a\u671f\u671b\u89c4\u6a21\u548c DC/AC \u6bd4",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "RadioChoice",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "inverter_count": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u9006\u53d8\u5668\u6570\u91cf",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 2.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "layout_warning": {
+      "Version": 4.0,
+      "Type": 4.0,
+      "Label": "\u7cfb\u7edf\u89c4\u6a21\u8c03\u6574\u6d88\u606f",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 9.0,
+      "DefaultValue": "",
+      "UIObject": "MultilineText",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "system_capacity": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u94ed\u724c\u76f4\u6d41\u5bb9\u91cf",
+      "Units": "kWdc",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "total_inverter_capacity": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u603b\u4ea4\u6d41\u5bb9\u91cf",
+      "Units": "kWac",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "total_module_area": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u603b\u7ec4\u4ef6\u9762\u79ef",
+      "Units": "m²",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "total_modules": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u7ec4\u4ef6\u6570\u91cf",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Numeric",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "ui_chkbox_nmodx_eq_mod_per_string": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "\u5c06\u884c\u5e95\u90e8\u7ec4\u4ef6\u6570\u8bbe\u4e3a\u7b49\u4e8e\u6bcf\u4e32\u7ec4\u4ef6\u6570",
+      "Units": "",
+      "Group": "PV System Size",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    }
+  },
+  "Equations": [
+    "equations{ '$MIMO$ pv_size_array' } = define()\r",
+    "{\r",
+    "\tif (${enable_auto_size}==1) {\r",
+    "\t\t//disable subarrays 2-4- this only works for a single subarray\r",
+    "\t\t${subarray2_enable} = 0;\r",
+    "\t\t${subarray3_enable} = 0;\r",
+    "\t\t${subarray4_enable} = 0;\r",
+    "\t\t\r",
+    "\t\t//Now size subarray 1 only\r",
+    "\t\t/* Sizing rules\r",
+    "\t\t1. Voc < Vdcmax\r",
+    "\t\t2. Vmp > Vmppt_min\r",
+    "\t\t3. Vmp < Vmppt_max\r",
+    "\t\t4. num series * num_parallel is about desired array size (num_parallel = desired / (num series * mod_power)\r",
+    "\t\t5. num inverters is about desired array size (num_inv = num_series * num_parallel * mod_power) / inv_power\r",
+    "\t\t*/\r",
+    "\t\t\t\r",
+    "\t\t// module parameters\r",
+    "\t\tmod_vmp= ?${module_model} [\t${spe_vmp},${cec_v_mp_ref},${6par_vmp},${snl_ref_vmp},${sd11par_Vmp0}];\r",
+    "\t\tmod_voc= ?${module_model} [\t${spe_voc},${cec_v_oc_ref},${6par_voc},${snl_ref_voc},${sd11par_Voc0}];\r",
+    "\t\tmod_power= ?${module_model} [${spe_power}, ${cec_p_mp_ref}, ${6par_pmp}, ${snl_ref_pmp},${sd11par_Pmp0}];\r",
+    "\r",
+    "\t\t// inverter power\r",
+    "\t\tinv_power= ?${inverter_model} [${inv_snl_paco}, ${inv_ds_paco}, ${inv_pd_paco},${inv_cec_cg_paco}];\r",
+    "\t\t\r",
+    "\t\t// DC-connected battery parameters (assumed to use common inverter)\r",
+    "\t\tbatt_max_power_dc = 0; // TO DO is this used?\r",
+    "\t\tif ( technology() == 'PV Battery' ) {\r",
+    "\t\t\tif (${batt_ac_or_dc} == 0) {\r",
+    "\t\t\t\tbatt_max_power_dc = ${batt_max_power};\r",
+    "\t\t\t}\r",
+    "\t\t}\r",
+    "\t\t\r",
+    "\t\t// calculations\r",
+    "\t\tif(mod_vmp>0) {\r",
+    "\t\t\tnum_series= 0.5 * (${mppt_low_inverter} + ${mppt_hi_inverter})/mod_vmp;}\r",
+    "\t\t\tif(${vdcmax_inverter} > 0){\r",
+    "\t\t\t\twhile ((num_series > 0) && ((num_series*mod_voc) > ${vdcmax_inverter})){\r",
+    "\t\t\t\t\tnum_series = num_series - 1;\r",
+    "\t\t\t\t}\r",
+    "\t\t\t}\r",
+    "\t\tif (num_series < 1) num_series= 1;\r",
+    "\t\tnum_series= round(num_series);\r",
+    "\t\tnum_parallel= ${desired_size} * 1000 /(num_series * mod_power);\r",
+    "\t\tif (num_parallel < 1) num_parallel= 1;\r",
+    "\t\tnum_parallel= round(num_parallel);\r",
+    "\t\tif (${desired_dcac_ratio} > 0) { \tinverters = ((num_series * num_parallel * mod_power) /* + batt_max_power_dc */) / (${desired_dcac_ratio} * inv_power);\r",
+    "\t\t\t//round inverters for best DC-AC ratio\r",
+    "\t\t\tif((inverters - floor(inverters)) < 0.5) {\r",
+    "\t\t\t\tnum_inverters = floor(inverters); \r",
+    "\t\t\t}\r",
+    "\t\t\telse {\r",
+    "\t\t\t\tnum_inverters = ceil(inverters); \r",
+    "\t\t\t}\r",
+    "\t\t}\t\t\t\t\r",
+    "\t\telse { \r",
+    "\t\t\tnum_inverters = ceil(((num_series * num_parallel * mod_power) /* + batt_max_power_dc */) / inv_power);\r",
+    "\t\t}\r",
+    "\t\tif (num_inverters < 1) {\r",
+    "\t\t\tnum_inverters = 1;\r",
+    "\t\t}\r",
+    "\t\t\r",
+    "\t\t//check that the sizing was close to the desired sizes, otherwise, error out if more than 10% away\r",
+    "\t\tproposed_size = num_series * num_parallel * mod_power / 1000; //convert W to kW\r",
+    "\t\tproposed_ratio = proposed_size / (num_inverters * inv_power / 1000); //convert inverter W to kW\r",
+    "\t\tif (abs(proposed_size - ${desired_size}) / ${desired_size} > 0.2) { // || abs(proposed_ratio - ${desired_dcac_ratio}) / ${desired_dcac_ratio} > 0.1)\r",
+    "\t\t\tnum_series = 0;\r",
+    "\t\t\tnum_parallel = 0;\r",
+    "\t\t\tinverter_count = 0;\r",
+    "\t\t\tmsgbox('\\u8b66\\u544a\\uff01\\nSAM \\u65e0\\u6cd5\\u8ba1\\u7b97\\u51fa\\u63a5\\u8fd1\\u671f\\u671b\\u89c4\\u6a21\\u7684\\u7cfb\\u7edf\\u89c4\\u6a21\\u3002\\u8bf7\\u624b\\u52a8\\u8c03\\u6574\\u7cfb\\u7edf\\u89c4\\u6a21\\uff0c\\u5c1d\\u8bd5\\u5176\\u4ed6\\u671f\\u671b\\u89c4\\u6a21\\uff0c\\u6216\\u5c1d\\u8bd5\\u4e0d\\u540c\\u7684\\u7ec4\\u4ef6\\u548c/\\u6216\\u9006\\u53d8\\u5668\\u3002\\n\\n\\u671f\\u671b\\u89c4\\u6a21\\uff1a' + ${desired_size} +' kWdc\\n\\u8ba1\\u7b97\\u89c4\\u6a21\\uff1a' + proposed_size + ' kWdc'); // 警告！SAM 无法计算出接近期望规模的系统规模。请手动调整系统规模，尝试其他期望规模，或尝试不同的组件和/或逆变器。 期望规模：... 计算规模：...\r",
+    "\t\t}\t\r",
+    "\t\t\r",
+    "\t\t//assign the final calculated numbers\r",
+    "\t\t${subarray1_modules_per_string} = num_series;\r",
+    "\t\t${subarray1_nstrings} = num_parallel;\r",
+    "\t\t${inverter_count} = num_inverters;\r",
+    "\t\t\r",
+    "\t\t// set row dimensions if enabled\r",
+    "\t\tif (${ui_chkbox_nmodx_eq_mod_per_string}==1) {\r",
+    "\t\t\t${subarray1_nmodx} = num_series;\r",
+    "\t\t\t${subarray1_nmody} = 1;\r",
+    "\t\t}\r",
+    "\t}\r",
+    "\r",
+    "};\r",
+    "\r",
+    "equations{'system_capacity'} = define() {\r",
+    "\treturn ?${module_model} [ \r",
+    "\t${spe_power},\r",
+    "\t${cec_p_mp_ref},\r",
+    "\t${6par_pmp},\r",
+    "\t${snl_ref_pmp},\r",
+    "\t${sd11par_Pmp0} ] \r",
+    "\t* ${total_modules} / 1000; };\r",
+    "\r",
+    "equations{'calculated_dcac_ratio'} = define() {\r",
+    "\treturn ${system_capacity} /${total_inverter_capacity} ;\r",
+    "};\r",
+    "\r",
+    "equations{'total_inverter_capacity'} = define() {\r",
+    "\treturn ?${inverter_model} [ \r",
+    "\t${inv_snl_paco},\r",
+    "\t${inv_ds_paco}, \r",
+    "\t${inv_pd_paco}, \r",
+    "\t${inv_cec_cg_paco} ] \r",
+    "\t* ${inverter_count} /1000; \r",
+    "};\r",
+    "\r",
+    "equations{'batt_max_power'} = define() {\r",
+    "\tmax_power = 0;\r",
+    "\tif ( technology() == 'PV Battery') {\r",
+    "\t\tmax_power = ${batt_power_discharge_max_kwdc};\r",
+    "\t}\r",
+    "\treturn max_power;\r",
+    "};\r",
+    "\r",
+    "\t\r",
+    "equations{'total_modules'} = define() {\r",
+    "\ta = ${subarray1_modules_per_string} * ${subarray1_nstrings}\r",
+    "\t\t+ (${subarray2_modules_per_string} * ${subarray2_nstrings}) * ${subarray2_enable}\r",
+    "\t\t+ (${subarray3_modules_per_string} * ${subarray3_nstrings}) * ${subarray3_enable}\r",
+    "\t\t+ (${subarray4_modules_per_string} * ${subarray4_nstrings}) * ${subarray4_enable};\r",
+    "\r",
+    "\treturn a; \r",
+    "};\r",
+    "\r",
+    "equations{'total_module_area'} = define() {\r",
+    "\treturn ?${module_model} [ \r",
+    "\t${spe_area}, \r",
+    "\t${cec_area}, \r",
+    "\t${6par_area}, \r",
+    "\t${snl_area}, \r",
+    "\t${sd11par_area} ] \r",
+    "\t* ${total_modules};\r",
+    "};\r",
+    "\r",
+    "equations{'layout_warning'} = define(){\r",
+    "\r",
+    "\tmessage = '';\r",
+    "\t\r",
+    "\t// DC-connected battery parameters (assumed to use common inverter)\r",
+    "\t//dc_connected_battery = false; TO DO remove?\r",
+    "\tif (technology() == 'PV Battery')\r",
+    "\t{\r",
+    "\t\tif (${batt_ac_or_dc} == 0) // dc connected battery\r",
+    "\t\t{\r",
+    "\t\t\tx = (${system_capacity} + ${batt_max_power})/${total_inverter_capacity};\r",
+    "\t\t\tx_no_batt = (${system_capacity})/${total_inverter_capacity};\r",
+    "\t\t\tmessage += ('PV \\u65b9\\u9635\\u76f4\\u6d41\\u4e0e\\u9006\\u53d8\\u5668\\u4ea4\\u6d41\\u5bb9\\u91cf\\u6bd4\\u4e3a ' + sprintf('%.2f', x_no_batt) + '\\u3002\\nPV \\u65b9\\u9635 + \\u7535\\u6c60\\u76f4\\u6d41\\u4e0e\\u9006\\u53d8\\u5668\\u4ea4\\u6d41\\u5bb9\\u91cf\\u6bd4\\u4e3a ' +  sprintf('%.2f', x) + '\\u3002\\n'); // PV 方阵直流与逆变器交流容量比为 ... PV 方阵 + 电池直流与逆变器交流容量比为 ...\r",
+    "\t\t\t//dc_connected_battery = true;\r",
+    "\t\t}\r",
+    "\t}\r",
+    "\t\r",
+    "\t//string voltage information\t\r",
+    "\tmod_vmp= ?${module_model} [\t${spe_vmp},${cec_v_mp_ref},${6par_vmp},${snl_ref_vmp},${sd11par_Vmp0}];\r",
+    "\tmod_voc= ?${module_model} [\t${spe_voc},${cec_v_oc_ref},${6par_voc},${snl_ref_voc},${sd11par_Voc0}];\r",
+    "\r",
+    "\tmin_modules = ceil(${mppt_low_inverter} / mod_vmp);\r",
+    "\tmax_modules = floor(${mppt_hi_inverter} / mod_voc);\r",
+    "\tif ( ${mppt_low_inverter} == 0 || ${mppt_hi_inverter} == 0 )\r",
+    "\t{\r",
+    "\t\tmessage +='SAM \\u65e0\\u6cd5\\u5728 MPPT \\u7535\\u538b\\u9650\\u5236\\u4e3a\\u96f6\\u65f6\\u8ba1\\u7b97\\u7535\\u538b\\u524a\\u6ce2\\u3002\\n'; // SAM 无法在 MPPT 电压限制为零时计算电压削波。\r",
+    "\t}\r",
+    "\telseif (max_modules < min_modules)\r",
+    "\t{\r",
+    "\t\tmessage += '\\u5bf9\\u4e8e\\u6b64\\u7ec4\\u4ef6\\u548c\\u9006\\u53d8\\u5668\\u7ec4\\u5408\\uff0c\\u65e0\\u6cd5\\u8bbe\\u5b9a\\u4e32\\u89c4\\u6a21\\u4ee5\\u4fdd\\u6301\\u4e32 Voc \\u548c Vmp \\u5728 MPPT \\u7535\\u538b\\u9650\\u5236\\u5185\\u3002'; // 对于此组件和逆变器组合，无法设定串规模以保持串 Voc 和 Vmp 在 MPPT 电压限制内。\r",
+    "\t\tmessage += '\\u4e3a\\u907f\\u514d\\u9006\\u53d8\\u5668 MPPT \\u524a\\u6ce2\\uff0c\\u8bf7\\u5c1d\\u8bd5\\u4e0d\\u540c\\u7684\\u7ec4\\u4ef6\\u6216\\u9006\\u53d8\\u5668\\u3002\\n'; // 为避免逆变器 MPPT 削波，请尝试不同的组件或逆变器。\r",
+    "\t}\r",
+    "\telse \r",
+    "\t{\r",
+    "\t\t//string voc & vmp, set to zero for disabled subarays\r",
+    "\t\tvoc = [${subarray1_string_voc}, ${subarray2_enable} * ${subarray2_string_voc}, ${subarray3_enable} * ${subarray3_string_voc}, ${subarray4_enable} * ${subarray4_string_voc}];\r",
+    "\t\tvmp = [${subarray1_string_vmp}, ${subarray2_enable} * ${subarray2_string_vmp}, ${subarray3_enable} * ${subarray3_string_vmp}, ${subarray4_enable} * ${subarray4_string_vmp}];\r",
+    "\r",
+    "\t\tmore = '';\r",
+    "\t\tless = '';\r",
+    "\t\t// assume voc is always greater than vmp \r",
+    "\t\t// to avoid confusing messages like \r",
+    "\t\t// \"vmp > vdcmax and voc > vdcmax\"\r",
+    "\t\t// less confusing to just say \"vmp > vdcmax\"\r",
+    "\t\tfor (i=0; i<4; i++)\r",
+    "\t\t{\r",
+    "\t\t\tif ( voc[i] > 0 && voc[i] < ${mppt_low_inverter} ) { \r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Voc < Vmppt_low\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(more,to_string(i+1)) < 0) { more += ' ' + to_string(i+1); } \r",
+    "\t\t\t}\r",
+    "\t\t\telseif ( vmp[i] > 0 && vmp[i] < ${mppt_low_inverter} ) {\r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Vmp < Vmppt_low\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(more,to_string(i+1)) < 0) { more += ' ' + to_string(i+1); } \r",
+    "\t\t\t}\r",
+    "\t\t\t\r",
+    "\t\t\tif ( vmp[i] > 0 && vmp[i] > ${vdcmax_inverter} ) {\r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Vmp > Vdc_max\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
+    "\t\t\t}\r",
+    "\t\t\telseif ( voc[i] > 0 && voc[i] > ${vdcmax_inverter} ) {\r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Voc > Vdc_max\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); }  \r",
+    "\t\t\t}\r",
+    "\t\t\t\r",
+    "\t\t\tif ( vmp[i] > 0 && vmp[i] > ${mppt_hi_inverter} ) {\r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Vmp > Vmppt_high\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
+    "\t\t\t}\r",
+    "\t\t\telseif ( voc[i] > 0 && voc[i] > ${mppt_hi_inverter} ) {\r",
+    "\t\t\t\tmessage += '\\u5b50\\u65b9\\u9635 ' + to_string(i+1) + ' Voc > Vmppt_high\\n'; // 子方阵\r",
+    "\t\t\t\tif (strpos(less,to_string(i+1)) < 0) { less += ' ' + to_string(i+1); } \r",
+    "\t\t\t}\r",
+    "\t\t}\r",
+    "\t\tif ( more != '' ) { message += '\\u8bf7\\u8003\\u8651\\u589e\\u52a0\\u5b50\\u65b9\\u9635' + more + ' \\u7684\\u6bcf\\u4e32\\u7ec4\\u4ef6\\u6570\\u3002\\n'; } // 请考虑增加子方阵...的每串组件数。\r",
+    "\t\tif ( less != '' ) { message += '\\u8bf7\\u8003\\u8651\\u51cf\\u5c11\\u5b50\\u65b9\\u9635' + less + ' \\u7684\\u6bcf\\u4e32\\u7ec4\\u4ef6\\u6570\\u3002\\n'; } // 请考虑减少子方阵...的每串组件数。\r",
+    "\t}\r",
+    "\t\r",
+    "\t// nameplate capacity is zero when autosize fails\r",
+    "\tif ( ${system_capacity} == 0 ) {\r",
+    "\t\tmessage += '\\u94ed\\u724c\\u76f4\\u6d41\\u5bb9\\u91cf\\u4e3a\\u96f6\\u3002\\u8bf7\\u6307\\u5b9a\\u4e0d\\u540c\\u7684\\u671f\\u671b\\u89c4\\u6a21\\u6216\\u4f7f\\u7528\\u201c\\u6307\\u5b9a\\u7ec4\\u4ef6\\u548c\\u9006\\u53d8\\u5668\\u6570\\u91cf\\u201d\\u9009\\u9879\\u3002'; // 铭牌直流容量为零。请指定不同的期望规模或使用“指定组件和逆变器数量”选项。\r",
+    "\t}\r",
+    "\r",
+    "\tif (message == '') { message = '\\u65e0\\u7cfb\\u7edf\\u89c4\\u6a21\\u6d88\\u606f\\u3002'; } // 无系统规模消息。\r",
+    "\r",
+    "\treturn message; \r",
+    "};\r",
+    "\r",
+    "equations{ 'batt_max_power' } = define() {\r",
+    "\tmax_power = 0;\r",
+    "\tif ( technology() == 'PV Battery') {\r",
+    "\t\tmax_power = ${batt_power_discharge_max_kwdc};\r",
+    "\t}\r",
+    "\treturn max_power;\r",
+    "};\r",
+    ""
+  ],
+  "Callbacks": [
+    "function size_option_inputs() {\r",
+    "\tif (value('enable_auto_size') == 1) {\r",
+    "\t\tshow_calculated('inverter_count', true); // defined on PV Subarrays and String Size form\r",
+    "\t\tenable('desired_size', 1);\r",
+    "\t\tenable('desired_dcac_ratio', 1);\r",
+    "\t}\r",
+    "\telse {\r",
+    "\t\tshow_calculated('inverter_count', false);\r",
+    "\t\tenable('desired_size', 0);\r",
+    "\t\tenable('desired_dcac_ratio', 0);\r",
+    "\t}\r",
+    "}\r",
+    "\r",
+    "on_load{'PV System Size'} = define() {\r",
+    "\tsize_option_inputs();\r",
+    "\t// show/hide battery max power input\r",
+    "\tshow('batt_max_power', (technology() == 'PV Battery') );\r",
+    "\trefresh();\r",
+    "};\r",
+    "\r",
+    "on_change{'enable_auto_size'} = define () {\r",
+    "\tsize_option_inputs();\r",
+    "\tauto_size_subarray_enable(); // defined on PV Subarrays and String Size form\r",
+    "};\r",
+    "\r",
+    "on_change{'inverter_count'} = define () {\r",
+    "\t// these are defined on PV Inverter Input Voltage form\r",
+    "\tenable_mppt();\r",
+    "\tmppt_warning();\r",
+    "};\r",
+    "\r",
+    ""
+  ]
 }
