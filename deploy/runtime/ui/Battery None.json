@@ -1,178 +1,178 @@
 {
-    "Name": "Battery None",
-    "Width": 997.0,
-    "Height": 161.0,
-    "FormObjects": {
-        "GroupBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "Battery Bank Enable"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 985.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 153.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery Energy Storage"
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+  "Name": "Battery None",
+  "Width": 997.0,
+  "Height": 161.0,
+  "FormObjects": {
+    "GroupBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "Battery Bank Enable"
         },
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "Battery explanation"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 45.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 60.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 876.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 84.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "The battery model provides comprehensive modeling of lead-acid and lithium ion batteries for integration with PV systems, including monitoring of battery capacity, terminal voltage variation with current and charge state, thermal effects, and lifetime degradation.  A manual dispatch controller provides the ability to dispatch the battery to meet specific energy and power needs based on time-of-day and time-of-year."
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "X": {
+          "Type": 3.0,
+          "Integer": 6.0
         },
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "object 7"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 45.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 27.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 834.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 30.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "By default, the battery model is not enabled.  To enable, select \"Enable Battery\" in the blue drop-down above."
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Y": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 985.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 153.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池储能"
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
         }
+      }
     },
-    "VarDatabase": {},
-    "Equations": [],
-    "Callbacks": [
-        "// check that battery O&M costs are set to zero",
-        "// when user disables battery for Fuel Cell configs",
-        "on_load{'Battery None'} = define()",
-        "{",
-        "\tcheck_battery_om();",
-        "};"
-    ]
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "Battery explanation"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 45.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 60.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 876.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 84.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "该电池模型提供了铅酸电池和锂离子电池的综合建模功能，用于与光伏系统集成，包括监测电池容量、端电压随电流和充电状态的变化、热效应以及寿命退化。手动调度控制器能够基于每天的不同时段和每年的不同时间来调度电池，以满足特定的能源和电力需求。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "object 7"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 45.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 27.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 834.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 30.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "默认情况下，电池模型未启用。要启用它，请在上面的蓝色下拉菜单中选择“启用电池”。"
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    }
+  },
+  "VarDatabase": {},
+  "Equations": [],
+  "Callbacks": [
+    "// check that battery O&M costs are set to zero",
+    "// when user disables battery for Fuel Cell configs",
+    "on_load{'Battery None'} = define()",
+    "{",
+    "\tcheck_battery_om();",
+    "};"
+  ]
 }

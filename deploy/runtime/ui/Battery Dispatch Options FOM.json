@@ -1,713 +1,713 @@
 {
-    "Name": "Battery Dispatch Options FOM",
-    "Width": 1053.0,
-    "Height": 212.0,
-    "FormObjects": {
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_auto_can_charge"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 306.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 111.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 348.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery can charge from system"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 7.0
-                }
-            }
+  "Name": "Battery Dispatch Options FOM",
+  "Width": 1053.0,
+  "Height": 212.0,
+  "FormObjects": {
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_auto_can_charge"
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_auto_can_clipcharge"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 306.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 159.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 348.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery can charge from clipped system power"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 11.0
-                }
-            }
+        "X": {
+          "Type": 3.0,
+          "Integer": 306.0
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_auto_can_curtailcharge"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 306.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 135.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 348.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery can charge from grid-limited system power"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 11.0
-                }
-            }
+        "Y": {
+          "Type": 3.0,
+          "Integer": 111.0
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_auto_can_fuelcellcharge"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 306.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 183.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 348.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery can charge from fuel cell"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 8.0
-                }
-            }
+        "Width": {
+          "Type": 3.0,
+          "Integer": 348.0
         },
-        "CheckBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_auto_can_gridcharge"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 306.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 87.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 348.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Battery can charge from grid"
-                },
-                "State": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                }
-            }
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
         },
-        "RadioChoice": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "batt_dispatch_choice_ui"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 15.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 87.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 288.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 100.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Selection": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "Items": {
-                    "Type": 6.0,
-                    "StringList": "Automated dispatch|PV smoothing|Dispatch to custom time series|Manual dispatch"
-                },
-                "ShowCaptions": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "Horizontal": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": 1.0
-                }
-            }
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
         },
-        "Label": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "lbl_dispatch_options"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 18.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 21.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 1020.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 63.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "TextColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "FontSize": {
-                    "Type": 3.0,
-                    "Integer": 0.0
-                },
-                "WordWrap": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                },
-                "AlignRight": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "AlignTop": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池可从系统充电"
         },
-        "MultilineText": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "lbl_fom_dispatch_message"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 657.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 87.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 378.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 117.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Text": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Editable": {
-                    "Type": 2.0,
-                    "Boolean": 0.0
-                },
-                "ForeColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 0.0,
-                        "Green": 0.0,
-                        "Blue": 0.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "BackColour": {
-                    "Type": 4.0,
-                    "Color": {
-                        "Red": 255.0,
-                        "Green": 255.0,
-                        "Blue": 255.0,
-                        "Alpha": 255.0
-                    }
-                },
-                "TabOrder": {
-                    "Type": 3.0,
-                    "Integer": -1.0
-                }
-            }
+        "State": {
+          "Type": 2.0,
+          "Boolean": 1.0
         },
-        "GroupBox": {
-            "Visible": 1.0,
-            "ObjectProperties": {
-                "Name": {
-                    "Type": 5.0,
-                    "String": "object 4"
-                },
-                "X": {
-                    "Type": 3.0,
-                    "Integer": 6.0
-                },
-                "Y": {
-                    "Type": 3.0,
-                    "Integer": 3.0
-                },
-                "Width": {
-                    "Type": 3.0,
-                    "Integer": 1042.0
-                },
-                "Height": {
-                    "Type": 3.0,
-                    "Integer": 205.0
-                },
-                "Tool Tip": {
-                    "Type": 5.0,
-                    "String": ""
-                },
-                "Caption": {
-                    "Type": 5.0,
-                    "String": "Front-of-meter (FOM) Storage Dispatch Options"
-                },
-                "Bold": {
-                    "Type": 2.0,
-                    "Boolean": 1.0
-                }
-            }
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 7.0
         }
+      }
     },
-    "VarDatabase": {
-        "batt_dispatch_auto_can_charge": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery can charge from power generation",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_auto_can_clipcharge"
         },
-        "batt_dispatch_auto_can_clipcharge": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery can charge from clipped power",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "X": {
+          "Type": 3.0,
+          "Integer": 306.0
         },
-        "batt_dispatch_auto_can_curtailcharge": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery can only charge from grid-limited system power",
-            "Units": "",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Y": {
+          "Type": 3.0,
+          "Integer": 159.0
         },
-        "batt_dispatch_auto_can_fuelcellcharge": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery can charge from fuel cell",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Width": {
+          "Type": 3.0,
+          "Integer": 348.0
         },
-        "batt_dispatch_auto_can_gridcharge": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery can charge from grid",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 3.0,
-            "DefaultValue": 0.0,
-            "UIObject": "CheckBox",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
         },
-        "batt_dispatch_choice": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery dispatch option",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 8.0,
-            "DefaultValue": 0.0,
-            "UIObject": "Default",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
         },
-        "batt_dispatch_choice_ui": {
-            "Version": 4.0,
-            "Type": 1.0,
-            "Label": "Battery dispatch options FOM",
-            "Units": " ",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "Automated dispatch|PV smoothing|Dispatch to custom time series|Manual dispatch",
-            "Flags": 3.0,
-            "DefaultValue": 3.0,
-            "UIObject": "RadioChoice",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池可从削峰的系统功率充电"
         },
-        "lbl_fom_dispatch_message": {
-            "Version": 4.0,
-            "Type": 4.0,
-            "Label": "FOM battery dispatch UI message",
-            "Units": "",
-            "Group": "Battery Dispatch",
-            "IndexLabels": "",
-            "Flags": 9.0,
-            "DefaultValue": "",
-            "UIObject": "MultilineText",
-            "sscVariableName": "",
-            "sscVariableValue": ""
+        "State": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 11.0
         }
+      }
     },
-    "Equations": [],
-    "Callbacks": [
-        "on_load{'Battery Dispatch Options FOM'} = define() ",
-        "{",
-        "\tshow_hide_charge_options();",
-        "\tcheck_auto_ppa();",
-        "\tenable_charge_from_clip();\r",
-        "\tenable_grid_limited_power();",
-        "\tfom_dispatch_message();",
-        "\tptc_pbi_with_grid_charging_message();\r",
-        "\tt = technology();\r",
-        "\tis_hybrid = (t == 'PVWatts Wind FuelCell Battery Hybrid' || t == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid' ||\r",
-        "\t\tt == 'Photovoltaic Wind Battery Hybrid' || t == 'PVWatts Wind Battery Hybrid');\r",
-        "\tif (is_hybrid) en_batt = 1;\r",
-        "\telse en_batt = value('en_batt');\r",
-        "\t",
-        "\tif ( technology() == 'Fuel Cell' && en_batt == 0) { ",
-        "\t\tmsg = 'Battery storage is not enabled. Enable battery on Battery Storage page before setting storage dispatch options. ';",
-        "\t\tclr = 'red';\r",
-        "\t\tenable('batt_dispatch_choice_ui',false);",
-        "\t}",
-        "\telse {",
-        "\t\tmsg = 'The storage dispatch options determine how and when the battery charges and discharges. Choose an option below and then set dispatch parameters as appropriate. ';",
-        "\t\tclr = 'black';",
-        "\t}\r",
-        "\tif ( technology() == 'Fuel Cell' ) {\r",
-        "\t\tmsg = msg +  'PV smoothing is not available for systems with Fuel Cells. ';\r",
-        "\t}\r",
-        "\tif ( technology() == 'Fuel Cell' && value('batt_dispatch_choice_ui') == 3 ) {\r",
-        "\t\tif ( value('fuelcell_dispatch_choice') == 2 ) {\r",
-        "\t\t\tmsg = msg + 'Set battery charge from fuel cell schedule on Fuel Cell Dispatch page. ';\r",
-        "\t\t}\r",
-        "\t}\r",
-        "\t",
-        "\tproperty('lbl_dispatch_options','Caption',msg);",
-        "\tproperty('lbl_dispatch_options','TextColour',clr);",
-        "};",
-        "\r",
-        "on_change{'batt_dispatch_auto_can_gridcharge'} = define() \r",
-        "{\r",
-        "\tptc_pbi_with_grid_charging_message();\r",
-        "};\r",
-        "\r",
-        "on_change{'batt_dispatch_auto_can_charge'} = define()\r",
-        "{\r",
-        "\tenable_grid_limited_power();\r",
-        "\tfom_dispatch_message();\r",
-        "};\r",
-        "\r",
-        "on_change{'batt_dispatch_auto_can_curtailcharge'} = define()\r",
-        "{\r",
-        "\tenable_grid_limited_power();\r",
-        "\tfom_dispatch_message();\r",
-        "};\r",
-        "",
-        "on_change{'batt_dispatch_choice_ui'} = define() ",
-        "{",
-        "\tcheck_auto_ppa();",
-        "\tenable_charge_from_clip();",
-        "\tshow_hide_charge_options();\r",
-        "\tenable_grid_limited_power();",
-        "\tptc_pbi_with_grid_charging_message();\t",
-        "\tfom_dispatch_message();\r",
-        "\tvalue('batt_dispatch_excl', value('batt_dispatch_choice_ui'));",
-        "};",
-        "",
-        "function check_auto_ppa()",
-        "{",
-        "\tdispatch = value('batt_dispatch_choice_ui');\r",
-        "\ten_batt = 0;\r",
-        "\tt = technology();\r",
-        "\t\r",
-        "\tis_hybrid = (t == 'PVWatts Wind FuelCell Battery Hybrid' || t == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid' ||\r",
-        "\t\tt == 'Photovoltaic Wind Battery Hybrid' || t == 'PVWatts Wind Battery Hybrid');\r",
-        "\tif (is_hybrid) en_batt = 1;\r",
-        "\telse en_batt = value('en_batt');",
-        "\tif (dispatch == 0 && en_batt != 0 && financing() != \"Merchant Plant\") ",
-        "\t{",
-        "\t\tppa_mode = value('ppa_soln_mode');",
-        "\t\tif (ppa_mode == 0) {",
-        "\t\t\tmsgbox('Specify IRR Target not available for automated dispatch.\\nThe automated battery dispatch options require the Specify PPA Price option on the Revenue or Financial Parameters page.\\n\\nPlease change Specify IRR Target to Specify PPA Price and specify a PPA price and optional escalation rate to use the Automated Dispatch options.');",
-        "\t\t}",
-        "\t}",
-        "}",
-        "",
-        "// hide charge options for manual dispatch",
-        "function show_hide_charge_options() {",
-        "\tis_dc = (value('batt_ac_or_dc' ) == 0);\r",
-        "\tis_fuelcell = (technology() == 'Fuel Cell' || technology() == 'PVWatts Wind FuelCell Battery Hybrid' || technology() == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid');",
-        "\toption = value('batt_dispatch_choice_ui');",
-        "\tenable('batt_dispatch_auto_can_charge',option != 3);",
-        "\tenable('batt_dispatch_auto_can_gridcharge', option !=3 );",
-        "\tenable('batt_dispatch_auto_can_clipcharge', option == 0 && is_dc);",
-        "\tshow('batt_dispatch_auto_can_fuelcellcharge', option !=3 && is_fuelcell );",
-        "\tif (option == 3) { // disable these options and set to zero for manual dispatch",
-        "\t\tenable('batt_dispatch_auto_can_gridcharge', false);",
-        "\t\tenable('batt_dispatch_auto_can_charge', false);",
-        "\t\tenable('batt_dispatch_auto_can_clipcharge', is_dc);",
-        "\t}",
-        "}",
-        "",
-        "function enable_charge_from_clip()",
-        "{",
-        "\t// enable charge from clipped power if dc-connected and automated dispatch",
-        "\tis_dc = (value('batt_ac_or_dc' ) == 0);",
-        "\tif ( is_dc && (value('batt_dispatch_choice_ui') == 0 || (value('batt_dispatch_choice_ui') == 3)))",
-        "\t{ enable('batt_dispatch_auto_can_clipcharge', true); }",
-        "\telse ",
-        "\t{ ",
-        "\t\tenable('batt_dispatch_auto_can_clipcharge',false);",
-        "\t\tproperty('batt_dispatch_auto_can_clipcharge','State', 0);",
-        "\t} ",
-        "}",
-        "\r",
-        "function is_grid_limit()\r",
-        "{\r",
-        "\ten_interconnection = value(\"enable_interconnection_limit\");\r",
-        "\tcurtailment = value(\"grid_curtailment\");\r",
-        "\ten_curtailment = false;\r",
-        "\tfor (i=0; i<#curtailment; i++)\r",
-        "\t{\r",
-        "\t\tif (curtailment[i] < 9e37) {\r",
-        "\t\t\ten_curtailment = true;\r",
-        "\t\t\tbreak;\r",
-        "\t\t}\r",
-        "\t}\r",
-        "\treturn en_interconnection || en_curtailment;\r",
-        "}\r",
-        "\r",
-        "function enable_grid_limited_power()\r",
-        "{\r",
-        "\ten_dispatch = value('batt_dispatch_choice_ui') == 0 || (value('batt_dispatch_choice_ui') == 3);\r",
-        "\ten_system_power = value('batt_dispatch_auto_can_charge');\r",
-        "\tif ( is_grid_limit() && en_dispatch && (!en_system_power || value('batt_dispatch_choice_ui') == 3)) {\r",
-        "\t\tenable('batt_dispatch_auto_can_curtailcharge', true);\r",
-        "\t}\r",
-        "\telse {\r",
-        "\t\tenable('batt_dispatch_auto_can_curtailcharge', false);\r",
-        "\t\tproperty('batt_dispatch_auto_can_curtailcharge','State', 0);\r",
-        "\t}\r",
-        "}\r",
-        "",
-        "function fom_dispatch_message() {",
-        "\tis_dc = (value('batt_ac_or_dc' ) == 0);",
-        "\r",
-        "\t// special case for marine energy\r",
-        "\tif (value('batt_dispatch_choice_ui') == 1 && technology() == \"MEwave Battery\") {\r",
-        "\t\tmsg = 'The PV Smoothing dispatch option was designed for PV + battery systems with solar resource data timestep of 15 minutes or less. Using this model for wave energy converter + battery systems may lead to unexpected results.';\r",
-        "\t\tproperty('lbl_fom_dispatch_message','Text',msg);\r",
-        "\t\treturn;\r",
-        "\t}\r",
-        "\t",
-        "\tif ( is_dc ) {",
-        "\t\tmsg = 'Battery is DC-connected. (See Power Converters inputs on Battery Cell and System page.)'; ",
-        "\t}",
-        "\telse { ",
-        "\t\tmsg = 'Battery is AC-connected. (See Power Converters inputs on Battery Cell and System page.)'; ",
-        "\t}\r",
-        "\t// manual dispatch\r",
-        "\tif ( value('batt_dispatch_choice_ui') == 3 ) {\r",
-        "\t\tmsg += '\\nFor manual dispatch, use check boxes below to determine when the battery charges and discharges.';\r",
-        "\t}\r",
-        "\t// grid limited power\r",
-        "\tif ( !is_grid_limit() ) {\r",
-        "\t\tmsg += '\\nCharging from grid-limited power is only available when limits are defined on the Grid Limits page.';\r",
-        "\t}\r",
-        "\telseif ( value('batt_dispatch_choice_ui') == 1 || value('batt_dispatch_choice_ui') == 2 ) {\r",
-        "\t\tmsg += '\\nCharging from grid-limited power is only available for Automated Dispatch and Manual Dispatch.';\r",
-        "\t}\r",
-        "\telseif ( value('batt_dispatch_auto_can_charge') == 1 && value('batt_dispatch_choice_ui') == 0 ) {\r",
-        "\t\tmsg += '\\nCharging from grid limited power requires that Battery Can Charge from System be disabled.';\r",
-        "\t}\r",
-        "\telseif ( value('batt_dispatch_auto_can_curtailcharge') == 1  && value('batt_dispatch_choice_ui') == 3) {\r",
-        "\t\tmsg += '\\nBattery only charges from grid-limited power in time steps that Charge from System is disabled.';\r",
-        "\t}\r",
-        "\t// clipped power\r",
-        "\tif ( !is_dc ) {\r",
-        "\t\tmsg += '\\nCharging from clipped power is only available for DC-connected batteries.';\r",
-        "\t}\r",
-        "\telseif ( value('batt_dispatch_choice_ui') == 1 || value('batt_dispatch_choice_ui') == 2 ) {\r",
-        "\t\tmsg += '\\nCharging from clipped power is only available for Automated Dispatch and Manual Dispatch.';\r",
-        "\t}\r",
-        "\tmsg += '\\nSee Help for more information about these dispatch options.';\r",
-        "\t",
-        "\tproperty('lbl_fom_dispatch_message','Text',msg);",
-        "}",
-        ""
-    ]
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_auto_can_curtailcharge"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 306.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 135.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 348.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池可从电网限制的系统功率充电"
+        },
+        "State": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 11.0
+        }
+      }
+    },
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_auto_can_fuelcellcharge"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 306.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 183.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 348.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池可从燃料电池充电"
+        },
+        "State": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 8.0
+        }
+      }
+    },
+    "CheckBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_auto_can_gridcharge"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 306.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 87.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 348.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "电池可从电网充电"
+        },
+        "State": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 6.0
+        }
+      }
+    },
+    "RadioChoice": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "batt_dispatch_choice_ui"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 15.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 87.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 288.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 100.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Selection": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "Items": {
+          "Type": 6.0,
+          "StringList": "自动调度|光伏平滑|按自定义时间序列调度|手动调度"
+        },
+        "ShowCaptions": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "Horizontal": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": 1.0
+        }
+      }
+    },
+    "Label": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_dispatch_options"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 18.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 21.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 1020.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 63.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "TextColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "FontSize": {
+          "Type": 3.0,
+          "Integer": 0.0
+        },
+        "WordWrap": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        },
+        "AlignRight": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "AlignTop": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    },
+    "MultilineText": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "lbl_fom_dispatch_message"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 657.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 87.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 378.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 117.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Text": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Editable": {
+          "Type": 2.0,
+          "Boolean": 0.0
+        },
+        "ForeColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 0.0,
+            "Green": 0.0,
+            "Blue": 0.0,
+            "Alpha": 255.0
+          }
+        },
+        "BackColour": {
+          "Type": 4.0,
+          "Color": {
+            "Red": 255.0,
+            "Green": 255.0,
+            "Blue": 255.0,
+            "Alpha": 255.0
+          }
+        },
+        "TabOrder": {
+          "Type": 3.0,
+          "Integer": -1.0
+        }
+      }
+    },
+    "GroupBox": {
+      "Visible": 1.0,
+      "ObjectProperties": {
+        "Name": {
+          "Type": 5.0,
+          "String": "object 4"
+        },
+        "X": {
+          "Type": 3.0,
+          "Integer": 6.0
+        },
+        "Y": {
+          "Type": 3.0,
+          "Integer": 3.0
+        },
+        "Width": {
+          "Type": 3.0,
+          "Integer": 1042.0
+        },
+        "Height": {
+          "Type": 3.0,
+          "Integer": 205.0
+        },
+        "Tool Tip": {
+          "Type": 5.0,
+          "String": ""
+        },
+        "Caption": {
+          "Type": 5.0,
+          "String": "表前 (FOM) 储能调度选项"
+        },
+        "Bold": {
+          "Type": 2.0,
+          "Boolean": 1.0
+        }
+      }
+    }
+  },
+  "VarDatabase": {
+    "batt_dispatch_auto_can_charge": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池可从发电充电",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_auto_can_clipcharge": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池可从削峰功率充电",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_auto_can_curtailcharge": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池只能从电网限制的系统功率充电",
+      "Units": "",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_auto_can_fuelcellcharge": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池可从燃料电池充电",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_auto_can_gridcharge": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池可从电网充电",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 3.0,
+      "DefaultValue": 0.0,
+      "UIObject": "CheckBox",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_choice": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池调度选项",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 8.0,
+      "DefaultValue": 0.0,
+      "UIObject": "Default",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "batt_dispatch_choice_ui": {
+      "Version": 4.0,
+      "Type": 1.0,
+      "Label": "电池调度选项FOM",
+      "Units": " ",
+      "Group": "电池调度",
+      "IndexLabels": "Automated dispatch|PV smoothing|Dispatch to custom time series|Manual dispatch",
+      "Flags": 3.0,
+      "DefaultValue": 3.0,
+      "UIObject": "RadioChoice",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    },
+    "lbl_fom_dispatch_message": {
+      "Version": 4.0,
+      "Type": 4.0,
+      "Label": "FOM电池调度界面消息",
+      "Units": "",
+      "Group": "电池调度",
+      "IndexLabels": "",
+      "Flags": 9.0,
+      "DefaultValue": "",
+      "UIObject": "MultilineText",
+      "sscVariableName": "",
+      "sscVariableValue": ""
+    }
+  },
+  "Equations": [],
+  "Callbacks": [
+    "on_load{'Battery Dispatch Options FOM'} = define() ",
+    "{",
+    "\tshow_hide_charge_options();",
+    "\tcheck_auto_ppa();",
+    "\tenable_charge_from_clip();\r",
+    "\tenable_grid_limited_power();",
+    "\tfom_dispatch_message();",
+    "\tptc_pbi_with_grid_charging_message();\r",
+    "\tt = technology();\r",
+    "\tis_hybrid = (t == 'PVWatts Wind FuelCell Battery Hybrid' || t == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid' ||\r",
+    "\t\tt == 'Photovoltaic Wind Battery Hybrid' || t == 'PVWatts Wind Battery Hybrid');\r",
+    "\tif (is_hybrid) en_batt = 1;\r",
+    "\telse en_batt = value('en_batt');\r",
+    "\t",
+    "\tif ( technology() == 'Fuel Cell' && en_batt == 0) { ",
+    "\t\tmsg = 'Battery storage is not enabled. Enable battery on Battery Storage page before setting storage dispatch options. ';",
+    "\t\tclr = 'red';\r",
+    "\t\tenable('batt_dispatch_choice_ui',false);",
+    "\t}",
+    "\telse {",
+    "\t\tmsg = 'The storage dispatch options determine how and when the battery charges and discharges. Choose an option below and then set dispatch parameters as appropriate. ';",
+    "\t\tclr = 'black';",
+    "\t}\r",
+    "\tif ( technology() == 'Fuel Cell' ) {\r",
+    "\t\tmsg = msg +  'PV smoothing is not available for systems with Fuel Cells. ';\r",
+    "\t}\r",
+    "\tif ( technology() == 'Fuel Cell' && value('batt_dispatch_choice_ui') == 3 ) {\r",
+    "\t\tif ( value('fuelcell_dispatch_choice') == 2 ) {\r",
+    "\t\t\tmsg = msg + 'Set battery charge from fuel cell schedule on Fuel Cell Dispatch page. ';\r",
+    "\t\t}\r",
+    "\t}\r",
+    "\t",
+    "\tproperty('lbl_dispatch_options','Caption',msg);",
+    "\tproperty('lbl_dispatch_options','TextColour',clr);",
+    "};",
+    "\r",
+    "on_change{'batt_dispatch_auto_can_gridcharge'} = define() \r",
+    "{\r",
+    "\tptc_pbi_with_grid_charging_message();\r",
+    "};\r",
+    "\r",
+    "on_change{'batt_dispatch_auto_can_charge'} = define()\r",
+    "{\r",
+    "\tenable_grid_limited_power();\r",
+    "\tfom_dispatch_message();\r",
+    "};\r",
+    "\r",
+    "on_change{'batt_dispatch_auto_can_curtailcharge'} = define()\r",
+    "{\r",
+    "\tenable_grid_limited_power();\r",
+    "\tfom_dispatch_message();\r",
+    "};\r",
+    "",
+    "on_change{'batt_dispatch_choice_ui'} = define() ",
+    "{",
+    "\tcheck_auto_ppa();",
+    "\tenable_charge_from_clip();",
+    "\tshow_hide_charge_options();\r",
+    "\tenable_grid_limited_power();",
+    "\tptc_pbi_with_grid_charging_message();\t",
+    "\tfom_dispatch_message();\r",
+    "\tvalue('batt_dispatch_excl', value('batt_dispatch_choice_ui'));",
+    "};",
+    "",
+    "function check_auto_ppa()",
+    "{",
+    "\tdispatch = value('batt_dispatch_choice_ui');\r",
+    "\ten_batt = 0;\r",
+    "\tt = technology();\r",
+    "\t\r",
+    "\tis_hybrid = (t == 'PVWatts Wind FuelCell Battery Hybrid' || t == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid' ||\r",
+    "\t\tt == 'Photovoltaic Wind Battery Hybrid' || t == 'PVWatts Wind Battery Hybrid');\r",
+    "\tif (is_hybrid) en_batt = 1;\r",
+    "\telse en_batt = value('en_batt');",
+    "\tif (dispatch == 0 && en_batt != 0 && financing() != \"Merchant Plant\") ",
+    "\t{",
+    "\t\tppa_mode = value('ppa_soln_mode');",
+    "\t\tif (ppa_mode == 0) {",
+    "\t\t\tmsgbox('Specify IRR Target not available for automated dispatch.\\nThe automated battery dispatch options require the Specify PPA Price option on the Revenue or Financial Parameters page.\\n\\nPlease change Specify IRR Target to Specify PPA Price and specify a PPA price and optional escalation rate to use the Automated Dispatch options.');",
+    "\t\t}",
+    "\t}",
+    "}",
+    "",
+    "// hide charge options for manual dispatch",
+    "function show_hide_charge_options() {",
+    "\tis_dc = (value('batt_ac_or_dc' ) == 0);\r",
+    "\tis_fuelcell = (technology() == 'Fuel Cell' || technology() == 'PVWatts Wind FuelCell Battery Hybrid' || technology() == 'CustomGeneration PVWatts Wind FuelCell Battery Hybrid');",
+    "\toption = value('batt_dispatch_choice_ui');",
+    "\tenable('batt_dispatch_auto_can_charge',option != 3);",
+    "\tenable('batt_dispatch_auto_can_gridcharge', option !=3 );",
+    "\tenable('batt_dispatch_auto_can_clipcharge', option == 0 && is_dc);",
+    "\tshow('batt_dispatch_auto_can_fuelcellcharge', option !=3 && is_fuelcell );",
+    "\tif (option == 3) { // disable these options and set to zero for manual dispatch",
+    "\t\tenable('batt_dispatch_auto_can_gridcharge', false);",
+    "\t\tenable('batt_dispatch_auto_can_charge', false);",
+    "\t\tenable('batt_dispatch_auto_can_clipcharge', is_dc);",
+    "\t}",
+    "}",
+    "",
+    "function enable_charge_from_clip()",
+    "{",
+    "\t// enable charge from clipped power if dc-connected and automated dispatch",
+    "\tis_dc = (value('batt_ac_or_dc' ) == 0);",
+    "\tif ( is_dc && (value('batt_dispatch_choice_ui') == 0 || (value('batt_dispatch_choice_ui') == 3)))",
+    "\t{ enable('batt_dispatch_auto_can_clipcharge', true); }",
+    "\telse ",
+    "\t{ ",
+    "\t\tenable('batt_dispatch_auto_can_clipcharge',false);",
+    "\t\tproperty('batt_dispatch_auto_can_clipcharge','State', 0);",
+    "\t} ",
+    "}",
+    "\r",
+    "function is_grid_limit()\r",
+    "{\r",
+    "\ten_interconnection = value(\"enable_interconnection_limit\");\r",
+    "\tcurtailment = value(\"grid_curtailment\");\r",
+    "\ten_curtailment = false;\r",
+    "\tfor (i=0; i<#curtailment; i++)\r",
+    "\t{\r",
+    "\t\tif (curtailment[i] < 9e37) {\r",
+    "\t\t\ten_curtailment = true;\r",
+    "\t\t\tbreak;\r",
+    "\t\t}\r",
+    "\t}\r",
+    "\treturn en_interconnection || en_curtailment;\r",
+    "}\r",
+    "\r",
+    "function enable_grid_limited_power()\r",
+    "{\r",
+    "\ten_dispatch = value('batt_dispatch_choice_ui') == 0 || (value('batt_dispatch_choice_ui') == 3);\r",
+    "\ten_system_power = value('batt_dispatch_auto_can_charge');\r",
+    "\tif ( is_grid_limit() && en_dispatch && (!en_system_power || value('batt_dispatch_choice_ui') == 3)) {\r",
+    "\t\tenable('batt_dispatch_auto_can_curtailcharge', true);\r",
+    "\t}\r",
+    "\telse {\r",
+    "\t\tenable('batt_dispatch_auto_can_curtailcharge', false);\r",
+    "\t\tproperty('batt_dispatch_auto_can_curtailcharge','State', 0);\r",
+    "\t}\r",
+    "}\r",
+    "",
+    "function fom_dispatch_message() {",
+    "\tis_dc = (value('batt_ac_or_dc' ) == 0);",
+    "\r",
+    "\t// special case for marine energy\r",
+    "\tif (value('batt_dispatch_choice_ui') == 1 && technology() == \"MEwave Battery\") {\r",
+    "\t\tmsg = 'The PV Smoothing dispatch option was designed for PV + battery systems with solar resource data timestep of 15 minutes or less. Using this model for wave energy converter + battery systems may lead to unexpected results.';\r",
+    "\t\tproperty('lbl_fom_dispatch_message','Text',msg);\r",
+    "\t\treturn;\r",
+    "\t}\r",
+    "\t",
+    "\tif ( is_dc ) {",
+    "\t\tmsg = 'Battery is DC-connected. (See Power Converters inputs on Battery Cell and System page.)'; ",
+    "\t}",
+    "\telse { ",
+    "\t\tmsg = 'Battery is AC-connected. (See Power Converters inputs on Battery Cell and System page.)'; ",
+    "\t}\r",
+    "\t// manual dispatch\r",
+    "\tif ( value('batt_dispatch_choice_ui') == 3 ) {\r",
+    "\t\tmsg += '\\nFor manual dispatch, use check boxes below to determine when the battery charges and discharges.';\r",
+    "\t}\r",
+    "\t// grid limited power\r",
+    "\tif ( !is_grid_limit() ) {\r",
+    "\t\tmsg += '\\nCharging from grid-limited power is only available when limits are defined on the Grid Limits page.';\r",
+    "\t}\r",
+    "\telseif ( value('batt_dispatch_choice_ui') == 1 || value('batt_dispatch_choice_ui') == 2 ) {\r",
+    "\t\tmsg += '\\nCharging from grid-limited power is only available for Automated Dispatch and Manual Dispatch.';\r",
+    "\t}\r",
+    "\telseif ( value('batt_dispatch_auto_can_charge') == 1 && value('batt_dispatch_choice_ui') == 0 ) {\r",
+    "\t\tmsg += '\\nCharging from grid limited power requires that Battery Can Charge from System be disabled.';\r",
+    "\t}\r",
+    "\telseif ( value('batt_dispatch_auto_can_curtailcharge') == 1  && value('batt_dispatch_choice_ui') == 3) {\r",
+    "\t\tmsg += '\\nBattery only charges from grid-limited power in time steps that Charge from System is disabled.';\r",
+    "\t}\r",
+    "\t// clipped power\r",
+    "\tif ( !is_dc ) {\r",
+    "\t\tmsg += '\\nCharging from clipped power is only available for DC-connected batteries.';\r",
+    "\t}\r",
+    "\telseif ( value('batt_dispatch_choice_ui') == 1 || value('batt_dispatch_choice_ui') == 2 ) {\r",
+    "\t\tmsg += '\\nCharging from clipped power is only available for Automated Dispatch and Manual Dispatch.';\r",
+    "\t}\r",
+    "\tmsg += '\\nSee Help for more information about these dispatch options.';\r",
+    "\t",
+    "\tproperty('lbl_fom_dispatch_message','Text',msg);",
+    "}",
+    ""
+  ]
 }
